@@ -12,5 +12,30 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layout');
 });
+
+
+
+Route::get('/contacts', "Productscontroller@index" );
+
+
+Route::get("/productions/{id}", function ($id) {
+    return "je suis un productions $id";
+});
+Route::get("/productions","Productscontroller@index");
+Route::get("/productions","Productscontroller@index");
+
+   
+Route::get("/productions/{id}","Productscontroller@show");
+
+Route::get("/","HomeController@index");
+
+Route::get("/productions/{id}","HomeController@show");
+
+
+
+
+
+
+

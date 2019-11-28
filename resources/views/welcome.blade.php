@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    FERME AGRICOLE
                 </div>
 
                 <div class="links">

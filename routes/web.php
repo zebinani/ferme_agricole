@@ -12,26 +12,41 @@
 */
 
 Route::get('/', function () {
-    return view('layout');
+
+     return view('layout');
 });
 
+Route::get('/accueil',"AccueilController@index");
 
+Route::get('/Employ',"EmployController@index" );
 
-Route::get('/contacts', "Productscontroller@index" );
-
-
+Route::get('/contacts', "ProductsController@index" );
+ 
 Route::get("/productions/{id}", function ($id) {
     return "je suis un productions $id";
 });
-Route::get("/productions","Productscontroller@index");
-Route::get("/productions","Productscontroller@index");
 
-   
-Route::get("/productions/{id}","Productscontroller@show");
+Route::resource('Product','ProductsController');
+Route::get("/Product/edit/{id}","ProductsController@edit")->name('editer_produit');
+Route::patch("/Product/edit/{id}","ProductsController@update")->name('update_produit');
 
-Route::get("/","HomeController@index");
+Route::resource('Employ','EmploysController');
+Route::get("/Employ/edit/{id}", "EmploysController@edit")->name('editer_Employs');
+
+
+Route::resource('/Occupation','OccupationsController');
+
+Route::resource('/Department','DepartmentController');
+
+Route::resource('/Materiel','MaterielController');
+
+
 
 Route::get("/productions/{id}","HomeController@show");
+
+
+
+
 
 
 

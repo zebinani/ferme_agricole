@@ -1,11 +1,11 @@
 @extends("layout")
 
-      @section("page")
+@section("section2")
+<div class="container">
 
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi deserunt modi, corrupti nostrum eius dignissimos, et quibusdam perspiciatis adipisci fugiat maxime at molestiae atque magnam deleniti ab enim tenetur architecto!
+<p>
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum sequi soluta voluptas dicta, dolorum est perferendis ratione sit asperiores quas sunt, aut nesciunt recusandae ex? Ea vel laborum eaque veritatis.
+</p>
 
-      </p>
-      @endsection
-
-  
+</div>
+@endsection

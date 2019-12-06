@@ -20,7 +20,7 @@
   
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+      <a class="navbar-brand" href="index.html">BINANITECH</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -77,24 +77,43 @@
 
   
   <!-- la page de connexion-->
-  
-      <div id="container">
-        
+          
+              <div id="container">
+                
 
-      @yield("page")
+              @yield("section1")
 
-      </div>  
+              </div> 
+
+              <div id="container">
+                
+              @yield("section2")
+
+              </div> 
+              <div id="container">
+                
+              @yield("EMP_section")
+
+              </div> 
+              <div id="container">
+              
+              @yield("section_production")
+              </div>
+              <div id="container">
+              
+              @yield("section_occupation")
+              </div>
+
+              <div id="container">
+              
+              @yield("DEP_section")
+
+              </div>
 
 
-  <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; TOUS LES DROITS SONT RESERVES BINANITECH</p>
-    </div>
-<!-- la page de connexion-->
-  
-  <!-- /.container -->
+              </div> 
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
+ <footer class="py-5 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; TOUS LES DROITS SONT RESERVES BINANITECH</p>
     </div>

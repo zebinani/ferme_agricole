@@ -16,6 +16,7 @@ class EmploysController extends Controller
     public function index()
     {
         $employs = \App\Employ::orderBy('created_at', 'DESC')->get();
+
         return view('employers.index', compact('employs'));
     }
 
@@ -29,10 +30,8 @@ class EmploysController extends Controller
     {
       //
       
-
-      return view ('employers.create');
+       return view ('employers.create');
       
-
     }
 
     /**
@@ -44,20 +43,18 @@ class EmploysController extends Controller
     public function store(Request $request)
     {
         //
-        $Employs = new Employ();
-   $Employs->matricule = $request->input('maatricule');
+   $Employs = new Employ();
+
+   $Employs->matricule = $request->input('matricule');
    $Employs->nom = $request->input('nom');
    $Employs->prenom = $request->input('prenom');
    $Employs->adresse = $request->input('adresse');
    $Employs->telephone = $request->input('telephone');
    
-   
-   $produit->save();
-   return redirect('/');
-   
-       
+   $Employs->save();
 
-    }
+   return redirect('/');
+   }
 
     /**
      * Display the specified resource.
@@ -68,8 +65,7 @@ class EmploysController extends Controller
     public function show($id)
     {
         //
-        $Employs = \App\Employ::find($id);//on recupere le produit
-   return view('employers.edit', compact('Employs'));
+    
     }
 
     /**
@@ -81,6 +77,10 @@ class EmploysController extends Controller
     public function edit($id)
     {
         //
+        $Employs = \App\Employ::find($id);//on recupere le produit
+    
+    return view('employers.edit', compact('Employs'));
+       
     }
 
     /**
@@ -93,7 +93,19 @@ class EmploysController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $employs = \App\Employ::find($id);
+        if($employs )  $employs->update([
+           'matricule' => $request->input('matricule'),
+           'nom' => $request->input('nom'),
+           'prenom'=> $request->input('prenom'),
+           'adresse'=> $request->input('adresse'),
+           'telephone'=> $request->input('telephone')
+           
+       ]);
+       return redirect()->back();
     }
+    
+  
 
     /**
      * Remove the specified resource from storage.
@@ -101,7 +113,8 @@ class EmploysController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    
+     public function destroy($id)
     {
         //
     }

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class MaterielController extends Controller
+class MaterielsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,9 @@ class MaterielController extends Controller
     public function index()
     {
     
-        $products = \App\Product::orderBy('created_at', 'DESC')->get();
-        return view('materiels.index', compact('materiel'));
+        $materiels= \App\Materiel::orderBy('created_at', 'DESC')->get();
+
+        return view('materiels.index', compact('materiels'));
     }
    // compact('materiel')
     /**
@@ -26,7 +27,8 @@ class MaterielController extends Controller
     public function create()
     {
         //
-        return view('Materiel.index');
+        return view ('materiels.index');
+       
     }
 
     /**
@@ -38,7 +40,22 @@ class MaterielController extends Controller
     public function store(Request $request)
     {
         //
+     
+            $materiels = new Materiel();
+
+            $materiels->name = $request->input('name');
+
+            $materiels->description = $request->input('description');
+
+            $materiels->amortissement = $request->input('amortissement');
+            
+            $materiels->save();
+
+            return redirect('/');
+            
     }
+
+       
 
     /**
      * Display the specified resource.
@@ -46,7 +63,8 @@ class MaterielController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+     public function show($id)
+
     {
         //
     }
@@ -60,6 +78,9 @@ class MaterielController extends Controller
     public function edit($id)
     {
         //
+        $materiel = \App\Employ::find($id);//on recupere le produit
+    
+        return view('materiels.edit', compact('materiel'));
     }
 
     /**
@@ -69,10 +90,22 @@ class MaterielController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
     public function update(Request $request, $id)
     {
         //
+        $materiel = \App\Employ::find($id);
+        if($materiel )  $materiel->update([
+           'name' => $request->input('name'),
+           'description' => $request->input('descrption'),
+           'armortissement'=> $request->input('amortissement')
+           
+           
+       ]);
+       return redirect()->back();
     }
+    
+
 
     /**
      * Remove the specified resource from storage.

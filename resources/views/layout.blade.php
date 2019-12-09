@@ -81,13 +81,13 @@
               <div id="container">
                 
 
-              @yield("section1")
+              @yield("sect_layout")
 
               </div> 
 
               <div id="container">
                 
-              @yield("section2")
+              @yield("sect_accueil")
 
               </div> 
               <div id="container">
@@ -109,8 +109,30 @@
               @yield("DEP_section")
 
               </div>
+              <div id="container">
+              
+              @yield("sect_Em_edit")
+             
 
+              </div>
+              <div id="container">
+              
+              @yield("sect_materiel")
+             
 
+              </div>
+              <div id="container">
+              
+              @yield("sect_edit_mat")
+             
+
+              </div>
+              <div id="container">
+              
+              @yield("sect_create_mat")
+             
+
+              </div>
               </div> 
 
  <footer class="py-5 bg-dark">

@@ -1,6 +1,6 @@
  @extends("layout")
 
-@section("section3")
+@section("sect_accueil")
 
     <header>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

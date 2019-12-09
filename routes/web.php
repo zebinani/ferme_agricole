@@ -32,13 +32,17 @@ Route::patch("/Product/edit/{id}","ProductsController@update")->name('update_pro
 
 Route::resource('Employ','EmploysController');
 Route::get("/Employ/edit/{id}", "EmploysController@edit")->name('editer_Employs');
+Route::patch("/Employ/edit/{id}", "EmploysController@update")->name('update_Employs');
+
 
 
 Route::resource('/Occupation','OccupationsController');
 
 Route::resource('/Department','DepartmentController');
 
-Route::resource('/Materiel','MaterielController');
+Route::resource('/Materiel','MaterielsController');
+Route::get("/Materiel/edit/{id}","MaterielsController@edit")->name('editer_materiel');
+Route::patch("/materiel/edit/{id}","MaterielsController@update")->name('update_materiel');
 
 
 

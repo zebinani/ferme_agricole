@@ -1,7 +1,7 @@
 
 @extends("layout")
 
-@section("section1")
+@section("sect_layout")
 
 <!doctype html>
 <html lang="en">

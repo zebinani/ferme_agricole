@@ -4,7 +4,7 @@
 
 <table class="table table-striped">
        <tr>
-           <th>#</th> <th>id</th>    <th>matriclue</th> <th>nom</th><th>prenom</th> <th>adresse</th>    <th>telephone</th>       <th></th>
+           <th>#</th> <th>id</th>    <th>Matricule</th> <th>NOM</th><th>PRENOM</th> <th>ADRESSE</th>    <th>TELEPHONE</th>       <th></th>
        </tr>
        @foreach($employs as $employ)
            <tr>
@@ -19,7 +19,7 @@
            </tr>
        @endforeach
    </table>
-   <p><a href="{{route('editer_Employs',['id'=>$employ->id])}}">Editer</a>
+   <p><a href="{{route('editer_materiel',['id'=>$materiel->id])}}">Editer</a>
 
 </p>
 

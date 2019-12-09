@@ -1,3 +1,6 @@
+
+@extends("layout")
+@section("sect_create_product")
 <div class="container">
        
        <div class="container">
@@ -17,3 +20,8 @@
                    <button class="btn btn-primary">Enregistrer</button>
                </div>
            </form>
+
+           <div>
+
+   
+@endsection

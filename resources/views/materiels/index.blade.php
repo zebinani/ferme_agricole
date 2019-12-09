@@ -1,4 +1,6 @@
+@extends("layout")
 
+@section("sect_materiel")
 
 
 
@@ -13,17 +15,16 @@
        @foreach($materiels as $materiel)
    <tr>
        <th>#</th>
-       <th>{{$materiel->name ??""}}</th>
-       <th>{{$materiel->description ??""}} </th>
-       <th>{{$materiel->quantity ?? ""}} </th>
+       <th>{{$materiel->name ?? ''}}</th>
+       <th>{{$materiel->description ??''}} </th>
+       <th>{{$materiel->amortissement ?? ''}} </th>
        <th>
-           <p><a href="{{route('editer_materiel',['id'=>$materiel->id])}}">Editer</a>
-</p>
-       </th>
+        
+ </th>
    </tr>
 @endforeach
 
         </table>
         </div>
-
-   
+        <p><a href="{{route('editer_materiel',['id'=>$materiel->id])}}">Editer</a> </p>
+   @endsection

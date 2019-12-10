@@ -77,13 +77,14 @@
 
   
   <!-- la page de connexion-->
-          
-              <div id="container">
+  <div id="container">
+  
+        <div id="container"> @yield("create_product ") </div> 
+
+               <div id="container">@yield("create_employ") </div> 
+  
+               <div id="container">@yield("sect_layout")</div> 
                 
-
-              @yield("sect_layout")
-
-              </div> 
 
               <div id="container">
                 
@@ -130,10 +131,12 @@
               <div id="container">
               
               @yield("sect_create_mat")
-             
-
-              </div>
-              </div> 
+             </div>
+             <div id="container">
+              
+              @yield("create_materiel")
+             </div>
+</div> 
 
  <footer class="py-5 bg-dark">
     <div class="container">

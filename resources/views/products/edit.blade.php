@@ -4,7 +4,7 @@
 @section("section_production")
 
 
-<form action="{{route('update_produit',['id'=>$produit->id])}}
+<form action="{{route('editer_product',['id'=>$produit->id])}}
 " method="post">
    @csrf
    @method('patch')

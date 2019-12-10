@@ -29,8 +29,7 @@ class EmploysController extends Controller
          
     {
       //
-      
-       return view ('employers.create');
+        return view ('employers.create');
       
     }
 
@@ -43,15 +42,15 @@ class EmploysController extends Controller
     public function store(Request $request)
     {
         //
-   $Employs = new Employ();
+   $employs = new Employ();
 
-   $Employs->matricule = $request->input('matricule');
-   $Employs->nom = $request->input('nom');
-   $Employs->prenom = $request->input('prenom');
-   $Employs->adresse = $request->input('adresse');
-   $Employs->telephone = $request->input('telephone');
+   $employs->matricule = $request->input('matricule');
+   $employs->nom = $request->input('nom');
+   $employs->prenom = $request->input('prenom');
+   $employs->adresse = $request->input('adresse');
+   $employs->telephone = $request->input('telephone');
    
-   $Employs->save();
+   $employs->save();
 
    return redirect('/');
    }

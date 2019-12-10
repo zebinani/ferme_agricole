@@ -1,4 +1,5 @@
-
+@extends("layout")
+@section("index_product")
 
   
 
@@ -14,9 +15,14 @@
        <th>{{$product->price}} </th>
        <th>{{$product->quantity}} </th>
        <th>
-           <p><a href="{{route('editer_produit',['id'=>$product->id])}}">Editer</a>
-</p>
+           <p><a href="{{route('update_produit',['id'=>$product->id])}}">Editer</a></p>
        </th>
+
+       <th>
+           <p><a href="{{route('Product.create')}}">ajouter</a></p>
+       </th>
+       
+       
    </tr>
 @endforeach
 

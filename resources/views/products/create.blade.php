@@ -1,10 +1,14 @@
 
 @extends("layout")
-@section("sect_create_product")
+
+@section("create_product")
+
 <div class="container">
        
        <div class="container">
-           <form action="{{route('product.store')}}" method="post">
+
+       
+           <form action="{{route('Product.store')}}" method="post">
                @csrf
                <div>
                    <input type="text" name="name" class="form-control" placeholder="le nom du produit">
@@ -22,6 +26,5 @@
            </form>
 
            <div>
-
-   
-@endsection
+           
+ @endsection  

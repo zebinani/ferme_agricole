@@ -27,12 +27,14 @@ Route::get("/productions/{id}", function ($id) {
 });
 
 Route::resource('Product','ProductsController');
-Route::get("/Product/edit/{id}","ProductsController@edit")->name('editer_produit');
+Route::get("/Product/edit/{id}","ProductsController@edit")->name('editer_product');
+
 Route::patch("/Product/edit/{id}","ProductsController@update")->name('update_produit');
 
+
 Route::resource('Employ','EmploysController');
-Route::get("/Employ/edit/{id}", "EmploysController@edit")->name('editer_Employs');
-Route::patch("/Employ/edit/{id}", "EmploysController@update")->name('update_Employs');
+Route::get("/Employ/edit/{id}", "EmploysController@edit")->name('editer_employs');
+Route::patch("/Employ/edit/{id}", "EmploysController@update")->name('update.Employs');
 
 
 

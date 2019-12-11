@@ -12,7 +12,7 @@
            <th>AMORTISSEMENT</th>        <th></th>
        </tr>
        
-       @foreach($materiels as $materiel)
+       @foreach($Materiels as $materiel)
    <tr>
        <th>#</th>
        <th>{{$materiel->name ?? ''}}</th>
@@ -26,5 +26,5 @@
 
         </table>
         </div>
-        <p><a href="{{route('editer_materiel',['id'=>$materiel->id])}}">Editer</a> </p>
+        
    @endsection

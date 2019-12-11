@@ -1,5 +1,4 @@
 @extends("layout")
-
 @section("EMP_section")
 
 <table class="table table-striped">
@@ -17,14 +16,7 @@
                <th>{{$employ->telephone ?? ''}}</th>
                <th></th>
            </tr>
-
+</table>
        @endforeach
        
-   </table>
-   <p><a href="{{route('update.Employs',['id'=>$employ->id])}}">Editer</a>
-
-
-</p>
-
-
-@endsection
+  @endsection

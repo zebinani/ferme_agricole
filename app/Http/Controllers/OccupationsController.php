@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Occupation ;
+
 class OccupationsController extends Controller
 {
     /**
@@ -14,9 +16,9 @@ class OccupationsController extends Controller
     public function index()
     {
         //
-        $occupations = \App\Occupation::orderBy('created_at', 'DESC')->get();
+        $Occupations = \App\Occupation::orderBy('created_at', 'DESC')->get();
 
-        return view('occupations.index', compact('occupations'));
+        return view('occupations.index', compact('Occupations'));
     }
 
     /**
@@ -27,6 +29,7 @@ class OccupationsController extends Controller
     public function create()
     {
         //
+        return view ("occupations.index");
     }
 
     /**
@@ -37,7 +40,17 @@ class OccupationsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $Occupations = new Occupation();
+
+        $Occupations->type =$request->input('type');
+        $Occupations->categorie =$request->input('categorie');
+        $Occupations->salaire =$request->input('salaire');
+       
+        $Occupations->save();
+
+        return redirect('/');
+
+
     }
 
     /**

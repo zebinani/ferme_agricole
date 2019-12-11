@@ -22,12 +22,14 @@ Route::get('/Employ',"EmployController@index" );
 
 Route::get('/contacts', "ProductsController@index" );
  
-Route::get("/productions/{id}", function ($id) {
-    return "je suis un productions $id";
-});
+
+Route::resource('Production','ProductionsController');
+
+Route::get("/Production/edit/{id}", "ProductionsController@edit")->name('productions.edite');
+Route::patch("/Production/edit/{id}", "ProductionsController@update")->name('update.Production');
 
 Route::resource('Product','ProductsController');
-Route::get("/Product/edit/{id}","ProductsController@edit")->name('editer_product');
+Route::get("/Product/edit/{id}","ProductsController@edit")->name('product.edit');
 
 Route::patch("/Product/edit/{id}","ProductsController@update")->name('update_produit');
 
@@ -36,6 +38,9 @@ Route::resource('Employ','EmploysController');
 Route::get("/Employ/edit/{id}", "EmploysController@edit")->name('editer_employs');
 Route::patch("/Employ/edit/{id}", "EmploysController@update")->name('update.Employs');
 
+Route::resource('Parcel','ParcelController');
+Route::get("/Parcel/edit/{id}", "ParcelController@edit")->name('parcelles.edit');
+Route::patch("/Parcel/edit/{id}", "ParcelController@update")->name('update.parcels');
 
 
 Route::resource('/Occupation','OccupationsController');
@@ -48,7 +53,7 @@ Route::patch("/materiel/edit/{id}","MaterielsController@update")->name('update_m
 
 
 
-Route::get("/productions/{id}","HomeController@show");
+
 
 
 

@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ProductionController extends Controller
+
+
+
+class ProductionsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +17,10 @@ class ProductionController extends Controller
     public function index()
     {
         //
-        $Production = \App\Productions::orderBy('created_at', 'DESC')->get();
-        return view('productions.index', compact('productions'));
-     
+        $Productions = \App\Production::orderBy('created_at', 'DESC')->get();
         
+        return view('productions.index', compact('Productions'));
+ 
     }
 
     /**
@@ -28,7 +31,8 @@ class ProductionController extends Controller
     public function create()
     {
         //
-        return view('productions.create');
+        return view ("productions.create");
+       
     }
 
     /**
@@ -40,6 +44,15 @@ class ProductionController extends Controller
     public function store(Request $request)
     {
         //
+        $Productions = new Production();
+
+        $Productions->type = $request->input('type');
+        $Productions->periode= $request->input('periode');
+        $Productions->destination = $request->input('destination');
+        
+        $Productions->save();
+     
+        return redirect('/');
     }
 
     /**
@@ -62,6 +75,9 @@ class ProductionController extends Controller
     public function edit($id)
     {
         //
+        $Productions = \App\Production::find($id);//on recupere le produit
+    
+    return view('productions.edite', compact('Productions'));
     }
 
     /**
@@ -74,6 +90,16 @@ class ProductionController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $Productions = \App\Production::find($id);
+    
+          if($Productions )  $Productions->update([
+           'type' => $request->input('type'),
+           'periode' => $request->input('periode'),
+           'destination'=> $request->input('destination'),
+           
+           
+       ]);
+       return redirect()->back();
     }
 
     /**

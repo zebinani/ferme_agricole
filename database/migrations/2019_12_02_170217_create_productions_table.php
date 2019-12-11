@@ -16,7 +16,7 @@ class CreateProductionsTable extends Migration
         Schema::create('productions', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('type');
-            $table->string('preriode');
+            $table->string('periode');
             $table->string('destination');
             $table->timestamps();
         });

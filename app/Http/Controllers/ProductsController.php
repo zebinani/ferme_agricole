@@ -39,11 +39,11 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     {
-        $produit = new Product();
-        $produit->name = $request->input('name');
-        $produit->price = $request->input('price');
-        $produit->quantity = $request->input('quantity');
-        $produit->save();
+        $product = new Product();
+        $product->name = $request->input('name');
+        $product->price = $request->input('price');
+        $product->quantity = $request->input('quantity');
+        $product->save();
 
         return redirect('/');
     }
@@ -68,9 +68,9 @@ class ProductsController extends Controller
     public function edit($id)
     { 
         //
-        $produit = \App\Product::find($id);//on recupere le produit
+        $product = \App\Product::find($id);//on recupere le produit
         
-        return view('products.edit', compact('produit'));
+        return view('products.edit', compact('product'));
     }
 
 

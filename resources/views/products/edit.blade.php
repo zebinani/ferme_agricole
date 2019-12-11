@@ -1,10 +1,10 @@
 
 @extends("layout")
 
-@section("section_production")
+@section("Product_edit")
 
 
-<form action="{{route('editer_product',['id'=>$produit->id])}}
+<form action="{{route('products.edit',['id'=>$produit->id])}}
 " method="post">
    @csrf
    @method('patch')

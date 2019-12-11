@@ -2,11 +2,12 @@
 
 @section("section_occupation")
 
+
 <table class="table table-striped">
        <tr>
            <th>#</th>          <th>TYPE</th>           <th>CATEGORIE</th>           <th>SALAIRE</th>
        </tr>
-       @foreach($occupations as $occupation)
+       @foreach($Occupations as $occupation)
            <tr>
                <th>#</th>
                <th>{{$occupation->type ??''}}</th>

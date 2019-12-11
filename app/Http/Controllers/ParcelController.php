@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class MaterielsController extends Controller
+use App\Parcel;
+
+class ParcelController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,12 +15,12 @@ class MaterielsController extends Controller
      */
     public function index()
     {
-    
-        $Materiels= \App\Materiel::orderBy('created_at', 'DESC')->get();
+        //
+        $parcels= \App\Parcel::orderBy('created_at', 'DESC')->get();
 
-        return view('materiels.index', compact('Materiels'));
+        return view('parcelles.index', compact('parcels'));
     }
-   // compact('materiel')
+
     /**
      * Show the form for creating a new resource.
      *
@@ -27,8 +29,7 @@ class MaterielsController extends Controller
     public function create()
     {
         //
-        return view ('materiels.index');
-       
+        return view("parcelles.create");
     }
 
     /**
@@ -39,22 +40,17 @@ class MaterielsController extends Controller
      */
     public function store(Request $request)
     {
+        //
+        $parcels = new Parcel();
 
-            $Materiels = new Materiel();
+   $parcels->rentabilite = $request->input('rentabilite');
+   $parcels->categorie= $request->input('categorie');
+   $parcels->type_de_sol = $request->input('type_de_sol');
+  
+   $parcels->save();
 
-            $Materiels->name = $request->input('name');
-
-            $Materiels->description = $request->input('description');
-
-            $Materiels->amortissement = $request->input('amortissement');
-            
-            $Materiels->save();
-
-            return redirect('/');
-            
+   return redirect('/');
     }
-
-       
 
     /**
      * Display the specified resource.
@@ -62,8 +58,7 @@ class MaterielsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-     public function show($id)
-
+    public function show($id)
     {
         //
     }
@@ -77,9 +72,10 @@ class MaterielsController extends Controller
     public function edit($id)
     {
         //
-        $Materiels = \App\Employ::find($id);//on recupere le produit
+        $parcels = \App\Parcel::find($id);//on recupere le produit
     
-        return view('materiels.edit', compact('Materiels'));
+    return view('parcelles.edit', compact('parcels'));
+
     }
 
     /**
@@ -89,22 +85,20 @@ class MaterielsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-
     public function update(Request $request, $id)
     {
         //
-        $Materiels = \App\Employ::find($id);
-        if($materiels )  $materiels->update([
-           'name' => $request->input('name'),
-           'description' => $request->input('descrption'),
-           'armortissement'=> $request->input('amortissement')
+        $parcels = \App\Parcel::find($id);
+    
+          if($parcels )  $parcels->update([
+           'rentabilite' => $request->input('rentabilte'),
+           'categorie' => $request->input('categorie'),
+           'type_de_sol'=> $request->input('type_de_sol')
            
            
        ]);
        return redirect()->back();
     }
-    
-
 
     /**
      * Remove the specified resource from storage.

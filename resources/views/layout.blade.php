@@ -75,11 +75,15 @@
     </div>
   </nav>
 
+
   
   <!-- la page de connexion-->
   <div id="container">
   
         <div id="container"> @yield("create_product ") </div> 
+        <div id="container"> @yield("create_parcel ") </div> 
+        <div id="container"> @yield("edit_parcel ") </div> 
+        <div id="container"> @yield("index_parcel ") </div> 
 
                <div id="container">@yield("create_employ") </div> 
   
@@ -98,11 +102,27 @@
               </div> 
               <div id="container">
               
-              @yield("section_production")
+              @yield("index_production")
               </div>
               <div id="container">
               
               @yield("section_occupation")
+
+              </div>
+
+              <div id="container">@yield("Product_create")</div>
+              <div id="container">@yield("Product_index")</div>
+              <div id="container">@yield("Product_edit")</div>
+              
+              <div id="container">@yield("Employ_create")</div>
+
+              
+
+
+              <div id="container">
+              
+              @yield("parcel.index") 
+
               </div>
 
               <div id="container">
@@ -110,6 +130,7 @@
               @yield("DEP_section")
 
               </div>
+
               <div id="container">
               
               @yield("sect_Em_edit")
@@ -128,15 +149,16 @@
              
 
               </div>
+
               <div id="container">
-              
               @yield("sect_create_mat")
              </div>
              <div id="container">
-              
               @yield("create_materiel")
              </div>
-</div> 
+   </div> 
+
+
 
  <footer class="py-5 bg-dark">
     <div class="container">

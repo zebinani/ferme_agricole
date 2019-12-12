@@ -16,7 +16,9 @@ Route::get('/', function () {
      return view('home');
 });
 
-Route::get('/accueil',"AccueilController@index");
+Auth::routes(); //la route pour authentification
+
+Route::get('/accueil',"AccueilController@index")->middleware('auth');
 
 Route::get('/Employ',"EmployController@index" );
 
@@ -66,3 +68,7 @@ Route::patch("/Command/edit/{id}","CommandesController@update")->name('Command_u
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

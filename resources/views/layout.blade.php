@@ -20,31 +20,30 @@
   
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">BINANITECH</a>
+      <a class="navbar-brand" href="/accueil">Accueil</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+          
           <li class="nav-item">
-            <a class="nav-link" href="about.html">PRODUCTIONS</a>
+            <a class="nav-link" href="/login">INSCRIPTION</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="services.html">PPERSONNELS</a>
+            <a class="nav-link" href="/register">CONNEXION</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.php">Contact</a>
-          </li>
+          
  
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Portfolio
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
+              <a class="dropdown-item" href="/Employ">PERSONNELS</a>
+              <a class="dropdown-item" href="/Product">PRODUCT</a>
+              <a class="dropdown-item" href="/Materiel">MATERIELS</a>
+              <a class="dropdown-item" href="/Command">COMMANDES</a>
               <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
             </div>
           </li>
@@ -83,7 +82,9 @@
         <div id="container"> @yield("create_product ") </div> 
         <div id="container"> @yield("create_parcel ") </div> 
         <div id="container"> @yield("edit_parcel ") </div> 
-        <div id="container"> @yield("index_parcel ") </div> 
+        <div id="container"> @yield("index_parcel ") </div>
+
+         
 
                <div id="container">@yield("create_employ") </div> 
   
@@ -156,6 +157,10 @@
              <div id="container">
               @yield("create_materiel")
              </div>
+
+             <div id="container">@yield("Com_index")</div>
+             <div id="container">@yield("Com_create")</div>
+             <div id="container">@yield("Com_edit")</div>
    </div> 
 
 

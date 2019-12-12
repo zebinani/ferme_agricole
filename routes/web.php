@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
 
-     return view('layout');
+     return view('home');
 });
 
 Route::get('/accueil',"AccueilController@index");
@@ -30,7 +30,6 @@ Route::patch("/Production/edit/{id}", "ProductionsController@update")->name('upd
 
 Route::resource('Product','ProductsController');
 Route::get("/Product/edit/{id}","ProductsController@edit")->name('product.edit');
-
 Route::patch("/Product/edit/{id}","ProductsController@update")->name('update_produit');
 
 
@@ -51,7 +50,9 @@ Route::resource('/Materiel','MaterielsController');
 Route::get("/Materiel/edit/{id}","MaterielsController@edit")->name('editer_materiel');
 Route::patch("/materiel/edit/{id}","MaterielsController@update")->name('update_materiel');
 
-
+Route::resource('/Command','CommandesController');
+Route::get("/Command/edit/{id}","CommandesController@edit")->name('command.edit');
+Route::patch("/Command/edit/{id}","CommandesController@update")->name('Command_update');
 
 
 

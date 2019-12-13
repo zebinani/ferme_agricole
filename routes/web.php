@@ -13,12 +13,12 @@
 
 Route::get('/', function () {
 
-     return view('home');
+     return view('accueil');
 });
 
 Auth::routes(); //la route pour authentification
 
-Route::get('/accueil',"AccueilController@index")->middleware('auth');
+ Route::get('/accueil',"AccueilController@index");
 
 Route::get('/Employ',"EmployController@index" );
 

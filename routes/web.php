@@ -15,6 +15,12 @@ Route::get('/', function () {
 
      return view('accueil');
 });
+Route::get('/bonjour/{nom}',function(){
+     
+     return 'bonjours'.request('nom');
+
+});
+
 
 Auth::routes(); //la route pour authentification
 

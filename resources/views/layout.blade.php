@@ -27,25 +27,20 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           
-          <li class="nav-item">
-            <a class="nav-link" href="/login">INSCRIPTION</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/register">CONNEXION</a>
-          </li>
+          
           
  
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Portfolio
+              Menu
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="/Employ">PERSONNELS</a>
-              <a class="dropdown-item" href="/Product">PRODUCT</a>
-              <a class="dropdown-item" href="/Materiel">MATERIELS</a>
-              <a class="dropdown-item" href="/Command">COMMANDES</a>
-              <a class="dropdown-item" href="/Command">COMMANDES</a>
-              <a class="dropdown-item" href="/Command">COMMANDES</a>
+              <a class="dropdown-item" href="/Employ">Personnels</a>
+              <a class="dropdown-item" href="/Product">Produits</a>
+              <a class="dropdown-item" href="/Materiel">Materiels</a>
+              <a class="dropdown-item" href="/Command">Commandes</a>
+              <a class="dropdown-item" href="/Command">Ventes</a>
+              <a class="dropdown-item" href="/Command">Parcelles</a>
               <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
             </div>
           </li>
@@ -70,6 +65,40 @@
               <a class="dropdown-item" href="404.html">404</a>
               <a class="dropdown-item" href="pricing.html">Pricing Table</a>
             </div>
+          </li>
+          <li class="nav-item">
+          @guest
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('connexion') }}</a>
+                            </li>
+
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('enrigistrement') }}</a>
+                                </li>
+                            @endif
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('sortir') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+
+                            
+                        @endguest
           </li>
         </ul>
       </div>
@@ -164,11 +193,10 @@
              <div id="container">@yield("Com_create")</div>
              <div id="container">@yield("Com_edit")</div>
 
-             <!--    <div id="container">@yield("validation")</div> pour la validation -->
-            <!--  <div id="container">@yield("login")</div> pour la validation -->
-             <!-- <div id="container">@yield("verication")</div> pour la validation -->
-             <!-- <div id="container">@yield("registre")</div> pour la validation -->
-
+               <div id="container">@yield("validation")</div> 
+              <div id="container">@yield("login")</div> 
+             <div id="container">@yield("verication")</div> 
+              <div id="container">@yield("registre")</div> 
    </div> 
 
 

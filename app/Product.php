@@ -8,4 +8,8 @@ class product extends Model
 {
     //
     protected $guarded =[];
+    public function Production(){
+
+        return $this->belongsTo("App\Production");
+    }
 }

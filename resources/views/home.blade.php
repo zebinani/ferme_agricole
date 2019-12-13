@@ -1,11 +1,11 @@
-@extends('layouts.app')
+@extends('layout')
 
-@section('content')
+@section('validation')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header">Dashboardddd</div>
 
                 <div class="card-body">
                     @if (session('status'))

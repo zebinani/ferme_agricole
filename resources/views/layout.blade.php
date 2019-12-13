@@ -44,6 +44,8 @@
               <a class="dropdown-item" href="/Product">PRODUCT</a>
               <a class="dropdown-item" href="/Materiel">MATERIELS</a>
               <a class="dropdown-item" href="/Command">COMMANDES</a>
+              <a class="dropdown-item" href="/Command">COMMANDES</a>
+              <a class="dropdown-item" href="/Command">COMMANDES</a>
               <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
             </div>
           </li>
@@ -161,6 +163,12 @@
              <div id="container">@yield("Com_index")</div>
              <div id="container">@yield("Com_create")</div>
              <div id="container">@yield("Com_edit")</div>
+
+             <!--    <div id="container">@yield("validation")</div> pour la validation -->
+            <!--  <div id="container">@yield("login")</div> pour la validation -->
+             <!-- <div id="container">@yield("verication")</div> pour la validation -->
+             <!-- <div id="container">@yield("registre")</div> pour la validation -->
+
    </div> 
 
 

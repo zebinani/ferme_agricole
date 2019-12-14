@@ -32,18 +32,18 @@
  
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Portfolio
+              Menu
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="/Employ">PERSONNELS</a>
-              <a class="dropdown-item" href="/Product">PRODUCT</a>
-              <a class="dropdown-item" href="/Materiel">MATERIELS</a>
-              <a class="dropdown-item" href="/Command">COMMANDES</a>
-              <a class="dropdown-item" href="/Command">COMMANDES</a>
-              <a class="dropdown-item" href="/Command">COMMANDES</a>
+              <a class="dropdown-item" href="/Employ">Personnels</a>
+              <a class="dropdown-item" href="/Product">Produits</a>
+              <a class="dropdown-item" href="/Materiel">Materiels</a>
+              <a class="dropdown-item" href="/Command">Commandes</a>
+              <a class="dropdown-item" href="/Command">Commandes</a>
+              <a class="dropdown-item" href="/Command">Commandes</a>
               <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
             </div>
-          </li>
+ <!-- </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Blog
@@ -67,17 +67,18 @@
             </div>
           </li>
           <li class="nav-item">
+          -->
           @guest
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('LoginA') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Connexion') }}</a>
                             </li>
 
 
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Creer Compte') }}</a>
                                 </li>
                             @endif
                         @else
@@ -90,7 +91,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('Quitter') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -195,10 +196,10 @@
              <div id="container">@yield("Com_create")</div>
              <div id="container">@yield("Com_edit")</div>
 
-             <!--    <div id="container">@yield("validation")</div> pour la validation -->
-            <!--  <div id="container">@yield("login")</div> pour la validation -->
-             <!-- <div id="container">@yield("verication")</div> pour la validation -->
-             <!-- <div id="container">@yield("registre")</div> pour la validation -->
+                 <div id="container">@yield("validation")</div> <!--pour la validation -->
+             <div id="container">@yield("login")</div> <!-- pour la validation -->
+             <div id="container">@yield("verication")</div> <!-- pour la validation -->
+              <div id="container">@yield("registre")</div> <!-- pour la validation -->
 
    </div> 
 

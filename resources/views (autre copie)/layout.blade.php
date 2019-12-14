@@ -147,6 +147,10 @@
              <div id="container">@yield("Com_index")</div>
              <div id="container">@yield("Com_create")</div>
              <div id="container">@yield("Com_edit")</div>
+
+             <div id="container">@yield("login")</div>
+             <div id="container">@yield("registre")</div>
+             <div id="container">@yield("veri")</div>
    </div> 
 
 

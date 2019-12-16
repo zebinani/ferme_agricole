@@ -45,7 +45,6 @@ Route::patch("/Parcel/edit/{id}", "ParcelController@update")->name('update.parce
 
 
 Route::resource('/Occupation','OccupationsController');
-
 Route::resource('/Department','DepartmentController');
 
 Route::resource('/Materiel','MaterielsController');
@@ -55,16 +54,6 @@ Route::patch("/materiel/edit/{id}","MaterielsController@update")->name('update_m
 Route::resource('/Command','CommandesController');
 Route::get("/Command/edit/{id}","CommandesController@edit")->name('command.edit');
 Route::patch("/Command/edit/{id}","CommandesController@update")->name('Command_update');
-
-
-
-
-
-
-
-
-
-
 
 
 

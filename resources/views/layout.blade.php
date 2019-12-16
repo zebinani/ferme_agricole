@@ -27,12 +27,6 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           
-<<<<<<< HEAD
-          
-=======
-         
->>>>>>> 5913690fb48592cc8154ea53952995c952081d13
-          
  
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -47,7 +41,7 @@
               <a class="dropdown-item" href="/Command">Parcelles</a>
               <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
             </div>
-          </li>
+ <!-- </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Blog
@@ -71,26 +65,17 @@
             </div>
           </li>
           <li class="nav-item">
+          -->
           @guest
                             
                             <li class="nav-item">
-<<<<<<< HEAD
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('connexion') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Connexion') }}</a>
                             </li>
-
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('enrigistrement') }}</a>
-=======
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('LoginA') }}</a>
-                            </li>
-
-
-
                             @if (Route::has('register'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
->>>>>>> 5913690fb48592cc8154ea53952995c952081d13
+
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Creer Compte') }}</a>
                                 </li>
                             @endif
                         @else
@@ -103,26 +88,18 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-<<<<<<< HEAD
                                         {{ __('sortir') }}
-=======
-                                        {{ __('Logout') }}
->>>>>>> 5913690fb48592cc8154ea53952995c952081d13
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
                                 </div>
-                            </li>
-
-                            
+                            </li>                            
                         @endguest
-<<<<<<< HEAD
           </li>
-=======
             </li>
->>>>>>> 5913690fb48592cc8154ea53952995c952081d13
+            </li>
         </ul>
       </div>
     </div>

@@ -14,8 +14,10 @@ class Production extends Model
 
     public function products()
     {
-        return $this->hasMany("App\Product");
+        return $this->belongsTo("App\Product");
     }
     
-
+     public function materiels(){
+         return $this->
+     }
 }

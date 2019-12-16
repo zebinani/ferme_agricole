@@ -61,3 +61,4 @@ Route::patch("/Command/edit/{id}","CommandesController@update")->name('Command_u
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+

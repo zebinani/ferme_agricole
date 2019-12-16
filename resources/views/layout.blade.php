@@ -27,7 +27,11 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           
+<<<<<<< HEAD
           
+=======
+         
+>>>>>>> 5913690fb48592cc8154ea53952995c952081d13
           
  
           <li class="nav-item dropdown">
@@ -70,12 +74,23 @@
           @guest
                             
                             <li class="nav-item">
+<<<<<<< HEAD
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('connexion') }}</a>
                             </li>
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('enrigistrement') }}</a>
+=======
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('LoginA') }}</a>
+                            </li>
+
+
+
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+>>>>>>> 5913690fb48592cc8154ea53952995c952081d13
                                 </li>
                             @endif
                         @else
@@ -88,7 +103,11 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
+<<<<<<< HEAD
                                         {{ __('sortir') }}
+=======
+                                        {{ __('Logout') }}
+>>>>>>> 5913690fb48592cc8154ea53952995c952081d13
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -99,7 +118,11 @@
 
                             
                         @endguest
+<<<<<<< HEAD
           </li>
+=======
+            </li>
+>>>>>>> 5913690fb48592cc8154ea53952995c952081d13
         </ul>
       </div>
     </div>

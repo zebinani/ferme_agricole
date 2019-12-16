@@ -1,5 +1,4 @@
 @extends('layout')
-
 @section('login')
 <div class="container">
     <div class="row justify-content-center">

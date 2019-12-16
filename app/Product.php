@@ -8,7 +8,7 @@ class product extends Model
 {
     //
     protected $guarded =[];
-    public function Production(){
+    public function production(){
 
         return $this->belongsTo("App\Production");
     }

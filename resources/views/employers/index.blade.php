@@ -4,7 +4,8 @@
     <table class="table table-striped">
         <tr>
             <th>#</th> <th>id</th>    <th>Mat</th> <th>NOM</th><th>PRENOM</th> <th>ADRESSE</th>    <th>TELEPHONE</th>  
-        </tr>
+            <th>AJOUTER</th> <th>MODIFIER</th>  
+ </tr>
         @foreach($employs as $employ)
             <tr>
                 <th>#</th>
@@ -16,9 +17,15 @@
                 <th>{{$employ->telephone ?? ''}}</th>
 
                 
-                <th> <a href="Employ/create">Ajouter</a></th>
+                <th> 
+                <button type="button" class="btn btn-success">
+                <a href="Employ/create">Ajouter</a>
+                </button>
+                </th>
                 
-                <th>  <p><a href="{{route('update.Employs',['id'=>$employ->id])}}">Editer</a>
+                <th> 
+                <button type="button" class="btn btn-dark">
+                 <p><a href="{{route('update.Employs',['id'=>$employ->id])}}">Editer</a></button>
                 </th>
                 
             </tr>

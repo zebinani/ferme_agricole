@@ -39,7 +39,7 @@
               <a class="dropdown-item" href="/Product">Produits</a>
               <a class="dropdown-item" href="/Materiel">Materiels</a>
               <a class="dropdown-item" href="/Command">Commandes</a>
-              <a class="dropdown-item" href="/Command">Commandes</a>
+              <a class="dropdown-item" href="/Department">Departments</a>
               <a class="dropdown-item" href="/Command">Commandes</a>
               <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
             </div>

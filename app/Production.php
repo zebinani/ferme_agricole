@@ -14,10 +14,15 @@ class Production extends Model
 
     public function products()
     {
-        return $this->belongsTo("App\Product");
+        return $this->hasMany("App\Product");
     }
     
-     public function materiels(){
-         return $this->
+     public function command(){
+
+         return $this->hasMany("App\Command");
+     }
+     public function parcel(){
+
+         return $this->hasMany("App\Parcel");
      }
 }

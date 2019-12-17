@@ -20,6 +20,7 @@ class CreateEmploysTable extends Migration
             $table->String('prenom');
             $table->string('adresse');
             $table->integer('telephone');
+            $table->unsignedInteger('department_id');
             $table->timestamps();
         });
     }

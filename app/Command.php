@@ -8,4 +8,9 @@ class Command extends Model
 {
     //
     protected $guarded = [];
+
+    public function Production(){
+
+        return $this->hasOne(App\Production);
+    }
 }

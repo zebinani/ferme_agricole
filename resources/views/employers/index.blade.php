@@ -3,7 +3,7 @@
 
     <table class="table table-striped">
         <tr>
-            <th>#</th> <th>id</th>    <th>Mat</th> <th>NOM</th><th>PRENOM</th> <th>ADRESSE</th>    <th>TELEPHONE</th>  
+            <th>#</th> <th>id</th>    <th>Mat</th> <th>NOM</th><th>PRENOM</th> <th>ADRESSE</th>    <th>TELEPHONE</th>  <th>Departement</th>
         </tr>
         @foreach($employs as $employ)
             <tr>
@@ -14,6 +14,8 @@
                 <th>{{$employ->prenom ?? ''}}</th>
                 <th>{{$employ->adresse ?? ''}}</th>
                 <th>{{$employ->telephone ?? ''}}</th>
+                <th>{{$employ->department->name ?? ''}}</th>
+
 
                 
                 <th> <a href="Employ/create">Ajouter</a></th>

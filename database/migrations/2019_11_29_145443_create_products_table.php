@@ -18,7 +18,7 @@ class CreateProductsTable extends Migration
             $table->string('name');
             $table->integer('price');
             $table->integer('quantity');
-            $table->bigIncrements('production_id')unique;
+
             $table->timestamps();
         });
     }

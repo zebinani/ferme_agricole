@@ -8,4 +8,9 @@ class Department extends Model
 {
     //
     protected $guarded =[];
+
+    public function employ()
+    {
+        return $this->hasmany("App\Employ");
+    }
 }

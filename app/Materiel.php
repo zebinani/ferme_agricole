@@ -8,4 +8,6 @@ class Materiel extends Model
 {
     //
     protected $guarded = [];
+    
+    
 }

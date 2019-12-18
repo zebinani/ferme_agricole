@@ -1,6 +1,6 @@
  @extends("layout")
 
-@section("DEP_section")
+@section("DEP_index")
 
 <table class="table table-striped">
        <tr>
@@ -17,6 +17,8 @@
                  <th></th>
            </tr>
        @endforeach
+
+       
 </table>
 
 

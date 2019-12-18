@@ -45,7 +45,10 @@ Route::patch("/Parcel/edit/{id}", "ParcelController@update")->name('update.parce
 
 
 Route::resource('/Occupation','OccupationsController');
+
 Route::resource('/Department','DepartmentController');
+//Route::get("/Department/edit/{id}","DepartmentController")->name('departments.edit');
+//Route::patch("/Department/edit/{id}","DepartmentController")->name('departments.update');
 
 Route::resource('/Materiel','MaterielsController');
 Route::get("/Materiel/edit/{id}","MaterielsController@edit")->name('editer_materiel');

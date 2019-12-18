@@ -11,7 +11,7 @@ class product extends Model
 
     public function production(){
 
-        return $this->hasMany("App\Production");
+        return $this->belongsTo("App\Production");
     }
 
      

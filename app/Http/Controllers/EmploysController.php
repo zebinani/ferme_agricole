@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Employ;
 
+
 class EmploysController extends Controller
 {
     /**
@@ -17,7 +18,7 @@ class EmploysController extends Controller
     {
         $employs = \App\Employ::orderBy('created_at', 'DESC')->get();
 
-        return view('employers.index', compact('employs'));
+        return view('employers.index', compact('employs','department'));
     }
 
     /**
@@ -28,8 +29,15 @@ class EmploysController extends Controller
     public function create()
          
     {
-      //
-        return view ('employers.create');
+      
+         $Departments = \App\Department::pluck( 'name','id');
+
+         return view('employers.create', compact('Departments'));
+       
+
+   
+
+
       
     }
 
@@ -49,6 +57,8 @@ class EmploysController extends Controller
    $employs->prenom = $request->input('prenom');
    $employs->adresse = $request->input('adresse');
    $employs->telephone = $request->input('telephone');
+
+   $employs->department_id = $request->input('Department_id');
    
    $employs->save();
 
@@ -98,7 +108,8 @@ class EmploysController extends Controller
            'nom' => $request->input('nom'),
            'prenom'=> $request->input('prenom'),
            'adresse'=> $request->input('adresse'),
-           'telephone'=> $request->input('telephone')
+           'telephone'=> $request->input('telephone'),
+           'Department_id'=> $request->input('Department_id')
            
        ]);
        return redirect()->back();

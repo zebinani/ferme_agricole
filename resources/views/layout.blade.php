@@ -157,11 +157,11 @@
 
               </div>
 
-              <div id="container">
               
-              @yield("DEP_section")
+              
+             
 
-              </div>
+             
 
               <div id="container">
               
@@ -189,14 +189,19 @@
               @yield("create_materiel")
              </div>
 
-             <div id="container">@yield("Com_index")</div>
-             <div id="container">@yield("Com_create")</div>
-             <div id="container">@yield("Com_edit")</div>
+                <div id="container">@yield("Com_index")</div>
+                <div id="container">@yield("Com_create")</div>
+                <div id="container">@yield("Com_edit")</div>
 
                <div id="container">@yield("validation")</div> 
-              <div id="container">@yield("login")</div> 
-             <div id="container">@yield("verication")</div> 
-              <div id="container">@yield("registre")</div> 
+               <div id="container">@yield("login")</div> 
+               <div id="container">@yield("verication")</div> 
+               <div id="container">@yield("registre")</div> 
+               
+               <div id="container">  @yield("DEP_create")</div>
+              <div id="container">  @yield("DEP_index")</div>
+
+              
    </div> 
 
 

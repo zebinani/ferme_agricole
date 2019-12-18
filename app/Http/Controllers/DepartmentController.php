@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Department;
 
 class DepartmentController extends Controller
 {
@@ -25,6 +26,7 @@ class DepartmentController extends Controller
     public function create()
     {
         //
+        return view('departments.create');
     }
 
     /**
@@ -35,7 +37,15 @@ class DepartmentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+        $departments = new Department();
+
+        $departments->name = $request->input('name');
+        $departments->effective = $request->input('effective');
+        $departments->save();
+     
+        return redirect('/');
+        
     }
 
     /**
@@ -44,9 +54,9 @@ class DepartmentController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+     public function show($id)
     {
-        //
+    
     }
 
     /**
@@ -70,6 +80,14 @@ class DepartmentController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $departments =App\Department::find($id);
+            if($departments) $departments->update([
+            'name'=>$request->input('name'),
+            'effective'=>$request->input('effective'),
+            
+    
+    ]);
+         return redirect('/')->back();
     }
 
     /**

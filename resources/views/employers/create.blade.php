@@ -22,6 +22,20 @@
                         <input type="text" name="telephone" class="form-control" placeholder="TELEPHONE">
                     </div>
                     
+                
+
+                    <div>
+                    <select name="Department_id" id="Department" class="form-control">
+                        <option value=""></option>
+                        @foreach($Departments as $key => $value)
+                            <option value="{{$key}}">{{$value}}</option>
+                        @endforeach
+                    </select>
+                    
+                    </div>
+
+
+                    
                     <div>
                         <button class="btn btn-primary">Enregistrer</button>
                     </div>

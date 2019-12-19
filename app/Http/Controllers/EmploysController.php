@@ -87,8 +87,9 @@ class EmploysController extends Controller
     {
         //
         $Employs = \App\Employ::find($id);//on recupere le produit
-    
-    return view('employers.edit', compact('Employs'));
+        $Departments = \App\Department::pluck( 'name','id');
+
+        return view('employers.edit', compact('Employs','Departments'));
        
     }
 

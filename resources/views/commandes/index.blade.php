@@ -20,9 +20,10 @@
                 <th>
             <a href="Command/create ">Ajouter</a>
                 </th>
-                
+                <th>  <p><a href="{{route('Command_update',['id'=>$commande->id])}}">Editer</a>
+                </th>
             </tr>
-
+            
         @endforeach
    </table>
    

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMaterielsTable extends Migration
+class CreateClientsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,13 @@ class CreateMaterielsTable extends Migration
      */
     public function up()
     {
-        Schema::create('materiels', function (Blueprint $table) {
+        Schema::create('clients', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->string('description');
-            $table->string('amortissement');
+            $table->string('num_client');
+            $table->string('nom');
+            $table->string('prenom');
+            $table->string('adresse');
+            $table->string('telephone');
             $table->timestamps();
         });
     }
@@ -29,6 +31,6 @@ class CreateMaterielsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('materiels');
+        Schema::dropIfExists('clients');
     }
 }

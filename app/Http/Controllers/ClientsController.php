@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Client;
 
-use App\Command ;
-
-class CommandesController extends Controller
+class ClientsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,13 +15,11 @@ class CommandesController extends Controller
     public function index()
     {
         //
-        $Commandes= \App\Command::orderBy('created_at','DESC')->get();
-       
-        return view('commandes.index',compact('Commandes'));
-
-        
+       $Clients=\App\Client::orderBY('created_at','DESC')->get();
+       return view('Clients.index',compact('Clients'));
     }
-
+    
+    
     /**
      * Show the form for creating a new resource.
      *
@@ -30,8 +27,7 @@ class CommandesController extends Controller
      */
     public function create()
     {
-        //
-        return view("commandes.create");
+        return view('Clients.create');
     }
 
     /**
@@ -43,18 +39,8 @@ class CommandesController extends Controller
     public function store(Request $request)
     {
         //
-        $Commande= new Command();
-
-        $Commande->client =$request->input('client');
-        $Commande->article =$request->input('article');
-        $Commande->reference=$request->input('reference');
-        $Commande->quantite=$request->input('quantite');
-        $Commande->date=$request->input('date');
-
-        $Commande->save();
-         return redirect('/');
     }
-    
+
     /**
      * Display the specified resource.
      *
@@ -75,11 +61,12 @@ class CommandesController extends Controller
     public function edit($id)
     {
         //
-       $Commandes = \App\Command::find($id);
-       
-       return view('commandes.edit',compact('Commandes'));
-    }
+        $clients= \App\Client::find($id);
 
+        return view('Clients.edit',compact('clients'));
+    }
+    
+ 
     /**
      * Update the specified resource in storage.
      *
@@ -90,19 +77,18 @@ class CommandesController extends Controller
     public function update(Request $request, $id)
     {
         //
-            $Commandes =\App\Command::find($id);
-            if($Commandes) $Commandes->update([
-            'client'=>$request->input('client'),
-            'article'=>$request->input('article'),
-            'reference'=>$request->input('reference'),
-            'quantite'=>$request->input('quantite'),
-            'date'=>$request->input('date')
-    
-    ]);
-         
-         return redirect()->back();
+        $Client =\App\Client::find($id);
+        if($Client) $Client->update([
+        'Num_client'=>$request->input('Num_client'),
+        'nom'=>$request->input('nom'),
+        'prenom'=>$request->input('prnom'),
+        'adresse'=>$request->input('adresse'),
+        'tlephone'=>$request->input('telephone')
+        ]);
+        return redirect()->back();
     }
-
+     
+    
     /**
      * Remove the specified resource from storage.
      *

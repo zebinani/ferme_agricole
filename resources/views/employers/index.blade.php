@@ -22,7 +22,7 @@
                 
                 <th>  <p><a href="{{route('update.Employs',['id'=>$employ->id])}}">Editer</a>
                 </th>
-                
+               
             </tr>
         @endforeach
 

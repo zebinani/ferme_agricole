@@ -6,6 +6,7 @@
       <form action="{{route('editer_employs',['id'=>$Employs->id])}}" method="post">
          @csrf
          @method('patch')
+         
          <div><input type="text" name="matricule" class="form-control" placeholder="le nom du produit" value="{{$Employs->matricule}}"></div>
 
          <div><input type="text" name="nom" class="form-control" placeholder="nom" value="{{$Employs->nom}}"> </div>

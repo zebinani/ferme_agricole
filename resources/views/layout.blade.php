@@ -197,6 +197,13 @@
                <div id="container">@yield("login")</div> 
                <div id="container">@yield("verication")</div> 
                <div id="container">@yield("registre")</div> 
+
+               <div id="container">@yield("client_index")</div> 
+               <div id="container">@yield("client_create")</div> 
+               <div id="container">@yield("client_edit")</div> 
+               
+
+
                
                <div id="container">  @yield("DEP_create")</div>
               <div id="container">  @yield("DEP_index")</div>

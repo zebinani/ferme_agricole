@@ -62,8 +62,12 @@ class EmploysController extends Controller
    
    $employs->save();
 
+<<<<<<< HEAD
    return redirect('/');
 
+=======
+   return redirect('/Employ');
+>>>>>>> km
    }
 
     /**

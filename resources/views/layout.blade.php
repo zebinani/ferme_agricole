@@ -39,6 +39,7 @@
               <a class="dropdown-item" href="/Product">Produits</a>
               <a class="dropdown-item" href="/Materiel">Materiels</a>
               <a class="dropdown-item" href="/Command">Commandes</a>
+<<<<<<< HEAD
               <a class="dropdown-item" href="/Command">Ventes</a>
               <a class="dropdown-item" href="/Command">Parcelles</a>
              
@@ -49,6 +50,11 @@
               <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
               <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
               <a class="dropdown-item" href="blog-post.html">Blog Post</a>
+=======
+              <a class="dropdown-item" href="/Department">Departments</a>
+              <a class="dropdown-item" href="/Command">Commandes</a>
+              <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
+>>>>>>> km
             </div>
           </li>
  <!-- </li>

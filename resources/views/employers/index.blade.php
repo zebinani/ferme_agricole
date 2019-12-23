@@ -3,8 +3,14 @@
 
     <table class="table table-striped">
         <tr>
+<<<<<<< HEAD
             <th>#</th> <th>id</th>    <th>Mat</th> <th>NOM</th><th>PRENOM</th> <th>ADRESSE</th>    <th>TELEPHONE</th>  <th>Departement</th> <th>Ajouter</th> <th>modification</th> 
         </tr>
+=======
+            <th>#</th> <th>id</th>    <th>Mat</th> <th>NOM</th><th>PRENOM</th> <th>ADRESSE</th>    <th>TELEPHONE</th>  
+            <th>AJOUTER</th> <th>MODIFIER</th>  
+ </tr>
+>>>>>>> km
         @foreach($employs as $employ)
             <tr>
                 <th>#</th>
@@ -18,9 +24,15 @@
 
 
                 
-                <th> <a href="Employ/create">Ajouter</a></th>
+                <th> 
+                <button type="button" class="btn btn-success">
+                <a href="Employ/create">Ajouter</a>
+                </button>
+                </th>
                 
-                <th>  <p><a href="{{route('update.Employs',['id'=>$employ->id])}}">Editer</a>
+                <th> 
+                <button type="button" class="btn btn-dark">
+                 <p><a href="{{route('update.Employs',['id'=>$employ->id])}}">Editer</a></button>
                 </th>
                
             </tr>

@@ -78,3 +78,12 @@ Route::patch("/Client/edit/{id},ClientsController@update")->name('client.update'
 // Route::get('/home', 'HomeController@index')->name('home');
 
 
+
+
+
+
+
+
+
+
+

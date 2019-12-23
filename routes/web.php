@@ -74,5 +74,7 @@ Route::patch("/Client/edit/{id},ClientsController@update")->name('client.update'
 
 // Auth::routes();
 
+
 // Route::get('/home', 'HomeController@index')->name('home');
+
 

@@ -40,13 +40,15 @@ class OccupationsController extends Controller
      */
     public function store(Request $request)
     {
-        $Occupations = new Occupation();
+        $occupation = new Occupations();
 
-        $Occupations->type =$request->input('type');
-        $Occupations->categorie =$request->input('categorie');
-        $Occupations->salaire =$request->input('salaire');
+        $occupation->type =$request->input('type');
+
+        $occupation->categorie =$request->input('categorie');
+
+        $occupation->salaire =$request->input('salaire');
        
-        $Occupations->save();
+        $occupation->save();
 
         return redirect('/');
 

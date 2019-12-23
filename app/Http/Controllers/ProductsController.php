@@ -38,7 +38,7 @@ class ProductsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+    { 
         $product = new Product();
         $product->name = $request->input('name');
         $product->price = $request->input('price');

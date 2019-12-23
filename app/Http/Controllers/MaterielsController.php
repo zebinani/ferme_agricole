@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Materiel;
 
 class MaterielsController extends Controller
 {
@@ -27,7 +28,7 @@ class MaterielsController extends Controller
     public function create()
     {
         //
-        return view ('materiels.index');
+        return view ('materiels.create');
        
     }
 
@@ -40,15 +41,15 @@ class MaterielsController extends Controller
     public function store(Request $request)
     {
 
-            $Materiels = new Materiel();
+            $materiel = new Materiel();
 
-            $Materiels->name = $request->input('name');
+            $materiel->name = $request->input('name');
 
-            $Materiels->description = $request->input('description');
+            $materiel->description = $request->input('description');
 
-            $Materiels->amortissement = $request->input('amortissement');
+            $materiel->amortissement = $request->input('amortissement');
             
-            $Materiels->save();
+            $materiel->save();
 
             return redirect('/');
             
@@ -93,7 +94,7 @@ class MaterielsController extends Controller
     public function update(Request $request, $id)
     {
         //
-        $Materiels = \App\Employ::find($id);
+        $materiels = \App\Employ::find($id);
         if($materiels )  $materiels->update([
            'name' => $request->input('name'),
            'description' => $request->input('descrption'),

@@ -63,6 +63,7 @@ class EmploysController extends Controller
    $employs->save();
 
    return redirect('/');
+
    }
 
     /**

@@ -6,6 +6,8 @@
        </tr>
        
        @foreach($products as $product)
+       
+       
    <tr>
        <th>#</th>
             <th>{{$product->name ?? ''}}</th>

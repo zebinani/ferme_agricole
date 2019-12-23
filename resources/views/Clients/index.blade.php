@@ -19,7 +19,7 @@
                 
 
                 <th>
-            <a href="Command/create ">Ajouter</a>
+            <a href="Client/create ">Ajouter</a>
                 </th>
                 
             </tr>

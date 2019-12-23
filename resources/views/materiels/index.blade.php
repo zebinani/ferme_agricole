@@ -9,7 +9,7 @@
        <tr>
            <th>#</th>          <th>Nom materiel</th>  <th>description</th>    
            
-           <th>AMORTISSEMENT</th>        <th></th>
+           <th>AMORTISSEMENT</th>        <th>Ajouter</th>
        </tr>
        
        @foreach($Materiels as $materiel)
@@ -19,8 +19,11 @@
        <th>{{$materiel->description ??''}} </th>
        <th>{{$materiel->amortissement ?? ''}} </th>
        <th>
+       <a href="Materiel/create">Ajouter</a>
         
- </th>
+        </th>
+
+
    </tr>
 @endforeach
 

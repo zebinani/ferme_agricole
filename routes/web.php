@@ -12,20 +12,27 @@
 */
 
 Route::get('/', function () {
-
+   
      return view('accueil');
 });
 
 Auth::routes(); //la route pour authentification
 
- Route::get('/accueil',"AccueilController@index");
+
 
 Route::get('/Employ',"EmployController@index" );
 
 Route::get('/contacts', "ProductsController@index" );
- 
 
-Route::resource('Production','ProductionsController');
+Route:: group(['middleware'=>'auth'], //groupe middleware avec la page d'accueil.
+        function(){
+     Route::get('/accueil',"AccueilController@index");
+
+     Route::resource('Employ','EmploysController');
+     Route::get("/Employ/edit/{id}", "EmploysController@edit")->name('editer_employs');
+     Route::patch("/Employ/edit/{id}", "EmploysController@update")->name('update.Employs');
+
+     Route::resource('Production','ProductionsController');
 
 Route::get("/Production/edit/{id}", "ProductionsController@edit")->name('productions.edite');
 Route::patch("/Production/edit/{id}", "ProductionsController@update")->name('update.Production');
@@ -35,9 +42,7 @@ Route::get("/Product/edit/{id}","ProductsController@edit")->name('product.edit')
 Route::patch("/Product/edit/{id}","ProductsController@update")->name('update_produit');
 
 
-Route::resource('Employ','EmploysController');
-Route::get("/Employ/edit/{id}", "EmploysController@edit")->name('editer_employs');
-Route::patch("/Employ/edit/{id}", "EmploysController@update")->name('update.Employs');
+
 
 Route::resource('Parcel','ParcelController');
 Route::get("/Parcel/edit/{id}", "ParcelController@edit")->name('parcelles.edit');
@@ -62,9 +67,12 @@ Route::patch("/Command/edit/{id}","CommandesController@update")->name('Command_u
 Route::resource ('/Client','ClientsController');
 Route::get("/Client/edit/{id}","ClientsController@edit")->name('Client.edit');
 Route::patch("/Client/edit/{id},ClientsController@update")->name('client.update');
+});
 
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+// Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');
 

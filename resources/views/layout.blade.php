@@ -17,7 +17,7 @@
 <body>
 
   <!-- Navigation -->
-  
+  <!-- <div id='titre'><h1>PLATE-FORME DE GESTION DE FERME</h1></div>-->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="/accueil">Accueil</a>

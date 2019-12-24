@@ -21,8 +21,7 @@
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="/accueil">Accueil</a>
-      <a class="navbar-brand" href="/accueil">Contacts</a>
-      <a class="navbar-brand" href="/accueil">Blog</a>
+      
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -39,23 +38,13 @@
               <a class="dropdown-item" href="/Product">Produits</a>
               <a class="dropdown-item" href="/Materiel">Materiels</a>
               <a class="dropdown-item" href="/Command">Commandes</a>
-<<<<<<< HEAD
-              <a class="dropdown-item" href="/Command">Ventes</a>
-              <a class="dropdown-item" href="/Command">Parcelles</a>
+              <a class="dropdown-item" href="/Ventes">Ventes</a>
+              <a class="dropdown-item" href="/Parcel">Parcelles</a>
+              <a class="dropdown-item" href="/Client">Clients</a>
              
             </div>
-            <li class="nav-item dropdown">
-          
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-              <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-              <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-              <a class="dropdown-item" href="blog-post.html">Blog Post</a>
-=======
-              <a class="dropdown-item" href="/Department">Departments</a>
-              <a class="dropdown-item" href="/Command">Commandes</a>
-              <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
->>>>>>> km
-            </div>
+         
+            
           </li>
  <!-- </li>
           <li class="nav-item dropdown">
@@ -104,7 +93,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('sortir') }}
+                                        {{ __('Quitter') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -164,50 +153,28 @@
               
               <div id="container">@yield("Employ_create")</div>
 
+               <div id="container">@yield("sect_Em_edit")</div>
               
-
-
-              <div id="container">
               
-              @yield("parcel.index") 
-
-              </div>
-
-              
+              <div id="container"> @yield("sect_materiel") </div>
               
              
-
-             
-
-              <div id="container">
+              <div id="container"> @yield("sect_edit_mat")</div>
               
-              @yield("sect_Em_edit")
              
-
-              </div>
-              <div id="container">
+              <div id="container"> @yield("sect_create_mat")</div>
+             
+             
+             <div id="container">@yield("create_materiel")</div>
               
-              @yield("sect_materiel")
              
-
-              </div>
-              <div id="container">
-              
-              @yield("sect_edit_mat")
-             
-
-              </div>
-
-              <div id="container">
-              @yield("sect_create_mat")
-             </div>
-             <div id="container">
-              @yield("create_materiel")
-             </div>
-
                 <div id="container">@yield("Com_index")</div>
                 <div id="container">@yield("Com_create")</div>
                 <div id="container">@yield("Com_edit")</div>
+
+                <div id="container">@yield("parcel_index")</div>
+                <div id="container">@yield("parcel_create")</div>
+                <div id="container">@yield("parcel_edit")</div>
 
                <div id="container">@yield("validation")</div> 
                <div id="container">@yield("login")</div> 
@@ -217,15 +184,12 @@
                <div id="container">@yield("client_index")</div> 
                <div id="container">@yield("client_create")</div> 
                <div id="container">@yield("client_edit")</div> 
-               
 
-
-               
                <div id="container">  @yield("DEP_create")</div>
-              <div id="container">  @yield("DEP_index")</div>
+               <div id="container">  @yield("DEP_index")</div>
 
               
-   </div> 
+</div> 
 
 
 

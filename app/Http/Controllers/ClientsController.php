@@ -91,9 +91,9 @@ class ClientsController extends Controller
         if($Client) $Client->update([
         'Num_client'=>$request->input('Num_client'),
         'nom'=>$request->input('nom'),
-        'prenom'=>$request->input('prnom'),
+        'prenom'=>$request->input('prenom'),
         'adresse'=>$request->input('adresse'),
-        'tlephone'=>$request->input('telephone')
+        'telephone'=>$request->input('telephone')
         ]);
         return redirect()->back();
     }

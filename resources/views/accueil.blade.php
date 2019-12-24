@@ -91,11 +91,13 @@
 
       <!-- Portfolio Section -->
       <h2>Portfolio Heading</h2>
+      <div class="test1">
+                            
 
       <div class="row">
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <a href="#"><img class="card-img-top" src="{{asset('/images/4.jpeg')}}" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="#">Project One</a>
@@ -106,7 +108,7 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <a href="#"><img class="card-img-top" src="{{asset('images/2.jpg')}}" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="#">Project Two</a>
@@ -117,7 +119,7 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <a href="#"><img class="card-img-top" src="{{asset('images/3.jpg')}}" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="#">Project Three</a>
@@ -128,7 +130,7 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <a href="#"><img class="card-img-top" src="{{asset('images/6.jpg')}}" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="#">Project Four</a>
@@ -139,7 +141,7 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <a href="#"><img class="card-img-top" src="{{asset('images/1.jpg')}}" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="#">Project Five</a>
@@ -150,7 +152,7 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <a href="#"><img class="card-img-top" src="{{asset('images/champs.jpg')}}" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="#">Project Six</a>
@@ -179,9 +181,10 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
         </div>
         <div class="col-lg-6">
-          <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
+          <img class="img-fluid rounded" src="{{asset('images/champs.jpg')}}" alt="sellou">
         </div>
       </div>
+      
       <!-- /.row -->
 
       <hr>

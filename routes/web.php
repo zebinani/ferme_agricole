@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
    
-     return view('accueil');
+     return view('home');
 });
 
 Auth::routes(); //la route pour authentification
@@ -63,10 +63,10 @@ Route::resource('/Command','CommandesController');
 Route::get("/Command/edit/{id}","CommandesController@edit")->name('command.edit');
 Route::patch("/Command/edit/{id}","CommandesController@update")->name('Command_update');
 
-
 Route::resource ('/Client','ClientsController');
 Route::get("/Client/edit/{id}","ClientsController@edit")->name('Client.edit');
-Route::patch("/Client/edit/{id},ClientsController@update")->name('client.update');
+Route::patch("/Client/edit/{id}","ClientsController@update")->name('client_update');
+
 });
 
 
@@ -75,7 +75,7 @@ Route::patch("/Client/edit/{id},ClientsController@update")->name('client.update'
 // Auth::routes();
 
 
-// Route::get('/home', 'HomeController@index')->name('home');
+ Route::get('/home', 'HomeController@index');
 
 
 

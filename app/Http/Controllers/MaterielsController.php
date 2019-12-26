@@ -51,7 +51,7 @@ class MaterielsController extends Controller
             
             $materiel->save();
 
-            return redirect('/');
+            return redirect('/materiels.index');
             
     }
 

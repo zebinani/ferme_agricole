@@ -1,5 +1,12 @@
-@extends('layout')
-@section('login')
+@extends("layout_login")
+@section('login_page')
+
+
+<header>
+<div><h1>GESTION DE FERME-AGRICOLE</h1></div>
+
+</div>
+</header>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -69,4 +76,6 @@
         </div>
     </div>
 </div>
+
+
 @endsection

@@ -51,7 +51,7 @@ class EmploysController extends Controller
     {
         //
    $employs = new Employ();
-
+   
    $employs->matricule = $request->input('matricule');
    $employs->nom = $request->input('nom');
    $employs->prenom = $request->input('prenom');
@@ -64,6 +64,7 @@ class EmploysController extends Controller
 
    return redirect('/');
 
+   
    }
 
     /**

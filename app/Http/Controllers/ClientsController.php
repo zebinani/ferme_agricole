@@ -71,9 +71,9 @@ class ClientsController extends Controller
     public function edit($id)
     {
         //
-        $clients= \App\Client::find($id);
+        $client= \App\Client::find($id);
 
-        return view('Clients.edit',compact('clients'));
+        return view('Clients.edit',compact('client'));
     }
     
  
@@ -87,8 +87,8 @@ class ClientsController extends Controller
     public function update(Request $request, $id)
     {
         //
-        $Client =\App\Client::find($id);
-        if($Client) $Client->update([
+        $client =\App\Client::find($id);
+        if($client) $client->update([
         'Num_client'=>$request->input('Num_client'),
         'nom'=>$request->input('nom'),
         'prenom'=>$request->input('prnom'),

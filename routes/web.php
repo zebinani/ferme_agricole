@@ -66,7 +66,7 @@ Route::patch("/Command/edit/{id}","CommandesController@update")->name('Command_u
 
 Route::resource ('/Client','ClientsController');
 Route::get("/Client/edit/{id}","ClientsController@edit")->name('Client.edit');
-Route::patch("/Client/edit/{id},ClientsController@update")->name('client.update');
+Route::patch("/Client/edit/{id}","ClientsController@update")->name('Client.update');
 });
 
 

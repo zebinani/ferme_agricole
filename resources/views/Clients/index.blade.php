@@ -4,7 +4,7 @@
 <div class="container">
 <table class="table table-striped">
         <tr>
-            <th>#</th>  <th>id</th>   <th>numero client</th>  <th>nom</th>  <th>PRENOM</th> <th>ADRESSE</th>    <th>TELEHONE</th>  <th></th>  
+            <th>#</th>  <th>id</th>   <th>numero client</th>  <th>nom</th>  <th>PRENOM</th> <th>ADRESSE</th>    <th>TELEHONE</th>  <th>Ajouter</th> <th>Modifier</th>   
         </tr>
 
         @foreach($Clients as $client)
@@ -18,10 +18,10 @@
                 <th>{{$client->telephone ?? ''}}</th>
                 
 
-                <th>
-            <a href="Client/create ">Ajouter</a>
-                </th>
-                
+                <th> <a href="Client/create ">Ajouter</a> </th>
+
+                <th> <a href="{{route('Client.update  ',['id'=>$client->id])}}">Modifier</a> </th>
+         
             </tr>
             
         @endforeach

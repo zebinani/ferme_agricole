@@ -27,6 +27,6 @@
             
         @endforeach
    </table>
+ 
    
-   </div>
    @endsection

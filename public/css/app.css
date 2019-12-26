@@ -601,7 +601,7 @@ pre code {
 
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 100%;
   }
 }
 
@@ -11123,3 +11123,4 @@ a.text-dark:focus {
   -ms-flex-align: center;
   align-items: center;
   }
+  

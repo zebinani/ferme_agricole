@@ -3,7 +3,7 @@
 
 
 <header>
-<div><h1>GESTION DE FERME-AGRICOLE</h1></div>
+
 
 </div>
 </header>

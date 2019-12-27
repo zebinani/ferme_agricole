@@ -3,7 +3,7 @@
 
     <table class="table table-striped">
         <tr>
-            <th>#</th> <th>id</th>    <th>Mat</th> <th>NOM</th><th>PRENOM</th> <th>ADRESSE</th>    <th>TELEPHONE</th>  <th>Departement</th> <th>Ajouter</th> <th>modification</th> 
+            <th>#</th> <th>ID</th>    <th>MATRICULE</th> <th>NOM</th><th>PRENOM</th> <th>ADRESSE</th>    <th>TELEPHONE</th>  <th>Departement</th> <th>Ajouter</th> <th>modification</th> 
             
         </tr>
         @foreach($employs as $employ)
@@ -26,7 +26,7 @@
                 </th>
                 
                 <th> 
-                <button type="button" class="btn btn-dark">
+                <button type="button" class="btn btn-warning">
                  <p><a href="{{route('update.Employs',['id'=>$employ->id])}}">Editer</a></button>
                 </th>
                

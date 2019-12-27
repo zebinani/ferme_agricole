@@ -26,27 +26,8 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ml-auto">
         
- 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Menu
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="/Employ">Personnels</a>
-              <a class="dropdown-item" href="/Product">Produits</a>
-              <a class="dropdown-item" href="/Materiel">Materiels</a>
-              <a class="dropdown-item" href="/Command">Commandes</a>
-              <a class="dropdown-item" href="/Ventes">Ventes</a>
-              <a class="dropdown-item" href="/Parcel">Parcelles</a>
-              <a class="dropdown-item" href="/Client">Clients</a>
-             
-            </div>
-         
-            
-          </li>
- 
           -->
           @guest
                             

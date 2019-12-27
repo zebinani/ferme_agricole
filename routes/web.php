@@ -70,7 +70,7 @@ Route::get("/Client/edit/{id}","ClientsController@edit")->name('Client.edit');
 Route::patch("/Client/edit/{id}","ClientsController@update")->name('Client.update');
 
 });
-
+Route::resource('/User','usersController');
 
 
 

@@ -1,12 +1,15 @@
 @extends("layout")
 @section("EMP_section")
 
-    <table class="table table-striped">
+    <table class="table table-sm">
+    <thead>
         <tr>
-            <th>#</th> <th>ID</th>    <th>MATRICULE</th> <th>NOM</th><th>PRENOM</th> <th>ADRESSE</th>    <th>TELEPHONE</th>  <th>Departement</th> <th>Ajouter</th> <th>modification</th> 
+            <th>#</th> <th>ID</th>    <th>NOM</th> <th>EMAIL</th><th>EMAIL DE VERIFICATION</th> <th>ADRESSE</th>    <th>TELEPHONE</th>  <th>Departement</th> <th>Ajouter</th> <th>modification</th> 
             
         </tr>
+        </thead>
         @foreach($employs as $employ)
+        <tbody>
             <tr>
                 <th>#</th>
                 <th>{{$employ->id ?? ''}}</th>
@@ -16,7 +19,7 @@
                 <th>{{$employ->adresse ?? ''}}</th>
                 <th>{{$employ->telephone ?? ''}}</th>
                 <th>{{$employ->department->name ?? ''}}</th>
-
+       
 
                 
                 <th> 
@@ -31,6 +34,7 @@
                 </th>
                
             </tr>
+            </tbody>
         @endforeach
 
     </table>

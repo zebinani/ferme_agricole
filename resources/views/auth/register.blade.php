@@ -1,6 +1,6 @@
 @extends('layout_login')
 
-@section('login_page')
+@section('register_page')
 
 <div class="container">
     <div class="row justify-content-center">

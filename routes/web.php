@@ -14,7 +14,11 @@
 Route::get('/', function () {
    
      return view('accueil');
+     
 })->middleware('auth');
+
+Route::get('/accueil', 'HomeController@index');
+
 
 Auth::routes(); //la route pour authentification
 
@@ -27,7 +31,7 @@ Route::get('/contacts', "ProductsController@index" );
 
 Route:: group(['middleware'=>'auth'], //groupe middleware avec la page d'accueil.
         function(){
-     Route::get('/accueil',"AccueilController@index");
+   //  Route::get('/accueil',"AccueilController@index");
 
      Route::resource('Employ','EmploysController');
      Route::get("/Employ/edit/{id}", "EmploysController@edit")->name('editer_employs');
@@ -77,7 +81,7 @@ Route::resource('/User','usersController');
 // Auth::routes();
 
 
-// Route::get('/home', 'HomeController@index');
+ 
 
 
 

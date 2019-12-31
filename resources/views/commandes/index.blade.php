@@ -1,4 +1,4 @@
-@extends("layout")
+@extends("layouts.layout")
 @section("Com_index")
 
 <div class="container">

@@ -1,23 +1,26 @@
-@extends("layout")
+@extends("layouts.layout")
 @section("Com_create")
 <div class="container">
-            <div><h1>{{__('Enregistrement d\'une commande')}}</h1></div>
+
+       <div><h1>{{__('Enregistrement d\'une commande')}}</h1></div>
 
                 <form action="{{route('Command.store')}}" method="post">
                     @csrf
-                    <div>
+                    <div class="row-6">
                         <input type="text" name="client" class="form-control" placeholder="CLIENT">
                     </div>
-                    <div>
+                    
+                    <div class="row-6">
+                
                         <input type="text" name="article" class="form-control" placeholder="ARTICLE">
                     </div>
-                    <div>
+                    <div class="row-6">
                         <input type="text" name="reference" class="form-control" placeholder="REFERENCE">
                     </div>
-                    <div>
+                    <div class="row-6">
                         <input type="text" name="quantite" class="form-control" placeholder="QUANTITE">
                     </div>
-                    <div>
+                    <div class="row-6">
                         <input type="date" name="date" class="form-control" placeholder="DATE">
                     </div>
                     
@@ -26,5 +29,5 @@
                     </div>
                 </form>
 
-        </div>
+</div>
       @endsection

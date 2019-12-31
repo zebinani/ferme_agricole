@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Client;
+use App\Role;
 
-class ClientsController extends Controller
+class RolesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,11 +15,12 @@ class ClientsController extends Controller
     public function index()
     {
         //
-       $Clients=\App\Client::orderBY('created_at','DESC')->get();
-       return view('Clients.index',compact('Clients'));
+   $Roles = \App\Role::orderBy('created_at', 'DESC')->get();
+   
+    return view('Roles.index',compact('Roles'));
+   
     }
-    
-    
+
     /**
      * Show the form for creating a new resource.
      *
@@ -27,7 +28,7 @@ class ClientsController extends Controller
      */
     public function create()
     {
-        return view('Clients.create');
+        //
     }
 
     /**
@@ -39,16 +40,6 @@ class ClientsController extends Controller
     public function store(Request $request)
     {
         //
-        $Clients= new Client();
-        
-        $Clients->num_client=$request->input('num_client');
-        $Clients->nom=$request->input('nom');
-        $Clients->prenom=$request->input('prenom');
-        $Clients->adresse=$request->input('adresse');
-        $Clients->telephone=$request->input('telephone');
-        $Clients ->save();
-
-       return redirect('/');
     }
 
     /**
@@ -71,12 +62,8 @@ class ClientsController extends Controller
     public function edit($id)
     {
         //
-        $client= \App\Client::find($id);
-
-        return view('Clients.edit',compact('client'));
     }
-    
- 
+
     /**
      * Update the specified resource in storage.
      *
@@ -87,18 +74,8 @@ class ClientsController extends Controller
     public function update(Request $request, $id)
     {
         //
-        $client =\App\Client::find($id);
-        if($client) $client->update([
-        'Num_client'=>$request->input('num_client'),
-        'nom'=>$request->input('nom'),
-        'prenom'=>$request->input('prenom'),
-        'adresse'=>$request->input('adresse'),
-        'telephone'=>$request->input('telephone')
-        ]);
-        return redirect()->back();
     }
-     
-    
+
     /**
      * Remove the specified resource from storage.
      *

@@ -1,4 +1,4 @@
- @extends("layout")
+ @extends("layouts.layout")
 
 @section("sect_accueil")
 
@@ -49,7 +49,7 @@
     <!-- Page Content -->
     <div class="container">
 
-      <h1 class="my-4">Welcome to Modern Business</h1>
+      <h1 class="my-4">PLATE-FORME DE GESTION AGRICOLE</h1>
 
       <!-- Marketing Icons Section -->
       <div class="row">

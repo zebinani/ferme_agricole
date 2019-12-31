@@ -21,9 +21,9 @@
               
                <th>  <a href="Client/create ">Ajouter</a></th>
                 
-                <th> <a href="{{route('Client.update  ',['id'=>$client->id])}}">Modifier</a> </th>
+                <th> <a href="{{route('Client.update',['id'=>$client->id])}}">Modifier</a> </th>
          
-
+              
             </tr>
             
         @endforeach

@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 
 class usersController extends Controller
 {
@@ -15,8 +18,8 @@ class usersController extends Controller
     {
         //
        $users=\App\User::all();
-       // $Clients=\App\Client::orderBY('created_at','DESC')->get();
-       return view('utilisateurs.index',compact('users'));
+       
+       return view('Admin.index',compact('users','Roles'));
        
     }
 
@@ -28,6 +31,7 @@ class usersController extends Controller
     public function create()
     {
         //
+       return view ('Admin.create');
     }
 
     /**
@@ -37,8 +41,26 @@ class usersController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
+
     {
         //
+       // $user_id = Auth::id();
+
+        $Users = new User();
+
+        $Users->name =$request->input('name');
+
+        $Users->email =$request->input('email');
+
+        $Users->password = Hash::make($request->input('password'));
+       
+        $Users->role=$request->input('role');
+       
+        $Users->save();
+
+        return redirect('/');
+
+         
     }
 
     /**

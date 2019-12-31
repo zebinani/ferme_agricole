@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
 use App\Materiel;
+use Illuminate\Http\Request;
+
 
 class MaterielsController extends Controller
 {
@@ -77,10 +77,10 @@ class MaterielsController extends Controller
      */
     public function edit($id)
     {
-        //
-        $Materiels = \App\Employ::find($id);//on recupere le produit
+        //Materiels
+        $materiels = \App\Materiel::find($id);//on recupere le produit
     
-        return view('materiels.edit', compact('Materiels'));
+        return view('materiels.edit', compact('materiels'));
     }
 
     /**
@@ -94,19 +94,17 @@ class MaterielsController extends Controller
     public function update(Request $request, $id)
     {
         //
-        $materiels = \App\Employ::find($id);
+        $materiels = \App\Materiel::find($id);
         if($materiels )  $materiels->update([
            'name' => $request->input('name'),
-           'description' => $request->input('descrption'),
-           'armortissement'=> $request->input('amortissement')
+           'description' => $request->input('description'),
+           'amortissement'=> $request->input('amortissement')
            
            
        ]);
        return redirect()->back();
     }
-    
-
-
+ 
     /**
      * Remove the specified resource from storage.
      *

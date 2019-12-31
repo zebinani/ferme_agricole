@@ -1,38 +1,38 @@
-@extends("layout")
+@extends("layouts.layout")
 @section("EMP_section")
 
-    <table class="table table-sm">
+    <table class="table table-bordered">
     <thead>
         <tr>
-            <th>#</th> <th>ID</th>    <th>NOM</th> <th>EMAIL</th><th>EMAIL DE VERIFICATION</th> <th>ADRESSE</th>    <th>TELEPHONE</th>  <th>Departement</th> <th>Ajouter</th> <th>modification</th> 
+            <th>#</th> <th>ID</th>    <th>MATRICULE</th> <th>NOM</th><th>PRENOM</th> <th>ADRESSE</th>    <th>TELEPHONE</th>  <th>Departement</th> <th>Ajouter</th> <th>modification</th> 
             
         </tr>
         </thead>
         @foreach($employs as $employ)
         <tbody>
             <tr>
-                <th>#</th>
-                <th>{{$employ->id ?? ''}}</th>
-                <th>{{$employ->matricule ?? ''}}</th>
-                <th>{{$employ->nom ?? ''}}</th>
-                <th>{{$employ->prenom ?? ''}}</th>
-                <th>{{$employ->adresse ?? ''}}</th>
-                <th>{{$employ->telephone ?? ''}}</th>
-                <th>{{$employ->department->name ?? ''}}</th>
+                <td>#</td>
+                <td>{{$employ->id ?? ''}}</td>
+                <td>{{$employ->matricule ?? ''}}</td>
+                <td>{{$employ->nom ?? ''}}</td>
+                <td>{{$employ->prenom ?? ''}}</td>
+                <td>{{$employ->adresse ?? ''}}</td>
+                <td>{{$employ->telephone ?? ''}}</td>
+                <td>{{$employ->department->name ?? ''}}</td>
        
 
-                
-                <th> 
+                               <td> 
                 <button type="button" class="btn btn-success">
                 <a href="Employ/create">Ajouter</a>
                 </button>
-                </th>
+                </td>
                 
-                <th> 
+                <td> 
                 <button type="button" class="btn btn-warning">
                  <p><a href="{{route('update.Employs',['id'=>$employ->id])}}">Editer</a></button>
-                </th>
-               
+                </td>
+                
+
             </tr>
             </tbody>
         @endforeach

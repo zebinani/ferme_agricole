@@ -1,4 +1,4 @@
- @extends("layout")
+ @extends("layouts.layout")
 
 @section("DEP_index")
 

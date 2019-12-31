@@ -20,10 +20,13 @@
        <th>{{$materiel->amortissement ?? ''}} </th>
        <th>
        <a href="Materiel/create">Ajouter</a>
-        
         </th>
+        
 
-
+<th> 
+<button type="button" class="btn btn-warning">
+<p><a href="{{route('Materiel.update',['id'=>$materiel->id])}}">Editer</a></button>
+    </th>
    </tr>
 @endforeach
 

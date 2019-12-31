@@ -8,6 +8,7 @@ class Employ extends Model
 {
     //
     protected $guarded = [];
+    
 
     public function department(){
 

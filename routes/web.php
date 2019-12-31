@@ -39,7 +39,7 @@ Route::get("/Production/edit/{id}", "ProductionsController@edit")->name('product
 Route::patch("/Production/edit/{id}", "ProductionsController@update")->name('update.Production');
 
 Route::resource('Product','ProductsController');
-Route::get("/Product/edit/{id}","ProductsController@edit")->name('product.edit');
+Route::get("/Product/edit/{id}","ProductsController@edit")->name('products.edit');
 Route::patch("/Product/edit/{id}","ProductsController@update")->name('update_produit');
 
 
@@ -57,8 +57,8 @@ Route::resource('/Department','DepartmentController');
 //Route::patch("/Department/edit/{id}","DepartmentController")->name('departments.update');
 
 Route::resource('/Materiel','MaterielsController');
-Route::get("/Materiel/edit/{id}","MaterielsController@edit")->name('editer_materiel');
-Route::patch("/materiel/edit/{id}","MaterielsController@update")->name('update_materiel');
+Route::get("/Materiel/edit/{id}","MaterielsController@edit")->name('Materiel.edit');
+Route::patch("/Materiel/edit/{id}","MaterielsController@update")->name('Materiel.update');
 
 Route::resource('/Command','CommandesController');
 Route::get("/Command/edit/{id}","CommandesController@edit")->name('command.edit');
@@ -69,15 +69,18 @@ Route::get("/Client/edit/{id}","ClientsController@edit")->name('Client.edit');
 
 Route::patch("/Client/edit/{id}","ClientsController@update")->name('Client.update');
 
-});
+
 Route::resource('/User','usersController');
+});
+
+Route::resource('/Role','RolesController');
 
 
 
 // Auth::routes();
 
 
-// Route::get('/home', 'HomeController@index');
+ Route::get('/home', 'HomeController@index');
 
 
 

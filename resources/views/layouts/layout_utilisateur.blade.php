@@ -41,6 +41,7 @@
               <a class="dropdown-item" href="/Ventes">Ventes</a>
               <a class="dropdown-item" href="/Parcel">Parcelles</a>
               <a class="dropdown-item" href="/Client">Clients</a>
+              
              
             </div>
          
@@ -95,10 +96,13 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Quitter') }}
                                     </a>
-
+                                    
+                                   
+                                   
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
+                                   
                                 </div>
                             </li>                            
                         @endguest
@@ -116,6 +120,7 @@
   <div id="container">
   
         <div id="container"> @yield("create_product ") </div> 
+        
         <div id="container"> @yield("create_parcel ") </div> 
         <div id="container"> @yield("edit_parcel ") </div> 
         <div id="container"> @yield("index_parcel ") </div>
@@ -125,7 +130,7 @@
                <div id="container">@yield("create_employ") </div> 
   
                <div id="container">@yield("sect_layout")</div> 
-               <div id="container">@yield("User_Afficher")</div> 
+               
                 
 
               <div id="container">
@@ -189,6 +194,10 @@
                <div id="container">  @yield("DEP_create")</div>
                <div id="container">  @yield("DEP_index")</div>
 
+               <div id="container">  @yield("role_page")</div>
+
+               
+
               
 </div> 
 
@@ -207,3 +216,4 @@
 </body>
 
 </html>
+

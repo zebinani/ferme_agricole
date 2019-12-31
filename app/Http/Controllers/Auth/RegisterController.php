@@ -69,12 +69,6 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]);
     }
-    public function Afficher()
-    {
-        //
-        $parcels= \App\User::orderBy('created_at', 'DESC')->get();
-       var_dump ('$parcels');
-      //  return view('auth.afficher', compact('parcels'));
-     }
+    
     
 }

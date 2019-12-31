@@ -29,7 +29,7 @@ class EmploysController extends Controller
     public function create()
          
     {
-      
+        $this->authorize('Admin');
          $Departments = \App\Department::pluck( 'name','id');
 
          return view('employers.create', compact('Departments'));
@@ -49,6 +49,7 @@ class EmploysController extends Controller
      */
     public function store(Request $request)
     {
+        
         //
    $employs = new Employ();
    
@@ -87,6 +88,7 @@ class EmploysController extends Controller
      */
     public function edit($id)
     {
+        $this->authorize('Admin');
         //
         $Employs = \App\Employ::find($id);//on recupere le produit
         $Departments = \App\Department::pluck( 'name','id');
@@ -130,5 +132,6 @@ class EmploysController extends Controller
      public function destroy($id)
     {
         //
+        
     }
 }

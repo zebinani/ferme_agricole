@@ -109,5 +109,12 @@ class ParcelController extends Controller
     public function destroy($id)
     {
         //
+        $parcels=\App\Parcel::find($id);
+        
+        if('parcels')
+        $parcels->delete();
+
+        return redirect()->route('Parcel.index');
+
     }
 }

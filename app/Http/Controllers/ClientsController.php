@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Client;
 
+
 class ClientsController extends Controller
 {
     /**
@@ -27,7 +28,9 @@ class ClientsController extends Controller
      */
     public function create()
     {
+        
         return view('Clients.create');
+        
     }
 
     /**
@@ -38,7 +41,14 @@ class ClientsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->validate([
+            'num_client' => 'required | max:6' ,
+            'nom' => 'required | max:50' ,
+            'prenom' => 'required | max:50' ,
+            'adresse' => 'required | max:50' ,
+            'telephone' => 'required | max:12' ,
+            ]);
+            
         $Clients= new Client();
         
         $Clients->num_client=$request->input('num_client');
@@ -107,6 +117,9 @@ class ClientsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $Clients = Client::find($id);
+            if($Clients)
+            $Clients->delete();
+        return redirect()->route('Client.index');
     }
 }

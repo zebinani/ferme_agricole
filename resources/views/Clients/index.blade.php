@@ -1,8 +1,8 @@
-@extends("layout")
+@extends("layouts.layout")
 @section("client_index")
 
 <div class="container">
-<table class="table table-striped">
+<table class="table table-bodered">
         <tr>
 
             <th>#</th>  <th>id</th>   <th>numero client</th>  <th>nom</th>  <th>PRENOM</th> <th>ADRESSE</th>    <th>TELEHONE</th>  <th>Ajouter</th> <th>Modifier</th>   
@@ -11,19 +11,28 @@
 
         @foreach($Clients as $client)
             <tr>
-                <th>#</th>
-                <th>{{$client->id ?? ''}}</th>
-                <th>{{$client->num_client ?? ''}}</th>
-                <th>{{$client->nom ?? ''}}</th>
-                <th>{{$client->prenom?? ''}}</th>
-                <th>{{$client->adresse ?? ''}}</th>
-                <th>{{$client->telephone ?? ''}}</th>
+                <td>#</th>
+                <td>{{$client->id ?? ''}}</td>
+                <td>{{$client->num_client ?? ''}}</td>
+                <td>{{$client->nom ?? ''}}</td>
+                <td>{{$client->prenom?? ''}}</td>
+                <td>{{$client->adresse ?? ''}}</td>
+                <td>{{$client->telephone ?? ''}}</td>
               
-               <th>  <a href="Client/create ">Ajouter</a></th>
+                <td><a href="Client/create "><button class="btn btn-success">Ajouter</button> </a></td>
                 
-                <th> <a href="{{route('Client.update',['id'=>$client->id])}}">Modifier</a> </th>
-         
+                <td><a href="{{route('Client.update',['id'=>$client->id])}}">
+                <button class="btn btn-warning">Modifier</button> </a> </th>
+               
               
+               
+                <form action="Client/{{$client->id}}" method="post">
+               @csrf
+               @method('delete')
+             <td>  <input type="submit" class="btn btn-danger" name="delete" value="Supprimer">
+             </td>
+              
+           </form>
             </tr>
             
         @endforeach

@@ -15,15 +15,14 @@ Route::get('/', function () {
    
      return view('accueil');
      
-})->middleware('auth');
+});
 
-Route::get('/accueil', 'HomeController@index');
+Route::get('/accueil',"HomeController@index");
 
 
 Auth::routes(); //la route pour authentification
 
-
- Route::get('/User',"UsersController@Afficher");
+Route::get('/User',"UsersController@Afficher");
 
 Route::get('/Employ',"EmployController@index" );
 
@@ -79,12 +78,12 @@ Route::resource('/User','usersController');
 
 Route::resource('/Role','RolesController');
 
-
+Route::get('/accueil', 'HomeController@index');
 
 // Auth::routes();
 
 
- Route::get('/home', 'HomeController@index');
+
 
 
 

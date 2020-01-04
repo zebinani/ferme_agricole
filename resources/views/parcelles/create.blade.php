@@ -1,7 +1,6 @@
-
-
-   
-       <div><h1>{{__('Enregistrement d\'un prarcel')}}</h1></div>
+@extends("layouts.layout") 
+@section('parcel_create')
+<div><h1>{{__('Enregistrement d\'un prarcel')}}</h1></div>
           
                     <form action="{{route('Parcel.store')}}" method="post">
                         @csrf
@@ -21,5 +20,5 @@
                         </div>
                     </form>
      
-
+@endsection
 

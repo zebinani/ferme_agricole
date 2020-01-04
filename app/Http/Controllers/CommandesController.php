@@ -52,7 +52,7 @@ class CommandesController extends Controller
         $Commande->date=$request->input('date');
 
         $Commande->save();
-         return redirect('/');
+         return redirect('/Command');
     }
     
     /**
@@ -100,7 +100,7 @@ class CommandesController extends Controller
     
     ]);
          
-         return redirect()->back();
+         return redirect('/Command');
     }
 
     /**
@@ -112,5 +112,9 @@ class CommandesController extends Controller
     public function destroy($id)
     {
         //
+        $Commandes = Command::find($id);
+        if($Commandes)
+        $Commandes->delete();
+    return redirect()->route('Command.index');
     }
 }

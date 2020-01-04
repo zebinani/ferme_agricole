@@ -119,7 +119,7 @@
   <!-- la page de connexion-->
   <div id="container">
   
-        <div id="container"> @yield("create_product ") </div> 
+        <div id="container "> @yield("create_product ") </div> 
         
         <div id="container"> @yield("create_parcel ") </div> 
         <div id="container"> @yield("edit_parcel ") </div> 

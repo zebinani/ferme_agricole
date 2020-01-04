@@ -1,9 +1,6 @@
-
-
-
-
-
-<form action="{{route('parcelles.edit',['id'=>$parcels->id])}}" method="post">
+@extends('layouts.layout')
+@section('parcel-edit')
+<form action="{{route('Parcel.edit',['id'=>$parcels->id])}}" method="post">
    @csrf
    @method('patch')
    <div><input type="text" name="rentabilte" class="form-control" placeholder="RENTABILITE" value="{{$parcels->rentabilite}}"></div>
@@ -16,3 +13,4 @@
    <div> <button class="btn btn-primary">Enregistrer</button> </div>
 </form>
 
+@stop

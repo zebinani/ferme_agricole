@@ -1,4 +1,4 @@
- @extends("layout")
+ @extends("layouts.layout")
  @section("Product_create")
  
  <form action="{{route('Product.store')}}" method="post">

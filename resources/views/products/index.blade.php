@@ -1,8 +1,11 @@
-@extends("layout")
+@extends("layouts.layout")
 @section("Product_index")
-<table class="table table-striped">
+<div class="container">
+<div class="row">
+<div class="col">
+<table class="table table-bodered">
        <tr>
-           <th>#</th>          <th>Nom Produit</th>  <th>Prix Produit</th>    <th>Quantite</th>        <th>Ajouter</th><th>Modifier</th>
+           <th>#</th>          <th>Nom Produit</th>  <th>Prix Produit</th>    <th>Quantite</th>        <th>Action</th>
        </tr>
        
        @foreach($products as $product)
@@ -10,21 +13,29 @@
        
    <tr>
        <th>#</th>
-            <th>{{$product->name ?? ''}}</th>
-            <th>{{$product->price ?? ''}} </th>
-            <th>{{$product->quantity ?? ''}} </th>
+            <td>{{$product->name ?? ''}}</td>
+            <td>{{$product->price ?? ''}} </td>
+            <td>{{$product->quantity ?? ''}} </td>
 
-            <th>
-            <a href="Product/create ">Ajouter</a>
-            </th>
-       <th>
-  <p><a href="{{route('update_produit',['id'=>$product->id])}}">Editer</a></p>
-       </th>
-       
+            <td>
+            <a href="Product/create "> <button class="btn btn-success">  Ajouter </button></a>
+            </td>
+       <td>
+<a href="{{route('update_produit',['id'=>$product->id])}}"><button class="btn btn-warning"> Modifier </button></a>
+       </td>
+       <form action="Product/{{$product->id}}" method="post">
+               @csrf
+               @method('delete')
+             <td>  <input type="submit" class="btn btn-danger" name="delete" value="Supprimer">
+             </td>
+              
+           </form>
    </tr>
+
 @endforeach
 
 </table>
+        </div>
         </div>
 
    

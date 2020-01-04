@@ -66,7 +66,7 @@ section {
 
 body {
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito", 'Times New Roman', Times, serif;
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.6;
@@ -74,6 +74,10 @@ body {
   text-align: left;
   background-color: #f8fafc;
 }
+main{
+  margin-top: 53px;
+}
+
 
 [tabindex="-1"]:focus {
   outline: 0 !important;
@@ -91,7 +95,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
+  margin-top: 8px;
+
   margin-bottom: 0.5rem;
 }
 
@@ -397,6 +402,8 @@ h6,
 h1,
 .h1 {
   font-size: 2.25rem;
+  color: #11e00a;
+  background-color: #1b4b72;
 }
 
 h2,
@@ -4561,6 +4568,7 @@ input[type=button].btn-block {
   -webkit-box-pack: justify;
           justify-content: space-between;
   padding: 0.5rem 1rem;
+  margin-top: 52px;
 }
 
 .navbar > .container,

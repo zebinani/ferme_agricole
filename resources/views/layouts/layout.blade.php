@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <link href="{{asset('css/app.css')}}" rel="stylesheet" />
@@ -15,10 +15,14 @@
 </head>
 
 <body>
+   
+  <header> <div class="row-12 fixed-top justify-content-center"> <h1 class=" text-center mt-2px">PLATE-FORME DE GESTION AGRICOLE</h1> </div></header>
+  <main>
 
   <!-- Navigation -->
   <!-- <div id='titre'><h1>PLATE-FORME DE GESTION DE FERME</h1></div>-->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+ 
     <div class="container">
       <a class="navbar-brand" href="/accueil">Accueil</a>
       
@@ -27,8 +31,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+        <a class="navbar-brand" href="/Client"><button type="button" class="btn btn-outline-success">Clients</button> </a>
+        <a class="navbar-brand" href="/Command"><button type="button" class="btn btn-outline-success">Commandes</button> </a>
         
+      
+        
+       
   @can('Admin')
+  <a class="navbar-brand" href="/User"><button type="button" class="btn btn-outline-success">Utilisateurs</button> </a>
+        <a class="navbar-brand" href="/Product"> <button type="button" class="btn btn-outline-success">Produits</button> </a>
+        <a class="navbar-brand" href="/Employ"><button type="button" class="btn btn-outline-success">Employers</button> </a>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Menu
@@ -49,24 +61,7 @@
           </li>
          
           @endcan
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Menu
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="/Employ">Personnels</a>
-              <a class="dropdown-item" href="/Product">Produits</a>
-              <a class="dropdown-item" href="/Materiel">Materiels</a>
-              <a class="dropdown-item" href="/Command">Commandes</a>
-              <a class="dropdown-item" href="/Ventes">Ventes</a>
-              <a class="dropdown-item" href="/Parcel">Parcelles</a>
-              <a class="dropdown-item" href="/Client">Clients</a>
-              
-             
-            </div>
-         
-            
-          </li>
+          
  <!-- </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -101,7 +96,7 @@
                                 <li class="nav-item">
                                     
 
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Creer Compte') }}</a>
+          <!--   <a class="nav-link" href="{{ route('register') }}">{{ __('') }}</a> -->
                                 </li>
                             @endif
                         @else
@@ -216,12 +211,17 @@
 
                <div id="container">  @yield("role_page")</div>
 
+               <div id="container">  @yield("parcel_index")</div>
+               <div id="container">  @yield("parcel_create")</div>
+               <div id="container">  @yield("parcel_edit")</div>
+             
+
                
 
               
 </div> 
 
-
+</main>
 
  <footer class="py-5 bg-dark">
     <div class="container">

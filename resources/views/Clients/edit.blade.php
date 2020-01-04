@@ -1,15 +1,13 @@
-@extends('layout')
+@extends('layouts.layout')
 
 @section('client_edit')
-
-
 
 <div class="container">
 
       <form action="{{route('Client.edit',['id'=>$client->id])}}" method="post">
          @csrf
          @method('patch')
-
+          
          <div><input type="text" name="num_client" class="form-control" placeholder="le nom du produit" value="{{$client->num_client}}"></div>
 
          <div><input type="text" name="nom" class="form-control" placeholder="nom" value="{{$client->nom}}"> </div>

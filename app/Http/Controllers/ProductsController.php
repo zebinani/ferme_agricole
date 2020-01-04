@@ -96,7 +96,7 @@ class ProductsController extends Controller
            
        ]);
    }
-   return redirect()->back();
+   return redirect('/Product');
     }
 
     
@@ -109,5 +109,9 @@ class ProductsController extends Controller
     public function destroy($id)
     {
         //
+        $Products = Product::find($id);
+        if($Products)
+        $Products->delete();
+    return redirect()->route('Product.index');
     }
 }

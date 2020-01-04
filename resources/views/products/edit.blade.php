@@ -1,5 +1,5 @@
 
-@extends("layout")
+@extends("layouts.layout")
 
 @section("Product_edit")
 

@@ -1,8 +1,11 @@
-@extends("layout")
+@extends("layouts.layout")
 @section("sect_create_mat")
 
 
-<div class="container">
+<div class="container ">
+    <div class="row justify-content-center">
+    <div class="col-8">
+            <h1>test</h1>
             <div><h1>{{__('Enregistrement d\'un employer')}}</h1></div>
                 <form action="{{route('Employ.store')}}" method="post">
                     @csrf
@@ -26,7 +29,8 @@
                         <button class="btn btn-primary">Enregistrer</button>
                     </div>
                 </form>
-
+    </div>
+    </div>
         </div>
 
 

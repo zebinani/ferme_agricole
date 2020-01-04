@@ -1,15 +1,14 @@
-@extends("layout")
+@extends("layouts.layout")
 
 @section("sect_materiel")
-
-
-
 <div class="container">
-<table class="table table-striped">
+<div class="row justify-content-center ">
+ <div class="col-8 align-items-center">
+ <table class="table table-striped">
        <tr>
            <th>#</th>          <th>Nom materiel</th>  <th>description</th>    
            
-           <th>AMORTISSEMENT</th>        <th>Ajouter</th>
+           <th>AMORTISSEMENT</th>        <th>Ajouter</th> <th>Modifier</th>
        </tr>
        
        @foreach($Materiels as $materiel)
@@ -25,12 +24,13 @@
 
 <th> 
 <button type="button" class="btn btn-warning">
-<p><a href="{{route('Materiel.update',['id'=>$materiel->id])}}">Editer</a></button>
+<a href="{{route('Materiel.update',['id'=>$materiel->id])}}">Editer</a></button>
     </th>
    </tr>
 @endforeach
 
         </table>
+        </div>        
         </div>
-        
-   @endsection
+</div>
+@endsection

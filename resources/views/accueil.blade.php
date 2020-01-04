@@ -35,6 +35,7 @@
             </div>
           </div>
         </div>
+        
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
@@ -46,13 +47,14 @@
       </div>
     </header>
 
-    <!-- Page Content -->
-    <div class="container">
 
-      <h1 class="my-4">PLATE-FORME DE GESTION AGRICOLE</h1>
+    <!-- Page Content -->
+    <div class="container mt-60px h-100px">
+
+     
 
       <!-- Marketing Icons Section -->
-      <div class="row">
+      <div class="row ">
         <div class="col-lg-4 mb-4">
           <div class="card h-100">
             <h4 class="card-header">Card Title</h4>
@@ -60,7 +62,7 @@
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <a href="/Employ" class="btn btn-primary">Learn More</a>
             </div>
           </div>
         </div>
@@ -97,7 +99,7 @@
       <div class="row">
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="{{asset('/images/4.jpeg')}}" alt=""></a>
+          <a href="#"><img class="card-img-top" src="{{asset('images/9.jpg')}}" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="#">Project One</a>
@@ -130,7 +132,7 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="{{asset('images/6.jpg')}}" alt=""></a>
+            <a href="#"><img class="card-img-top" src="{{asset('images/10.jpg')}}" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="#">Project Four</a>

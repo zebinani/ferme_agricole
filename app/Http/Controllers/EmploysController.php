@@ -49,7 +49,13 @@ class EmploysController extends Controller
      */
     public function store(Request $request)
     {
-        
+       $data= $request->validate([
+            'matricule' => 'required | max:6 ' ,
+            'nom' => ' max:50|required ' ,
+            'prenom' => 'required | max:50' ,
+            'adresse' => 'required | max:50' ,
+            'telephone' => 'required|numeric' ,
+            ]);
         //
    $employs = new Employ();
    
@@ -63,9 +69,11 @@ class EmploysController extends Controller
    
    $employs->save();
 
-   return redirect('/');
+  // return redirect('/');
 
-   
+   return redirect()->route('Employ.index')->with(['success' => "Employe enregistré"]);
+
+
    }
 
     /**
@@ -131,7 +139,13 @@ class EmploysController extends Controller
     
      public function destroy($id)
     {
-        //
-        
+        $this->authorize('Admin');
+        $Employs= \App\Employ::find($id);
+        //dd($Employs);
+        if($Employs)
+        $Employs->delete();
+        return redirect()->route('Employ.index');
+     
+
     }
 }

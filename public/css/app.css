@@ -73,10 +73,12 @@ body {
   color: #212529;
   text-align: left;
   background-color: #f8fafc;
+  min-width: 300px;
 }
 main{
-  margin-top: 53px;
+  margin-top: 52px;
 }
+
 
 
 [tabindex="-1"]:focus {
@@ -401,9 +403,11 @@ h6,
 
 h1,
 .h1 {
+  text-align: center;
   font-size: 2.25rem;
   color: #11e00a;
   background-color: #1b4b72;
+  margin-top: 5px;
 }
 
 h2,
@@ -419,6 +423,7 @@ h3,
 h4,
 .h4 {
   font-size: 1.35rem;
+  color: #0d11eb;
 }
 
 h5,
@@ -592,7 +597,11 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+ 
 }
+
+
+
 
 @media (min-width: 576px) {
   .container {
@@ -632,6 +641,7 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  justify-content: center;
 }
 
 .no-gutters {
@@ -5538,7 +5548,6 @@ a.badge-light:focus {
   color: #212529;
   background-color: #dae0e5;
 }
-
 a.badge-light:focus,
 a.badge-light.focus {
   outline: 0;

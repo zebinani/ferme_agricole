@@ -109,7 +109,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('QUITTER') }}
+                                        {{ __('Deconnexion') }}
                                     </a>
                                     
                                    
@@ -130,7 +130,7 @@
   </nav>
 
 
-  
+  <main>
   <!-- la page de connexion-->
   <div id="container">
   
@@ -214,6 +214,9 @@
                <div id="container">  @yield("parcel_index")</div>
                <div id="container">  @yield("parcel_create")</div>
                <div id="container">  @yield("parcel_edit")</div>
+
+
+               <div id="container">  @yield("Admin.edit")</div>
              
 
                

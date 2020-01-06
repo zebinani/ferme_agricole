@@ -3,6 +3,7 @@
 
 <div class="container">
 <table class="table table-bodered">
+            <h1>LISTES DES CLIENTS</h1>
         <tr>
 
             <th>#</th>  <th>id</th>   <th>numero client</th>  <th>nom</th>  <th>PRENOM</th> <th>ADRESSE</th>    <th>TELEHONE</th>  <th>Ajouter</th> <th>Modifier</th>   

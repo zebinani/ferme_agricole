@@ -11,6 +11,11 @@ class Command extends Model
 
     public function Production(){
 
-        return $this->hasOne(App\Production);
+        return $this->hasOne("App\Production");
+    }
+
+    public function Client(){
+
+        return $this->belongsTo("App\Client");
     }
 }

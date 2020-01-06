@@ -46,7 +46,7 @@
         </a>
       </div>
     </header>
-
+<hr>
 
     <!-- Page Content -->
     <div class="container mt-60px h-100px">
@@ -57,9 +57,9 @@
       <div class="row ">
         <div class="col-lg-4 mb-4">
           <div class="card h-100">
-            <h4 class="card-header">Card Title</h4>
+            <h4 class="card-header">A PROPOS</h4>
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+              <p class="card-text">Notre groupement agricole a ete concu a l'origine pour permettre a l'excerce en commun de l'agriculture.</p>
             </div>
             <div class="card-footer">
               <a href="/Employ" class="btn btn-primary">Learn More</a>
@@ -68,9 +68,9 @@
         </div>
         <div class="col-lg-4 mb-4">
           <div class="card h-100">
-            <h4 class="card-header">Card Title</h4>
+            <h4 class="card-header">A LA UNE</h4>
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p>
+              <p class="card-text">Nous recrutons 150  saisonniers pour la recolte du mois de janviers .</p>
             </div>
             <div class="card-footer">
               <a href="#" class="btn btn-primary">Learn More</a>
@@ -79,9 +79,9 @@
         </div>
         <div class="col-lg-4 mb-4">
           <div class="card h-100">
-            <h4 class="card-header">Card Title</h4>
+            <h4 class="card-header">COMMUNIQUE</h4>
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+              <p class="card-text">Nous informons a nos partenaire que nous disposons de produits avec des prix tres abordables .</p>
             </div>
             <div class="card-footer">
               <a href="#" class="btn btn-primary">Learn More</a>
@@ -92,7 +92,7 @@
       <!-- /.row -->
 
       <!-- Portfolio Section -->
-      <h2>Portfolio Heading</h2>
+      <h2>Nos champs</h2>
       <div class="test1">
                             
 
@@ -167,6 +167,7 @@
       <!-- /.row -->
 
       <!-- Features Section -->
+      <!--
       <div class="row">
         <div class="col-lg-6">
           <h2>Modern Business Features</h2>
@@ -187,8 +188,8 @@
         </div>
       </div>
       
-      <!-- /.row -->
-
+      <!-- /.row
+-->
       <hr>
 
       <!-- Call to Action Section -->

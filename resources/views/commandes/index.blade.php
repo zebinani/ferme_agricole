@@ -4,18 +4,19 @@
 <div class="container">
 <table class="table table-striped">
         <tr>
-            <th>#</th>  <th>id</th>   <th>CLIENT</th>  <th>ARTICLE</th>  <th>REFERENCE</th> <th>QUANTITE</th>    <th>DATE</th>  <th>Ajouter</th> <th>Modifier</th> <th>Supprimer</th>
+            <th>#</th>  <th>id</th>   <th>Num_client</th>  <th>ARTICLE</th>  <th>REFERENCE</th> <th>QUANTITE</th>    <th>DATE</th>  <th>Ajouter</th> <th>Modifier</th> <th>Supprimer</th>
         </tr>
 
         @foreach($Commandes as $commande)
             <tr>
                 <th>#</th>
-                <th>{{$commande->id ?? ''}}</th>
-                <th>{{$commande->client ?? ''}}</th>
-                <th>{{$commande->article?? ''}}</th>
-                <th>{{$commande->reference ?? ''}}</th>
-                <th>{{$commande->quantite ?? ''}}</th>
-                <th>{{$commande->date ?? ''}}</th>
+                <td>{{$commande->id ?? ''}}</td>
+                <td>{{$commande->client->num_client ?? ''}}</td>
+                
+                <td>{{$commande->article?? ''}}</td>
+                <td>{{$commande->reference ?? ''}}</td>
+                <td>{{$commande->quantite ?? ''}}</td>
+                <td>{{$commande->date ?? ''}}</td>
 
                 <th>
      <a href="Command/create "><button type="button" class="btn btn-success">Success</button>

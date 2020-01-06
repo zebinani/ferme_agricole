@@ -3,6 +3,7 @@
 <div class="container">
 <div class="row">
 <div class="col">
+  
 <table class="table table-bodered">
        <tr>
            <th>#</th>          <th>Nom Produit</th>  <th>Prix Produit</th>    <th>Quantite</th>        <th>Action</th>
@@ -38,5 +39,5 @@
         </div>
         </div>
 
-   
+ @endsection  
 

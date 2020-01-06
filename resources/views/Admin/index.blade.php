@@ -21,6 +21,16 @@
 
                 
                 <th>  <a href="User/create">Ajouter</a></th>
+
+                <td><a href="{{route('User.update',['id'=>$user->id])}}">
+                
+                <button class="btn btn-warning">Modifier</button> </a> </th>
+
+                <form action="User/{{$user->id}}" method="post">
+               @csrf
+               @method('delete')
+             <td>  <input type="submit" class="btn btn-danger" name="delete" value="Supprimer">
+             </td>
             </tr>
            
             </tbody>

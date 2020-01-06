@@ -1,6 +1,9 @@
 @extends("layouts.layout")
 @section("client_index")
 <div class="container">
+<div class="row">
+<div class="col-10">
+    <br>
             <div><h1>{{__('Enregistrement d\'un client')}}</h1></div>
 
                 <form action="{{route('Client.store')}}" method="post">
@@ -11,30 +14,44 @@
                         <!-- @endforeach -->
                         @endif
 
-    
-
                     <div>
-                        <input type="text" name="num_client" class="form-control is-valid" placeholder="NUMERO CLIENT">
+                      <label for="num_client">NUM_CLIENT </label>
+                    <div>
+                        <input type="text" name="num_client" class="form-control is-valid" >
                    
-
-                  
+                        </div>
+                       <div>
+                      <label for="NOM" > NOM </label>
                     <div>
-                        <input type="text" name="nom" class="form-control is-valid" placeholder="NOM">
+                    <div>
+                        <input type="text" name="nom" class="form-control is-valid" >
                     </div>
                     <div>
-                        <input type="text" name="prenom" class="form-control is-valid" placeholder="PRENOM">
+                      <label for="prenom" > PRENOM </label>
+                    <div>
+                    <div>
+                        <input type="text" name="prenom" class="form-control is-valid" >
                     </div>
                     <div>
-                        <input type="text" name="adresse" class="form-control is-valid" placeholder="ADRESSE">
+                      <label for="adresse" > ADRESSE </label>
+                    <div>
+                    <div>
+                        <input type="text" name="adresse" class="form-control is-valid" >
                     </div>
                     <div>
-                        <input type="telephone" name="telephone" class="form-control is-valid" placeholder="TELEPHONE">
+                      <label for="telephone" > TELEPHONE </label>
+                    <div>
+                    <div>
+                        <input type="telephone" name="telephone" class="form-control is-valid" >
                     </div>
-                    
+                    <br>
                     <div>
                         <button class="btn btn-primary">Enregistrer</button>
                     </div>
+                    <br>
                 </form>
             
+        </div>
+        </div>
         </div>
       @endsection

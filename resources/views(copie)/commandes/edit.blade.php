@@ -1,6 +1,9 @@
-
-
+@extends('layouts.layout')
+@section('com_edit')
 <div class="container">
+<div class="row">
+<div class="col">
+<br>
       <form action="{{route('command_edit',['id'=>$Commande->id])}}" method="post">
          @csrf
          @method('patch')

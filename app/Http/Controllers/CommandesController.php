@@ -18,7 +18,7 @@ class CommandesController extends Controller
         //
         $Commandes= \App\Command::orderBy('created_at','DESC')->get();
        
-        return view('commandes.index',compact('Commandes'));
+        return view('commandes.index',compact('Commandes','client'));
 
         
     }
@@ -31,7 +31,13 @@ class CommandesController extends Controller
     public function create()
     {
         //
-        return view("commandes.create");
+        $Clients = \App\Client::pluck( 'num_client','id');
+
+ 
+        
+        return view("commandes.create" ,compact('Clients'));
+        
+      
     }
 
     /**
@@ -45,7 +51,7 @@ class CommandesController extends Controller
         //
         $Commande= new Command();
 
-        $Commande->client =$request->input('client');
+        $Commande->client_id = $request->input('client_id');
         $Commande->article =$request->input('article');
         $Commande->reference=$request->input('reference');
         $Commande->quantite=$request->input('quantite');
@@ -61,7 +67,7 @@ class CommandesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($num_client)
     {
         //
     }
@@ -76,9 +82,11 @@ class CommandesController extends Controller
     {
         //
        $Commandes = \App\Command::find($id);
+        $Clients=\App\Client::pluck('num_client','id');
        
-       return view('commandes.edit',compact('Commandes'));
+       return view('commandes.edit',compact('Commandes','Clients'));
     }
+    
 
     /**
      * Update the specified resource in storage.

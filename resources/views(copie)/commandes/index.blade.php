@@ -2,6 +2,7 @@
 @section("Com_index")
 
 <div class="container">
+<br>
 <table class="table table-striped">
         <tr>
             <th>#</th>  <th>id</th>   <th>CLIENT</th>  <th>ARTICLE</th>  <th>REFERENCE</th> <th>QUANTITE</th>    <th>DATE</th>  

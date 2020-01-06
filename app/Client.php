@@ -8,5 +8,11 @@ class Client extends Model
 {
     //
     protected $guarded = [];
-    public $timestamps =false;
+    
+
+    public function Command(){
+
+        return $this->hasmany("App\Command");
+}
+
 }

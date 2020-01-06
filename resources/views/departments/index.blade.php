@@ -10,9 +10,9 @@
           
            <tr>
                <th>#</th>
-               <th>{{$department->id ?? ''}}</th>
-               <th>{{$department->name ??''}}</th>
-               <th>{{$department->effective ??''}}</th>
+               <td>{{$department->id ?? ''}}</td>
+               <td>{{$department->name ??''}}</td>
+               <td>{{$department->effective ??''}}</td>
                
                  <th></th>
            </tr>

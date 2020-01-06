@@ -1,22 +1,30 @@
 @extends('layouts.layout')
 @section('Com_edit')
-
+<br>
 <div class="container">
-
-      <form action="{{route('command.edit',['id'=>$Commandes->id])}}" method="post">
+<div class="row ">
+<div class="col-7">
+        
+      <form action="{{route('command.edit',['id'=>$Commandes->id])}}" method="post" autocomplete="on">
          @csrf
          @method('patch')
-         <div><input type="text" name="client" class="form-control" placeholder="le nom du produit" value="{{$Commandes->client}}"></div>
-
-         <div><input type="text" name="article" class="form-control" placeholder="nom" value="{{$Commandes->article}}"> </div>
-
-         <div><input type="text" name="reference" class="form-control" placeholder="prenom" value="{{$Commandes->reference}}"> </div>
-
-         <div><input type="text" name="quantite" class="form-control" placeholder="Adresse" value="{{$Commandes->quantite}}"> </div>
-
-         <div><input type="date" name="date" class="form-control" placeholder="Telephone" value="{{$Commandes->date}}"> </div>
+         <Fieldset>
+         <div>
+         <div><label for="client">CLIENT</label></div>
+         <div><input type="text" name="client" class="form-control"  value="{{$Commandes->client}}"></div>
+          </div> 
+          <div><label for="client">ARTICLE</label></div>
+         <div><input type="text" name="article" class="form-control" value="{{$Commandes->article}}"> </div>
+         <div><label for="client">REFERENCE</label></div>
+         <div><input type="text" name="reference" class="form-control"  value="{{$Commandes->reference}}"> </div>
+         <div><label for="client">QUANTITE</label></div>
+         <div><input type="text" name="quantite" class="form-control"  value="{{$Commandes->quantite}}"> </div>
+         <div><label for="client">DATE</label></div>
+         <div><input type="date" name="date" class="form-control"  value="{{$Commandes->date}}"> </div>
          
          <div> <button class="btn btn-primary">Enregistrer</button> </div>
+         </Fieldset>
+         <br>
       </form>
 
    </div>

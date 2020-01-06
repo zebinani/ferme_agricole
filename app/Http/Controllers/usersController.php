@@ -83,6 +83,9 @@ class usersController extends Controller
     public function edit($id)
     {
         //
+        $Users = \App\User::find($id);//on recupere le produit
+    
+        return view('Admin.edit', compact('Users'));
     }
 
     /**
@@ -95,6 +98,19 @@ class usersController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $Users = \App\User::find($id);
+          if($Users){
+           $Users->update([
+           'name' => $request->input('name'),
+           'email' => $request->input('email'),
+           'password'=> $request->input('password'),
+           'role'=> $request->input('role')
+           
+       ]);
+      
+    }
+    return redirect('/');
+   
     }
 
     /**
@@ -106,5 +122,13 @@ class usersController extends Controller
     public function destroy($id)
     {
         //
+        $this->authorize('Admin');
+
+        $Users= \App\User::find($id);
+        //dd($Employs);
+        if($Users)
+
+        $Users->delete();
+        return redirect()->route('User.index');
     }
 }

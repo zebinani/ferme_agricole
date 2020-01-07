@@ -46,6 +46,7 @@
                     </div>
                     <br>
                     <div>
+                         <input type="reset" value="Effacer"><br> <br>
                         <button class="btn btn-primary">Enregistrer</button>
                     </div>
                     <br>

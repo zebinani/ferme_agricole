@@ -82,7 +82,7 @@ class CommandesController extends Controller
     {
         //
        $Commandes = \App\Command::find($id);
-        $Clients=\App\Client::pluck('num_client','id');
+       $Clients=\App\Client::pluck('num_client','id');
        
        return view('commandes.edit',compact('Commandes','Clients'));
     }
@@ -100,7 +100,7 @@ class CommandesController extends Controller
         //
             $Commandes =\App\Command::find($id);
             if($Commandes) $Commandes->update([
-            'client'=>$request->input('client'),
+            'client_id'=>$request->input('client_id'),
             'article'=>$request->input('article'),
             'reference'=>$request->input('reference'),
             'quantite'=>$request->input('quantite'),

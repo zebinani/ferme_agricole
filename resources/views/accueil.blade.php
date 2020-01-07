@@ -16,21 +16,21 @@
           <!-- Slide One - Set the background image for this slide in the line below -->
           <div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1545300329-e785e923ed45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80/1900x1080')">
             <div class="carousel-caption d-none d-md-block">
-              <h3>First Slide</h3>
+              <h2>FERME-AGRICOLE</h2>
               <p>This is a description for the first slide.</p>
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
           <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1486328228599-85db4443971f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80/1900x1080')">
             <div class="carousel-caption d-none d-md-block">
-              <h3>Second Slide</h3>
+            <h2>FERME-AGRICOLE</h2>
               <p>This is a description for the second slide.</p>
             </div>
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
           <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1505872342847-6dbb5e76cd31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80/1900x1080')">
             <div class="carousel-caption d-none d-md-block">
-              <h3>Third Slide</h3>
+            <h2>PRODUITS</h2>
               <p>This is a description for the third slide.</p>
             </div>
           </div>
@@ -62,7 +62,7 @@
               <p class="card-text">Notre groupement agricole a ete concu a l'origine pour permettre a l'excerce en commun de l'agriculture.</p>
             </div>
             <div class="card-footer">
-              <a href="/Employ" class="btn btn-primary">Learn More</a>
+              <a href="/accueil" class="btn btn-primary">suite</a>
             </div>
           </div>
         </div>
@@ -73,7 +73,7 @@
               <p class="card-text">Nous recrutons 150  saisonniers pour la recolte du mois de janviers .</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <a href="#" class="btn btn-primary">suite</a>
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@
               <p class="card-text">Nous informons a nos partenaire que nous disposons de produits avec des prix tres abordables .</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <a href="#" class="btn btn-primary">suite</a>
             </div>
           </div>
         </div>

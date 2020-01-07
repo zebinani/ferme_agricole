@@ -4,6 +4,7 @@
 <div class="container">
 <div class="row ">
 <div class="col-7">
+<br>
         
       <form action="{{route('command.edit',['id'=>$Commandes->id])}}" method="post" autocomplete="on">
          @csrf
@@ -11,7 +12,14 @@
          <Fieldset>
          <div>
          <div><label for="client">CLIENT</label></div>
-         <div><input type="text" name="client" class="form-control"  value="{{$Commandes->client}}"></div>
+         <select name="client_id" id="Clients" class="form-control" required autocomplete="Cient_id" >
+                        <option value=""></option>
+                        @foreach($Clients as $key => $value)
+                            <option value="{{$key}}">{{$value}}</option>
+                        @endforeach
+                    </select>
+                    
+        
           </div> 
           <div><label for="client">ARTICLE</label></div>
          <div><input type="text" name="article" class="form-control" value="{{$Commandes->article}}"> </div>

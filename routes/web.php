@@ -17,7 +17,7 @@ Route::get('/', function () {
      
 });
 
-Route::get('/accueil',"HomeController@index");
+Route::get('/accueil',"AccueilController@index");
 
 
 Auth::routes(); //la route pour authentification

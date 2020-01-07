@@ -27,6 +27,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
+      <li>
+      
+      </li>
         
           -->
           @guest
@@ -69,6 +72,7 @@
   </nav>
   <div id="container">  @yield("login_page")</div>
   <div id="container">  @yield("register_page")</div>
+  <div id="container">  @yield("sect_accueil")</div>
   
     <!-- /.container -->
   </footer>

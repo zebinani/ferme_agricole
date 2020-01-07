@@ -3,6 +3,9 @@
 
 <div class="container">
 <table class="table table-striped">
+<br>
+<div><h1>{{__('Liste Des Commandes')}}</h1></div>
+<br>
         <tr>
             <th>#</th>  <th>id</th>   <th>Num_client</th>  <th>ARTICLE</th>  <th>REFERENCE</th> <th>QUANTITE</th>    <th>DATE</th>  <th>Ajouter</th> <th>Modifier</th> <th>Supprimer</th>
         </tr>
@@ -19,7 +22,7 @@
                 <td>{{$commande->date ?? ''}}</td>
 
                 <th>
-     <a href="Command/create "><button type="button" class="btn btn-success">Success</button>
+     <a href="Command/create "><button type="button" class="btn btn-success">Ajouter</button>
 </a>
                 </th>
                 <th>  <p><a href="{{route('Command_update',['id'=>$commande->id])}}"><button type="button" class="btn btn-warning">Modifier</button></a>

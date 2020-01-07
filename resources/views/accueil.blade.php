@@ -102,9 +102,9 @@
           <a href="#"><img class="card-img-top" src="{{asset('images/9.jpg')}}" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project One</a>
+                <a href="#">Pepiniere</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+              <p class="card-text"> nos Pepinieres de</p>
             </div>
           </div>
         </div>

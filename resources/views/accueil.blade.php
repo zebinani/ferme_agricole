@@ -92,7 +92,7 @@
       <!-- /.row -->
 
       <!-- Portfolio Section -->
-      <h2>Nos champs</h2>
+      <h2>Nos Produits</h2>
       <div class="test1">
                             
 
@@ -102,9 +102,9 @@
           <a href="#"><img class="card-img-top" src="{{asset('images/9.jpg')}}" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Pepiniere</a>
+                <a href="#">NOS PRODUITS</a>
               </h4>
-              <p class="card-text"> nos Pepinieres de</p>
+              <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ut dolorem facilis tenetur. At, deserunt. Doloremque vel ut quaerat error! At impedit temporibus quibusdam, soluta in maxime maiores officia aut? </p>
             </div>
           </div>
         </div>

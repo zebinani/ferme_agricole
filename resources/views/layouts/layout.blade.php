@@ -16,7 +16,7 @@
 
 <body>
    
-  <header> <div class="row-12 fixed-top justify-content-center"> <h1 class=" text-center mt-2px">PLATE-FORME DE GESTION AGRICOLE</h1> </div></header>
+  <header> <div class="row-12  fixed-top justify-content-center"> <h1 class=" text-center mt-2px">PLATE-FORME DE GESTION AGRICOLE</h1> </div></header>
   <main>
 
   <!-- Navigation -->

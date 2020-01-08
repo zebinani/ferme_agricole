@@ -99,10 +99,10 @@
       <div class="row">
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="{{asset('images/9.jpg')}}" alt=""></a>
+          <a href="#"><img class="card-img-top" src="{{asset('images/fruits.jpg')}}" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">NOS PRODUITS</a>
+                <a href="#"> Fruits</a>
               </h4>
               <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ut dolorem facilis tenetur. At, deserunt. Doloremque vel ut quaerat error! At impedit temporibus quibusdam, soluta in maxime maiores officia aut? </p>
             </div>
@@ -113,7 +113,7 @@
             <a href="#"><img class="card-img-top" src="{{asset('images/champs.jpg')}}" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Two</a>
+                <a href="#">Legume</a>
               </h4>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
             </div>
@@ -189,10 +189,10 @@
       </div>
       
       <!-- /.row
--->
+
       <hr>
 
-      <!-- Call to Action Section -->
+      <!-- Call to Action Section 
       <div class="row mb-4">
         <div class="col-md-8">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
@@ -201,6 +201,7 @@
           <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
         </div>
       </div>
+      -->
 
     </div>
  @endsection

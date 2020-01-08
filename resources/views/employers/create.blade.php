@@ -22,10 +22,10 @@
                         <input type="text" name="prenom" class="form-control" placeholder="PRENOM">
                     </div>
                     <div>
-                        <div class="col-md-6">
+                        
                                 <input id="adresse" type="text" class="form-control " name="adresse" value="adresse" required autocomplete="email" autofocus placeholder="Adresse">
 
-                        </div>
+                        
                     </div>
                     <div>
                         <input type="text" name="telephone" class="form-control" placeholder="TELEPHONE">

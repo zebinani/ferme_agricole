@@ -1,0 +1,28 @@
+
+*** These modified files were found in JOE when it aborted on Tue Jan  7 17:33:40 2020
+*** JOE was aborted because the terminal closed
+
+*** Fichier '(Sans nom)'
+/var/www/ferme_agricole/.git/COMMIT_EDITMSG
+
+*** Fichier '/var/www/ferme_agricole/.git/COMMIT_EDITMSG'
+Correct error on heroku ajout seeder
+
+# Veuillez saisir le message de validation pour vos modifications. Les lignes
+# commençant[D par '#' seront ignorées, et un message vide abandonne la validation.
+#
+# Date :       Tue Jan 7 17:01:57 2020 +0100
+#
+# Sur la branche master
+# Votre branche est en avance sur 'origin/master' de 3 commits.
+#   (utilisez "git push" pour publier vos commits locaux)
+#
+# Modifications qui seront validées :
+#	modifié :         database/factories/UserFactory.php
+#	modifié :         database/seeds/DatabaseSeeder.php
+#	nouveau fichier : database/seeds/UsersTableSeeder.php
+#
+
+*** Fichier '* Startup Log *'
+Traitement de '/etc/joe/editorrc'...Traitement de '/etc/joe/ftyperc'...Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/editorrc

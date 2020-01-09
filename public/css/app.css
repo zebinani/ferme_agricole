@@ -123,6 +123,17 @@ address {
   font-style: normal;
   line-height: inherit;
 }
+.entete{
+  font-size: 1.5vw;
+  text-align: center;
+  line-height: inherit;
+  margin-bottom: 20px;
+  min-height: 48px;
+  padding: 15px;
+  color: white;
+  font-weight:bold;
+}
+
 
 ol,
 ul,
@@ -398,13 +409,13 @@ h6,
 .h6 {
   margin-bottom: 0.5rem;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 h1,
 .h1 {
   text-align: center;
-  font-size: 3.25rem;
+  font-size: 5vw;
   color: #11e00a;
   background-color: #1b4b72;
   margin-top: 5px;
@@ -935,6 +946,7 @@ pre code {
 .offset-11 {
   margin-left: 91.6666666667%;
 }
+
 
 @media (min-width: 576px) {
   .col-sm {
@@ -11141,3 +11153,9 @@ a.text-dark:focus {
   align-items: center;
   }
   
+  .header{
+    
+   
+  
+
+  }

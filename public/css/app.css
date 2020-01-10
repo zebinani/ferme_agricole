@@ -5020,7 +5020,7 @@ input[type=button].btn-block {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
-  margin-top: 189px;
+  margin-top: 18px;
   
 }
 
@@ -11196,6 +11196,10 @@ a.text-dark:focus {
        height: 700px;
      }
   }
+  .entete {
+    text-align: center;
+    line-height: 37vw;
+    color: white;
   
   
   #author a{

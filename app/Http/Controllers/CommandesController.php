@@ -18,7 +18,7 @@ class CommandesController extends Controller
         //
         $Commandes= \App\Command::orderBy('created_at','DESC')->get();
        
-        return view('commandes.index',compact('Commandes','client'));
+        return view('commandes.index',compact('Commandes'));
 
         
     }

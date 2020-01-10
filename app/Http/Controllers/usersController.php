@@ -19,7 +19,7 @@ class usersController extends Controller
         //
        $users=\App\User::all();
        
-       return view('Admin.index',compact('users','Roles'));
+       return view('Admin.index',compact('users'));
        
     }
 

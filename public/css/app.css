@@ -123,16 +123,7 @@ address {
   font-style: normal;
   line-height: inherit;
 }
-.entete{
-  font-size: 1.5vw;
-  text-align: center;
-  line-height: inherit;
-  margin-bottom: 20px;
-  min-height: 48px;
-  padding: 15px;
-  color: white;
-  font-weight:bold;
-}
+
 
 
 ol,
@@ -5029,6 +5020,8 @@ input[type=button].btn-block {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  margin-top: 189px;
+  
 }
 
 .card > hr {
@@ -5054,6 +5047,7 @@ input[type=button].btn-block {
 
 .card-title {
   margin-bottom: 0.75rem;
+  
 }
 
 .card-subtitle {
@@ -5078,6 +5072,7 @@ input[type=button].btn-block {
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  text-align: center;
 }
 
 .card-header:first-child {
@@ -11153,9 +11148,63 @@ a.text-dark:focus {
   align-items: center;
   }
   
-  .header{
+  #contatti{
+    background-color: #464b46fa;
+    letter-spacing: 2px;
+    }
+  #contatti a{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  @media (max-width: 575.98px) {
+  
+    #contatti{padding-bottom: 800px;}
+    #contatti .maps iframe{
+      width: 100%;
+      height: 450px;
+    }
+   }
+  
+  
+  @media (min-width: 576px) {
+  
+     #contatti{padding-bottom: 800px;}
+  
+     #contatti .maps iframe{
+       width: 100%;
+       height: 450px;
+     }
+   }
+  
+  @media (min-width: 768px) {
+  
+    #contatti{padding-bottom: 350px;}
+  
+    #contatti .maps iframe{
+      width: 100%;
+      height: 850px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    #contatti{padding-bottom: 200px;}
+  
+     #contatti .maps iframe{
+       width: 100%;
+       height: 700px;
+     }
+  }
+  
+  
+  #author a{
+    color: #fff;
+    text-decoration: none;
+      
+  }
     
    
   
 
-  }
+  

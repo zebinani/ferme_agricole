@@ -1,8 +1,9 @@
  @extends("layouts.layout")
 
 @section("sect_accueil")
-
-    <header>
+<div class="container">
+  <!-- Content here -->
+  <header>
 
     </ul>
 
@@ -45,163 +46,165 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-    </header>
-<hr>
-
-    <!-- Page Content -->
-    <div class="container mt-60px h-100px">
+</header>
+<div class="container mt-60px h-100px">
 
      
 
-      <!-- Marketing Icons Section -->
-      <div class="row ">
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100">
-            <h4 class="card-header">A PROPOS</h4>
-            <div class="card-body">
-              <p class="card-text">Notre groupement agricole a ete concu a l'origine pour permettre a l'excerce en commun de l'agriculture.</p>
-            </div>
-            <div class="card-footer">
-              <a href="/accueil" class="btn btn-primary">suite</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100">
-            <h4 class="card-header">A LA UNE</h4>
-            <div class="card-body">
-              <p class="card-text">Nous recrutons 150  saisonniers pour la recolte du mois de janviers .</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">suite</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100">
-            <h4 class="card-header">COMMUNIQUE</h4>
-            <div class="card-body">
-              <p class="card-text">Nous informons a nos partenaire que nous disposons de produits avec des prix tres abordables .</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">suite</a>
-            </div>
-          </div>
-        </div>
+<!-- Marketing Icons Section -->
+<div class="row ">
+  <div class="col-lg-4 mb-4">
+    <div class="card h-100">
+      <h4 class="card-header">A PROPOS</h4>
+      <div class="card-body">
+        <p class="card-text">Notre groupement agricole a ete concu a l'origine pour permettre a l'excerce en commun de l'agriculture.</p>
       </div>
-      <!-- /.row -->
-
-      <!-- Portfolio Section -->
-      <h2>Nos Produits</h2>
-      <div class="test1">
-                            
-
-      <div class="row">
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="{{asset('images/fruits.jpg')}}" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#"> Fruits</a>
-              </h4>
-              <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ut dolorem facilis tenetur. At, deserunt. Doloremque vel ut quaerat error! At impedit temporibus quibusdam, soluta in maxime maiores officia aut? </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="{{asset('images/champs.jpg')}}" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Legume</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="{{asset('images/3.jpg')}}" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Three</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="{{asset('images/10.jpg')}}" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Four</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="{{asset('images/1.jpg')}}" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Five</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="{{asset('images/champs.jpg')}}" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Six</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
-            </div>
-          </div>
-        </div>
+      <div class="card-footer">
+        <a href="/accueil" class="btn btn-primary">suite</a>
       </div>
-      <!-- /.row -->
-
-      <!-- Features Section -->
-      <!--
-      <div class="row">
-        <div class="col-lg-6">
-          <h2>Modern Business Features</h2>
-          <p>The Modern Business template by Start Bootstrap includes:</p>
-          <ul>
-            <li>
-              <strong>Bootstrap v4</strong>
-            </li>
-            <li>jQuery</li>
-            <li>Font Awesome</li>
-            <li>Working contact form with validation</li>
-            <li>Unstyled page elements for easy customization</li>
-          </ul>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
-        </div>
-        <div class="col-lg-6">
-          <img class="img-fluid rounded" src="{{asset('images/champs.jpg')}}" alt="sellou">
-        </div>
-      </div>
-      
-      <!-- /.row
-
-      <hr>
-
-      <!-- Call to Action Section 
-      <div class="row mb-4">
-        <div class="col-md-8">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
-        </div>
-        <div class="col-md-4">
-          <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
-        </div>
-      </div>
-      -->
-
     </div>
- @endsection
+  </div>
+  <div class="col-lg-4 mb-4">
+    <div class="card h-100">
+      <h4 class="card-header">A LA UNE</h4>
+      <div class="card-body">
+        <p class="card-text">Nous recrutons 150  saisonniers pour la recolte du mois de janviers .</p>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="btn btn-primary">suite</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 mb-4">
+    <div class="card h-100">
+      <h4 class="card-header">COMMUNIQUE</h4>
+      <div class="card-body">
+        <p class="card-text">Nous informons a nos partenaire que nous disposons des produits agricole de tres bonne qualite  avec des prix tres abordables .</p>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="btn btn-primary">suite</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.row  <div class="test1">-->
+
+<!-- Portfolio Section -->
+<h2>Nos Produits</h2>
+
+     <!-- /.row  <div class="test1">-->                 
+
+<div class="row">
+  <div class="col-lg-4 col-sm-6 portfolio-item">
+    <div class="card h-100">
+    <a href="#"><img class="card-img-top" src="{{asset('images/fruits.jpg')}}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="#"> Fruits</a>
+        </h4>
+        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ut dolorem facilis tenetur. At, deserunt. Doloremque vel ut quaerat error! At impedit temporibus quibusdam, soluta in maxime maiores officia aut? </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-sm-6 portfolio-item">
+    <div class="card h-100">
+      <a href="#"><img class="card-img-top" src="{{asset('images/champs.jpg')}}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="#">Legume</a>
+        </h4>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-sm-6 portfolio-item">
+    <div class="card h-100">
+      <a href="#"><img class="card-img-top" src="{{asset('images/tomate.jpg')}}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="#">Project Three</a>
+        </h4>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-sm-6 portfolio-item">
+    <div class="card h-100">
+      <a href="#"><img class="card-img-top" src="{{asset('images/10.jpg')}}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="#">Project Four</a>
+        </h4>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-sm-6 portfolio-item">
+    <div class="card h-100">
+      <a href="#"><img class="card-img-top" src="{{asset('images/1.jpg')}}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="#">Project Five</a>
+        </h4>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-sm-6 portfolio-item">
+    <div class="card h-100">
+      <a href="#"><img class="card-img-top" src="{{asset('images/champs.jpg')}}" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="#">Project Six</a>
+        </h4>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- /.row -->
+
+<!-- Features Section -->
+<!--
+<div class="row">
+  <div class="col-lg-6">
+    <h2>Modern Business Features</h2>
+    <p>The Modern Business template by Start Bootstrap includes:</p>
+    <ul>
+      <li>
+        <strong>Bootstrap v4</strong>
+      </li>
+      <li>jQuery</li>
+      <li>Font Awesome</li>
+      <li>Working contact form with validation</li>
+      <li>Unstyled page elements for easy customization</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+  </div>
+  <div class="col-lg-6">
+    <img class="img-fluid rounded" src="{{asset('images/champs.jpg')}}" alt="sellou">
+  </div>
+</div>
+
+<!-- /.row
+
+<hr>
+
+<!-- Call to Action Section 
+<div class="row mb-4">
+  <div class="col-md-8">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+  </div>
+  <div class="col-md-4">
+    <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
+  </div>
+   -->
+</div>
+
+
+</div>
+
+</div>
+
+@endsection

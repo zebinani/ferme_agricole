@@ -15,7 +15,16 @@
 </head>
 
 <body>
-<header> <div class="row-12 fixed-top justify-content-center"> <h1 class=" text-center mt-2px">PLATE-FORME DE GESTION AGRICOLE</h1> </div></header>
+<div class="container">
+<div class="container">
+  <div class="row  fixed-top text-align-center">
+    <div class="col-sm-12 bg-success">
+      <div class="entete"><h5> PLATE-FORME DE GESTION DE FERME AGRICOLE.</h5> </div>
+ 
+    </div>
+  </div>
+</div>
+</header>
 
   <!-- Navigation -->
   <!-- <div id='titre'><h1>PLATE-FORME DE GESTION DE FERME</h1></div>-->

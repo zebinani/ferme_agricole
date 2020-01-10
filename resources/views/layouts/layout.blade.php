@@ -27,7 +27,7 @@
 <div class="container">
   <div class="row  fixed-top text-align-center">
     <div class="col-sm-12 bg-success">
-      <div class="entete"> PLATE-FORME DE GESTION DE FERME AGRICOLE. </div>
+      <div class="entete"><h5> PLATE-FORME DE GESTION DE FERME AGRICOLE.</h5> </div>
  
     </div>
   </div>
@@ -43,6 +43,8 @@
  
     <div class="container">
       <a class="navbar-brand" href="/accueil">Accueil</a>
+      <a class="navbar-brand" href="/Contact">Contact</a>
+      <a class="navbar-brand" href="/accueil">blog</a>
       
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -174,6 +176,11 @@
               </div> 
               <div id="container">
                 
+              @yield("sect_contact")
+
+              </div> 
+              <div id="container">
+                
               @yield("EMP_section")
 
               </div> 
@@ -247,7 +254,7 @@
 
  <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; TOUS LES DROITS SONT RESERVES BINANITECH</p>
+      <p class="m-0 text-center   text-white">Copyright &copy; TOUS LES DROITS SONT RESERVES BINANITECH</p>
     </div>
     <!-- /.container -->
   </footer>

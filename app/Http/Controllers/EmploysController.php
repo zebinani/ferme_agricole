@@ -18,7 +18,7 @@ class EmploysController extends Controller
     {
         $employs = \App\Employ::orderBy('created_at', 'DESC')->get();
 
-        return view('employers.index', compact('employs','department'));
+        return view('employers.index', compact('employs','departments'));
     }
 
     /**

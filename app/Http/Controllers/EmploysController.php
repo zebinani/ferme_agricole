@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Employ;
-
+use App\Department;
 
 class EmploysController extends Controller
 {
@@ -18,7 +18,7 @@ class EmploysController extends Controller
     {
         $employs = \App\Employ::orderBy('created_at', 'DESC')->get();
 
-        return view('employers.index', compact('employs','departments'));
+        return view('employers.index', compact('employs'));
     }
 
     /**

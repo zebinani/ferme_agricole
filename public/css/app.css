@@ -11196,18 +11196,16 @@ a.text-dark:focus {
        height: 700px;
      }
   }
-  .entete {
-    text-align: center;
-    line-height: 37vw;
-    color: white;
-  
   
   #author a{
     color: #fff;
     text-decoration: none;
       
   }
-    
+  .entete {
+    text-align: center;
+    line-height: 7vw;
+    color: white;
    
   
 

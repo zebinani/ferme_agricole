@@ -2,7 +2,7 @@
 @section("EMP_section")
  
  <div class="row justify-content-center ">
- <div class="col-8 "><h1>LISTE DES EMPLOYERS</h1></div>
+ <div class="col-8 "><h3>LISTE DES EMPLOYES</h3></div>
  <div class="container  justify-content-center ">
  @if(session('success'))
                     <div class="alert alert-success">{{session('success')}}</div>

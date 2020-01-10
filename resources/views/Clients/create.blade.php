@@ -4,7 +4,7 @@
 <div class="row">
 <div class="col-10">
     <br>
-            <div><h1>{{__('Enregistrement d\'un client')}}</h1></div>
+            <div><h3>{{__('Enregistrement d\'un client')}}</h3></div>
 
                 <form action="{{route('Client.store')}}" method="post">
                     @csrf

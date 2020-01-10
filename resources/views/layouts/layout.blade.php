@@ -161,6 +161,8 @@
         <div id="container"> @yield("edit_parcel ") </div> 
         <div id="container"> @yield("index_parcel ") </div>
 
+        <div id="container"> @yield("listecontact") </div>
+
          
 
                <div id="container">@yield("create_employ") </div> 

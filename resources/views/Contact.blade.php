@@ -15,7 +15,7 @@
       </div>
       <div class="col-md-6">
         <h2 class="text-uppercase mt-3 font-weight-bold text-white">CONTACT</h2>
-        <form action="">
+        <form action="listecontact" method="post">
           <div class="row">
             <div class="col-lg-6">
               <div class="form-group">

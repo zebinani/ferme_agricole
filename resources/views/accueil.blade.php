@@ -33,6 +33,7 @@
       </div>
       <!-- Slide Three - Set the background image for this slide in the line below -->
       <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1505872342847-6dbb5e76cd31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80/1900x1080')">
+      
         <div class="carousel-caption d-none d-md-block">
         <h2>PRODUITS</h2>
           <p>This is a description for the third slide.</p>
@@ -93,12 +94,12 @@
 <div class="row">
   <div class="col-lg-4 col-sm-6 portfolio-item">
     <div class="card h-100">
-    <a href="#"><img class="card-img-top" src="{{asset('images/fruits.jpg')}}" alt=""></a>
+    <a href="#"><img class="card-img-top" src="{{asset('images/fruit1.jpeg')}}" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
           <a href="#"> Fruits</a>
         </h4>
-        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ut dolorem facilis tenetur. At, deserunt. Doloremque vel ut quaerat error! At impedit temporibus quibusdam, soluta in maxime maiores officia aut? </p>
+        <p class="card-text">la fraicheur le gout et la qualite d'une agriculture raisonnee </p>
       </div>
     </div>
   </div>

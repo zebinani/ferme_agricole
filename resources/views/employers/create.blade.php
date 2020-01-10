@@ -5,7 +5,7 @@
         <div class="container">
 
        
-            <div><h1>{{__('Enregistrement d\'un employer')}}</h1></div>
+            <div><h3>{{__('Enregistrement d\'un employer')}}</h3></div>
                 <form action="{{route('Employ.store')}}" method="post">
                     @csrf
    

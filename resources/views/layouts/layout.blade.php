@@ -27,7 +27,7 @@
 <div class="container">
   <div class="row  fixed-top text-align-center">
     <div class="col-sm-12 bg-success">
-      <div class="entete"><p> PLATE-FORME DE GESTION DE FERME AGRICOLE.</p> </div>
+      <div class="entete"><p><strong>  PLATE-FORME DE GESTION DE FERME AGRICOLE </strong> </p> </div>
  
     </div>
   </div>

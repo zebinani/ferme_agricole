@@ -11204,8 +11204,10 @@ a.text-dark:focus {
   }
   .entete {
     text-align: center;
-    line-height: 7vw;
+    line-height: 4vw;
     color: white;
+    height: 58px;
+    font-weight: bold;
    
   
 

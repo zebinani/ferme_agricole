@@ -2,6 +2,7 @@
 @section('sect_contact')
 
 <div class="container">
+<br>
   <div class="row">
     <div class="col-12 sm-6 ">
    
@@ -19,35 +20,35 @@
           <div class="row">
             <div class="col-lg-6">
               <div class="form-group">
-                <input type="text" class="form-control mt-2" placeholder="NOM" required>
+                <input type="text" class="form-control mt-2"  name="name" placeholder="NOM" required>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="form-group">
-                <input type="text" class="form-control mt-2" placeholder="PRENOM" required>
+                <input type="text" class="form-control mt-2" name="prenom" placeholder="PRENOM" required>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="form-group">
-                <input type="email" class="form-control mt-2" placeholder="Email" required>
+                <input type="email" class="form-control mt-2" name="email" placeholder="Email" required>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="form-group">
-                <input type="number" class="form-control mt-2" placeholder="TELEPHONE" required>
+                <input type="number" class="form-control mt-2" name="number" placeholder="TELEPHONE" required>
               </div>
             </div>
             <div class="col-12">
               <div class="form-group">
-                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Description" rows="6" required></textarea>
+                <textarea class="form-control" name="description" id="exampleFormControlTextarea1" placeholder="Description" rows="6" required></textarea>
               </div>
             </div>
             <div class="col-12">
             <div class="form-group">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                <label class="form-check-label" for="invalidCheck2">
-                  Accetta le condizioni
+                <label class="form-check-label text-white" for="invalidCheck2">
+                  Valider
                 </label>
               </div>
             </div>

@@ -10,11 +10,11 @@
                    <div>
                        
                     <input type="text" name="name" class="form-control" 
-                        placeholder="Department">
+                    required placeholder="Department">
                     </div>
                 
                     <input type="text" name="effective" class="form-control" 
-                        placeholder="effective">
+                    required placeholder="effective">
                     </div>
                     
                     <div>

@@ -3,7 +3,7 @@
 <br>
 <div class="container">
 <div class="row justify-content-center ">
-<div class="col-8  "><h1>Liste des contacts</h1></div>
+<div class="col-8 sm lg  "><h1>Liste des contacts</h1></div>
  <div class="col-10 align-items-center">
  <table class="table table-striped">
        <tr class=" bg-success">

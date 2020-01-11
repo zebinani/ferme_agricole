@@ -1,6 +1,7 @@
 @extends("layouts.layout")
 @section('parcel_index')
-<table class="table table-bodered">
+
+<table class="table table-bordered">
        <tr>
         <th>#</th> <th>id</th>    <th>RENTABILITE</th> <th>CATEGORIE</th><th>TYPE DE SOL</th>  <th>Test</th>
        </tr>
@@ -8,15 +9,11 @@
         <tr>
                <th>#</th>
                
-               <th>{{$parcel->id ?? ''}}</th>
-               <th>{{$parcel->rentabilite ?? ''}}</th>
-               <th>{{$parcel->categorie ?? ''}}</th>
-               <th>{{$parcel->type_de_sol ?? ''}}</th>
+               <td>{{$parcel->id ?? ''}}</td>
+               <td>{{$parcel->rentabilite ?? ''}}</td>
+               <td>{{$parcel->categorie ?? ''}}</td>
+               <td>{{$parcel->type_de_sol ?? ''}}</td>
               
-               <th>#</th>
-
-
-
                <td> <a href="Parcel/create">
                 <button type="button" class="btn btn-success">
                 Ajouter </button></a>

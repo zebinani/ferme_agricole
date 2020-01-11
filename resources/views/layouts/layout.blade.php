@@ -51,7 +51,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-       
+        <a class="navbar-brand" href="/Command/create"><button type="button" class="btn btn-outline-success">Commandes</button> </a>
+        <a class="navbar-brand" href="/Client/create"><button type="button" class="btn btn-outline-success">Client</button> </a>
       
         
        

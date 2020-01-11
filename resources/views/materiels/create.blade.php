@@ -10,19 +10,19 @@
                 <form action="{{route('Employ.store')}}" method="post">
                     @csrf
                     <div>
-                        <input type="text" name="matricule" class="form-control" placeholder="MATRICULE">
+                        <input type="text" name="matricule" class="form-control"  required placeholder="MATRICULE">
                     </div>
                     <div>
-                        <input type="text" name="nom" class="form-control" placeholder="NOM">
+                        <input type="text" name="nom" class="form-control"required placeholder="NOM">
                     </div>
                     <div>
-                        <input type="text" name="prenom" class="form-control" placeholder="PRENOM">
+                        <input type="text" name="prenom" class="form-control"required placeholder="PRENOM">
                     </div>
                     <div>
-                        <input type="text" name="adresse" class="form-control" placeholder="ADRESSE">
+                        <input type="text" name="adresse" class="form-control"required placeholder="ADRESSE">
                     </div>
                     <div>
-                        <input type="text" name="telephone" class="form-control" placeholder="TELEPHONE">
+                        <input type="text" name="telephone" class="form-control"required placeholder="TELEPHONE">
                     </div>
              
                     <div>

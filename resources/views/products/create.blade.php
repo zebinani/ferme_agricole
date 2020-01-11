@@ -10,15 +10,15 @@
  <form action="{{route('Product.store')}}" method="post">
                @csrf
                <div>
-                   <input type="text" name="name" class="form-control" placeholder="le nom du produit">
+                   <input type="text" name="name" class="form-control"required placeholder="le nom du produit">
                </div>
                <br>
                <div>
-                   <input type="text" name="price" class="form-control" placeholder="Le prix du produit">
+                   <input type="text" name="price" class="form-control"required placeholder="Le prix du produit">
                </div>
                <br>
                <div>
-                   <input type="text" name="quantity" class="form-control" placeholder="Le quantite du produit">
+                   <input type="text" name="quantity" class="form-control"required placeholder="Le quantite du produit">
                </div>
   <br>
                <div>

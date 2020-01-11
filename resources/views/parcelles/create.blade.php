@@ -5,13 +5,13 @@
                     <form action="{{route('Parcel.store')}}" method="post">
                         @csrf
                         <div>
-                            <input type="text" name="rentabilite" class="form-control" placeholder="RENTABILITE">
+                            <input type="text" name="rentabilite" class="form-control"required placeholder="RENTABILITE">
                         </div>
                         <div>
-                       <input type="text" name="categorie" class="form-control" placeholder="CATEGORIE">
+                       <input type="text" name="categorie" class="form-control"required placeholder="CATEGORIE">
                         </div>
                         <div>
-                            <input type="text" name="type_de_sol" class="form-control" placeholder="TYPE DE SOL">
+                            <input type="text" name="type_de_sol" class="form-control"required placeholder="TYPE DE SOL">
                         </div>
                         
                         

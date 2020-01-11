@@ -14,15 +14,15 @@
         @csrf
         @method('patch')
         <div>
-        <input type="text" name="name" class="form-control" placeholder="le nom du produit" value="{{$product->name ?? ''}}">
+        <input type="text" name="name" class="form-control" required placeholder="le nom du produit" value="{{$product->name ?? ''}}">
         </div>
         <br>
         <div>
-        <input type="text" name="price" class="form-control" placeholder="Le prix du produit" value="{{$product->price ?? ''}}">
+        <input type="text" name="price" class="form-control"required placeholder="Le prix du produit" value="{{$product->price ?? ''}}">
          </div>
         <br>
         <div>
-        <input type="text" name="quantity" class="form-control" placeholder="quantite du produit"
+        <input type="text" name="quantity" class="form-control"required placeholder="quantite du produit"
         value="{{$product->quantity ?? ''}}">
             </div>
         <br>

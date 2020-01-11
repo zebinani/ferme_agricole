@@ -415,6 +415,9 @@ h1,
 h2,
 .h2 {
   font-size: 1.8rem;
+  text-align: center;
+  color: rgb(28, 13, 161);
+  
 }
 
 h3,
@@ -11213,11 +11216,8 @@ a.text-dark:focus {
     margin-top: 10px;
     font-family: initial
   }
-  .ze {
-
-    background-color: #1cbd16;
-    color:rgb(7, 7, 7);
-  }
+ 
+  
    
   
 

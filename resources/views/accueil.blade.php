@@ -21,14 +21,14 @@
       <div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1545300329-e785e923ed45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80/1900x1080')">
         <div class="carousel-caption d-none d-md-block">
           <h1>FERME-AGRICOLE</h1>
-          <p>This is a description for the first slide.</p>
+          <p>Nos champs de prduction de fruit</p>
         </div>
       </div>
       <!-- Slide Two - Set the background image for this slide in the line below -->
       <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1486328228599-85db4443971f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80/1900x1080')">
         <div class="carousel-caption d-none d-md-block">
         <h1>FERME-AGRICOLE</h1>
-          <p>This is a description for the second slide.</p>
+          <p>Nos champs de prduction de legume </p>
         </div>
       </div>
       <!-- Slide Three - Set the background image for this slide in the line below -->
@@ -36,7 +36,7 @@
       
         <div class="carousel-caption d-none d-md-block">
         <h1>PRODUITS</h1>
-          <p>This is a description for the third slide.</p>
+          <p>Nos produits delicieux.</p>
         </div>
       </div>
     </div>

@@ -19,9 +19,9 @@ Route::get('/', function () {
 
 Route::get('/accueil',"AccueilController@index");
 
-Route::get('/Contact',"ContactController@index");
 
-Route::resource('/listecontact',"ContactlistController");
+
+Route::resource('/Contact',"ContactlistController");
 
 
 Auth::routes(); //la route pour authentification

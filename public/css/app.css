@@ -11212,6 +11212,12 @@ a.text-dark:focus {
     font-weight: bold;
     margin-top: 10px;
     font-family: initial
+  }
+  .ze {
+
+    background-color: #1cbd16;
+    color:rgb(7, 7, 7);
+  }
    
   
 

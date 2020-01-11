@@ -43,7 +43,7 @@
  
     <div class="container">
       <a class="navbar-brand" href="/accueil">Accueil</a>
-      <a class="navbar-brand" href="/Contact">Contact</a>
+      <a class="navbar-brand" href="/Contact/create">Contact</a>
       <a class="navbar-brand" href="/accueil">blog</a>
       
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,6 +75,7 @@
               <a class="dropdown-item" href="/Parcel">Parcelles</a>
               <a class="dropdown-item" href="/Client">Clients</a>
               <a class="dropdown-item" href="/User">Utilisateur</a>
+              <a class="dropdown-item" href="/Contact">contacts</a>
              
             </div>
          
@@ -255,7 +256,8 @@
 </main>
 
  <footer class="py-5 bg-dark">
-    <div class="container">
+    <div class="container ">
+    <div class="row-12 ">
       <p class="m-0 text-center   text-white">Copyright 2020 &copy; TOUS LES DROITS SONT RESERVES BINANITECH</p>
     </div>
     <!-- /.container -->

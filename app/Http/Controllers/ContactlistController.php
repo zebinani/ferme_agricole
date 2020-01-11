@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Contact ;
 
 class ContactlistController extends Controller
 {
@@ -14,7 +15,10 @@ class ContactlistController extends Controller
     public function index()
     {
         //
-        return view ('listecontact');
+
+        $Contacts= \App\Contact::orderBy('created_at','DESC')->get();
+       
+        return view('contact.index',compact('Contacts'));
     }
 
     /**
@@ -25,7 +29,7 @@ class ContactlistController extends Controller
     public function create()
     {
         //
-        $conctact=App\Contact
+       return view('contact.create');
     }
 
     /**
@@ -37,6 +41,18 @@ class ContactlistController extends Controller
     public function store(Request $request)
     {
         //
+        $Contacts= new Contact();
+
+        $Contacts->id =$request->input('id');
+        $Contacts->name =$request->input('name');
+        $Contacts->prenom=$request->input('prenom');
+        $Contacts->email=$request->input('email');
+        $Contacts->number=$request->input('number');
+        $Contacts->description=$request->input('description');
+        
+
+        $Contacts->save();
+         return redirect('/');
     }
 
     /**

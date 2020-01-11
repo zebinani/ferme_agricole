@@ -26,7 +26,7 @@ class DepartmentController extends Controller
     public function create()
     {
         //
-        dd('hdhdhdhhdh')
+       
         return view('departments.create');
     }
 

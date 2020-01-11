@@ -20,14 +20,14 @@
       <!-- Slide One - Set the background image for this slide in the line below -->
       <div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1545300329-e785e923ed45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80/1900x1080')">
         <div class="carousel-caption d-none d-md-block">
-          <h2>FERME-AGRICOLE</h2>
+          <h1>FERME-AGRICOLE</h1>
           <p>This is a description for the first slide.</p>
         </div>
       </div>
       <!-- Slide Two - Set the background image for this slide in the line below -->
       <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1486328228599-85db4443971f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80/1900x1080')">
         <div class="carousel-caption d-none d-md-block">
-        <h2>FERME-AGRICOLE</h2>
+        <h1>FERME-AGRICOLE</h1>
           <p>This is a description for the second slide.</p>
         </div>
       </div>
@@ -35,7 +35,7 @@
       <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1505872342847-6dbb5e76cd31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80/1900x1080')">
       
         <div class="carousel-caption d-none d-md-block">
-        <h2>PRODUITS</h2>
+        <h1>PRODUITS</h1>
           <p>This is a description for the third slide.</p>
         </div>
       </div>

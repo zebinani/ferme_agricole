@@ -406,9 +406,9 @@ h6,
 h1,
 .h1 {
   text-align: center;
-  font-size: 5vw;
-  color: #11e00a;
-  background-color: #1b4b72;
+  font-size: 7vw;
+  color: #eaeaee;
+  
   margin-top: 5px;
 }
 
@@ -7163,7 +7163,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  background-color: #0e0f0f !important;
 }
 
 a.bg-dark:hover,
@@ -11203,11 +11203,15 @@ a.text-dark:focus {
       
   }
   .entete {
+    background-color: white;
     text-align: center;
-    line-height: 4vw;
-    color: white;
-    height: 58px;
+    line-height: 100%;
+    color: #38c172;
+    height: 46px;
+    font-size: 22px;
     font-weight: bold;
+    margin-top: 10px;
+    font-family: initial
    
   
 

@@ -1,5 +1,5 @@
-
-
+@extends('layouts.layout')
+@section('Prod_creation')
 <div class="container">
        <div><h1>{{__('Enregistrement d\'une production')}}</h1></div>
        <div class="container">
@@ -22,3 +22,4 @@
            </form>
 
  </div>
+@endsection 

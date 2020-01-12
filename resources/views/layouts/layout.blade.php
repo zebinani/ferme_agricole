@@ -57,12 +57,13 @@
         
        
   @can('Admin')
-  <a class="navbar-brand" href="/User"><button type="button" class="btn btn-outline-success">Utilisateurs</button> </a>
+  <!--
+        <a class="navbar-brand" href="/User"><button type="button" class="btn btn-outline-success">Utilisateurs</button> </a>
         <a class="navbar-brand" href="/Product"> <button type="button" class="btn btn-outline-success">Produits</button> </a>
         <a class="navbar-brand" href="/Employ"><button type="button" class="btn btn-outline-success">Employers</button> </a>
         <a class="navbar-brand" href="/Client"><button type="button" class="btn btn-outline-success">Clients</button> </a>
         <a class="navbar-brand" href="/Command"><button type="button" class="btn btn-outline-success">Commandes</button> </a>
-        
+        -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Menu
@@ -70,6 +71,7 @@
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
               <a class="dropdown-item" href="/Employ">Personnels</a>
               <a class="dropdown-item" href="/Product">Produits</a>
+              <a class="dropdown-item" href="/Production">Production</a>
               <a class="dropdown-item" href="/Materiel">Materiels</a>
               <a class="dropdown-item" href="/Command">Commandes</a>
               <a class="dropdown-item" href="/Ventes">Ventes</a>
@@ -247,6 +249,9 @@
 
 
                <div id="container">  @yield("Admin.edit")</div>
+
+               <div id="container">  @yield("Prod_creation")</div>
+               <div id="container">  @yield("Prod_index")</div>
              
 
                
@@ -256,7 +261,7 @@
 
 </main>
 
- <footer class="py-5 bg-dark">
+ <footer class="py-2 bg-dark fixed-bottom">
     <div class="container ">
     <div class="row-12 ">
       <p class="m-0 text-center   text-white">Copyright 2020 &copy; TOUS LES DROITS SONT RESERVES BINANITECH</p>

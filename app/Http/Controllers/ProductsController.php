@@ -44,6 +44,7 @@ class ProductsController extends Controller
         $product->name = $request->input('name');
         $product->price = $request->input('price');
         $product->quantity = $request->input('quantity');
+        
         $product->save();
 
         return redirect('/');

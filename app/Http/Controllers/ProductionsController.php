@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Production;
 
 
 
@@ -45,7 +45,6 @@ class ProductionsController extends Controller
     {
         //
         $Productions = new Production();
-
         $Productions->type = $request->input('type');
         $Productions->periode= $request->input('periode');
         $Productions->destination = $request->input('destination');

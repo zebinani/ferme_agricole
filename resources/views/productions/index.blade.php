@@ -1,5 +1,5 @@
-
-
+@extends('layouts.layout')
+@section('Prod_index')
 <table class="table table-striped">
        <tr>
         <th>#</th> <th>id</th>    <th>TYPE</th> <th>PERIODE</th><th>DESTINATION</th>     
@@ -18,5 +18,5 @@
        @endforeach
        
    </table>
-  
+ @endsection 
    

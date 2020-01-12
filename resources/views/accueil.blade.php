@@ -1,9 +1,6 @@
  @extends("layouts.layout")
 
 @section("sect_accueil")
-
-
-
 <div class="row-10 ">
     <div class="col">
     <header>

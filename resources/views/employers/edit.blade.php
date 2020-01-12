@@ -8,10 +8,10 @@
          @method('patch')
          <strong></strong>
          <div>
-         <div><label for="text">NOM ENMPLOY</label></div>
+         
          <input type="text" name="matricule" class="form-control"   placeholder="le nom du produit" value="{{$Employs->matricule}}"></div>
 
-         <div><div><label for="text">  <strong>NOM ENMPLOY</strong></label></div>
+         <div>
          <input type="text" name="nom" class="form-control" placeholder="nom" value="{{$Employs->nom}}"> </div>
 
          <div><input type="text" name="prenom" class="form-control" placeholder="prenom" value="{{$Employs->prenom}}"> </div>
@@ -20,11 +20,11 @@
 
          <div><input type="text" name="telephone" class="form-control" placeholder="Telephone" value="{{$Employs->telephone}}"> </div>
         
-      <div>
+      <div> 
                     <select name="Department_id" id="Department" class="form-control">
                         <option value=""></option>
                         @foreach($Departments as $key => $value)
-                            <option value="{{$key}}">{{$value}}</option>
+                            <option value="{{$key}}">{{$value }}</option>
                         @endforeach
                     </select>
                     

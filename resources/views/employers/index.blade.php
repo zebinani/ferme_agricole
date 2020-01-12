@@ -11,8 +11,8 @@
  
     <table class="table table-bodered">
     <thead>
-        <tr>
-            <th>#</th> <th>ID</th>    <th>MATRICULE</th> <th>NOM</th><th>PRENOM</th> <th>ADRESSE</th>    <th>TELEPHONE</th>  <th>Departement</th> <th>Ajouter</th> <th>modification</th> 
+    <tr class=" bg-success">
+            <th>#</th> <th>ID</th>    <th>MATRICULE</th> <th>NOM</th><th>PRENOM</th> <th>ADRESSE</th>    <th>TELEPHONE</th>  <th>Departement</th> <th>Ajouter</th> <th>Modifier</th> <th>Supprimer</th>
             
         </tr>
         </thead>
@@ -29,10 +29,11 @@
                 <td>{{$employ->department->name ?? ''}}</td>
        
 
-            <td> <a href="Employ/create">
+            <td>
+             <a href="Employ/create">
                 <button type="button" class="btn btn-success">
                 Ajouter </button></a>
-                
+
                 </td>
                 
                 <td> 

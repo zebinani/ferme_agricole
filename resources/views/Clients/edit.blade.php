@@ -2,6 +2,7 @@
 
 @section('client_edit')
 
+<br>
 <div class="container">
 
       <form action="{{route('Client.edit',['id'=>$client->id])}}" method="post">
@@ -16,7 +17,7 @@
 
          <div><input type="text" name="adresse" class="form-control" placeholder="Adresse" value="{{$client->adresse}}"> </div>
 
-         <div><input type="date" name="telephone" class="form-control" placeholder="Telephone" value="{{$client->telephone}}"> </div>
+         <div><input type="telephone" name="telephone" class="form-control" placeholder="Telephone" value="{{$client->telephone}}"> </div>
 
          
  

@@ -8,7 +8,7 @@
 <br>
 <div><h1>{{__('Liste des produits')}}</h1></div>
 <br>
-       <tr>
+<tr class=" bg-success">
            <th>#</th>          <th>Nom Produit</th>  <th>Prix Produit</th>    <th>Quantite</th>        <th>Action</th>
        </tr>
        

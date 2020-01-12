@@ -51,9 +51,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-        <a class="navbar-brand" href="/Command/create"><button type="button" class="btn btn-outline-success">Commandes</button> </a>
+       
         <a class="navbar-brand" href="/Client/create"><button type="button" class="btn btn-outline-success">Client</button> </a>
-      
+       
         
        
   @can('Admin')
@@ -64,10 +64,12 @@
         <a class="navbar-brand" href="/Client"><button type="button" class="btn btn-outline-success">Clients</button> </a>
         <a class="navbar-brand" href="/Command"><button type="button" class="btn btn-outline-success">Commandes</button> </a>
         -->
+       
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Menu
             </a>
+           
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
               <a class="dropdown-item" href="/Employ">Personnels</a>
               <a class="dropdown-item" href="/Product">Produits</a>

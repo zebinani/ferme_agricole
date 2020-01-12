@@ -1,17 +1,14 @@
 @extends("layouts.layout")
 @section("Employ_create")
-
+<!--
             
         <div class="container">
 
        
-            <div><h3>{{__('Enregistrement d\'un employer')}}</h3></div>
+            <div><h1>{{__('Enregistrement d\'un employer')}}</h1></div>
                 <form action="{{route('Employ.store')}}" method="post">
                     @csrf
-   
-               
-
-                          
+        
                     <div>
                         <input type="text" name="matricule" class="form-control"required autocomplete="email"  placeholder="MATRICULE">
                     </div>
@@ -23,7 +20,7 @@
                     </div>
                     <div>
                         
-                                <input id="adresse" type="text" class="form-control " name="adresse" value="adresse" required autocomplete="email" autofocus placeholder="Adresse">
+                    <input  type="text" name="adresse" class="form-control "id="adresse"  required autocomplete="email" autofocus placeholder="Adresse">
 
                         
                     </div>
@@ -49,5 +46,6 @@
      
 
         </div>
+        -->
 @endsection
 

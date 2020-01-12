@@ -1,5 +1,6 @@
 @extends("layouts.layout")
 @section("client_index")
+
 <div class="container">
 <div class="row">
 <div class="col-10">
@@ -51,4 +52,6 @@
         </div>
         </div>
         </div>
+    
+   
       @endsection

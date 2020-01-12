@@ -1,17 +1,11 @@
 @extends("layouts.layout_login")
-@section('login_page')
+@section('login')
 
-
-<header>
-
-
-</div>
-</header>
-<div class="container">
-    <div class="row-8 justify-content-center">
-        <div class="col-10 -md-8">
+<div class="container pt-5 pl-5">
+    <div class="row justify-content-center">
+        <div class="col-8 -md-8">
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+                <div class="card-header">{{ __('Connexion') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">

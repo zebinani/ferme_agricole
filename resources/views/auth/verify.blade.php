@@ -1,7 +1,7 @@
-@extends('layout')
+@extends('layouts.layout_login')
 
 @section('verification')
-<div class="container">
+<div class="container t-5 pl-5">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">

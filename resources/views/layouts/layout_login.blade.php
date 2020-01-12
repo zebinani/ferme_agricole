@@ -64,7 +64,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('QUITTER') }}
+                                        {{ __('Deconnexion') }}
                                     </a>
                                     
                                    
@@ -82,9 +82,15 @@
     </div>
   </nav>
   
-  <div id="container">  @yield("login_page")</div>
+  <div id="container">  @yield("login")</div>
   
   <div id="container">  @yield("Admin_create")</div>
+
+  <div id="container">  @yield("reset")</div>
+  <div id="container">  @yield("confirmer")</div>
+  <div id="container">  @yield("verify")</div>
+  <div id="container">  @yield("email")</div>
+
 
   
   

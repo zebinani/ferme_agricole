@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.layout_login')
 
-@section('content')
-<div class="container">
+@section('email')
+<div class="container pt-5 pl-5">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">

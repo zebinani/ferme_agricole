@@ -1,11 +1,12 @@
 @extends("layouts.layout_login")
 
 @section("Admin_create")
-<div class="container">
+<br> <br> <br>
+<div class="container t-5 pl-5">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+                <div class="card-header">{{ __('Nouveau utilisateur') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('User.store') }}">
@@ -89,6 +90,7 @@
                                 </button>
                             </div>
                         </div>
+                        <br>
                     </form>
                 </div>
             </div>

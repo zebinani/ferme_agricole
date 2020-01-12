@@ -1,8 +1,8 @@
-@extends('layout_login')
+@extends('layouts.loyout_login')
 
-@section('register_page')
+@section('register')
 
-<div class="container">
+<div class="container t-5 pl-5">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">

@@ -139,7 +139,7 @@
         <h4 class="card-title">
           <a href="#">Champs de fruit</a>
         </h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        <p class="card-text">Comme la plupart des arbres fruitiers, le pommier est greffé. Ce greffage permet de raccourcir le délai entre la plantation et la première récolte, mais aussi de maintenir naturellement les arbres à une hauteur acceptable pour le travail quotidien de l’arboriculteur.De la fleur à la récolte il faudra attendre 160 jours en moyenne pour que le goût et les arômes s'expriment à leur optimum.Il existe toujours au monde des centaines de variétés différentes, certaines sont caractéristiques de votre région, vous les trouverez souvent chez Chapeau de paille. Pour les reconnaître, la couleur de jaune à rouge brique en passant par un vert explosif, le grain de la peau de lisse à rugueux, la forme de plate à tronconique en passant par la rondeur, seront les meilleurs guides. </p>
       </div>
     </div>
   </div>

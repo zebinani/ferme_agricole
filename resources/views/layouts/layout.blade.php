@@ -263,7 +263,7 @@
 
 </main>
 
- <footer class="py-2 bg-dark fixed-bottom">
+ <footer class="py-2 bg-dark ">
     <div class="container ">
     <div class="row-12 ">
       <p class="m-0 text-center   text-white">Copyright 2020 &copy; TOUS LES DROITS SONT RESERVES BINANITECH</p>

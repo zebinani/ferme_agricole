@@ -1,6 +1,6 @@
 @extends("layouts.layout")
 @section("Employ_create")
-<!--
+
             
         <div class="container">
 
@@ -46,6 +46,6 @@
      
 
         </div>
-        -->
+        
 @endsection
 

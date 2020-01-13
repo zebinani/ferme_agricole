@@ -129,8 +129,9 @@
     </div>
   </div>
   
-  <h2>Nos champs</h2>
+  <h2>Nos champs</h2> 
 <div class="row">
+
 <div class="col-lg-4 col-sm-6 portfolio-item">
     <div class="card h-100">
       <a href="#"><img class="card-img-top" src="{{asset('images/10.jpg')}}" alt=""></a>
@@ -144,12 +145,12 @@
   </div>
   <div class="col-lg-4 col-sm-6 portfolio-item">
     <div class="card h-100">
-      <a href="#"><img class="card-img-top" src="{{asset('images/1.jpg')}}" alt=""></a>
+      <a href="#"><img class="card-img-top" src="{{asset('images/2.jpg')}}" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
-          <a href="#">Project Five</a>
+          <a href="#">Nos Pepinieres</a>
         </h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        <p class="card-text">  Voici comment nous soignons nos pepiniere pour qu'elles donnent le meilleur d'elle-même.</p>
       </div>
     </div>
   </div>
@@ -158,9 +159,9 @@
       <a href="#"><img class="card-img-top" src="{{asset('images/champs6.jpeg')}}" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
-          <a href="#">Project Six</a>
+          <a href="#">Cueillette</a>
         </h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
+        <p class="card-text">Du printemps à l'automne, le verger nous régale de ses fruits. La cueillette, c'est tout un art : un peu de matériel, mais surtout le choix du bon moment, avec une météo clémente et une lune ascendante... Et comme chaque fruit a sa période de cueillette .</p>
       </div>
     </div>
   </div>

@@ -7,24 +7,18 @@
     <div class="col-8">
             <h1>test</h1>
             <div><h1>{{__('Enregistrement d\'un employer')}}</h1></div>
-                <form action="{{route('Employ.store')}}" method="post">
+                <form action="{{route('Materiel.store')}}" method="post">
                     @csrf
                     <div>
-                        <input type="text" name="matricule" class="form-control"  required placeholder="MATRICULE">
+                        <input type="text" name="name" class="form-control"  required placeholder="nom">
                     </div>
                     <div>
-                        <input type="text" name="nom" class="form-control"required placeholder="NOM">
+                        <input type="text" name="description" class="form-control"required placeholder="description">
                     </div>
                     <div>
-                        <input type="text" name="prenom" class="form-control"required placeholder="PRENOM">
+                        <input type="text" name="amortissement" class="form-control"required placeholder="amortissement">
                     </div>
-                    <div>
-                        <input type="text" name="adresse" class="form-control"required placeholder="ADRESSE">
-                    </div>
-                    <div>
-                        <input type="text" name="telephone" class="form-control"required placeholder="TELEPHONE">
-                    </div>
-             
+                    
                     <div>
                         <button class="btn btn-primary">Enregistrer</button>
                     </div>

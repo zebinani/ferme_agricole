@@ -1,7 +1,9 @@
 @extends("layouts.layout")
 
 @section("sect_materiel")
+<br>
 <div class="container">
+<h1>LISTES DES Materiel</h1>
 <div class="row justify-content-center ">
  <div class="col-8 align-items-center">
  <table class="table table-striped">

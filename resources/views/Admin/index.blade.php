@@ -1,10 +1,14 @@
 
 @extends("layouts.layout")
 @section("EMP_section")
-
+<br>
+    <div class="container">
+    <h1>Liste Des utilisateurs </h1>
+    <div class="row">
+    
     <table class="table table-sm">
     <thead>
-        <tr>
+        <tr class=" bg-success">
             <th>#</th> <th>ID</th>    <th>NOM</th> <th>EMAIL</th>  <th>ROLE</th> <th>Ajouter</th> <th>modification</th> 
             
         </tr>
@@ -37,5 +41,6 @@
         @endforeach
 
     </table>
-
+    </div>
+    </div>
 @endsection

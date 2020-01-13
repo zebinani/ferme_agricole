@@ -51,7 +51,7 @@ class MaterielsController extends Controller
             
             $materiel->save();
 
-            return redirect('/materiels.index');
+            return redirect('/Materiel');
             
     }
 
@@ -114,5 +114,9 @@ class MaterielsController extends Controller
     public function destroy($id)
     {
         //
+        $Materiels = Materiel::find($id);
+            if($Materiels)
+            $Materiels->delete();
+        return redirect()->route('Materiel');
     }
 }

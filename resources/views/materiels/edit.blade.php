@@ -29,7 +29,7 @@
            <th>AMORTISSEMENT</th>        <th>Ajouter</th>
        </tr>
        
-       @foreach($Materiels as $materiel)
+       @foreach($materiels as $materiel)
    <tr>
        <th>#</th>
        <th>{{$materiel->name ?? ''}}</th>

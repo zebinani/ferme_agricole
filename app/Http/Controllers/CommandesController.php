@@ -98,6 +98,8 @@ class CommandesController extends Controller
     public function update(Request $request, $id)
     {
         //
+           //  $this->authorize('Admin');
+
             $Commandes =\App\Command::find($id);
             if($Commandes) $Commandes->update([
             'client_id'=>$request->input('client_id'),

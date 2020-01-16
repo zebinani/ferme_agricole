@@ -123,7 +123,7 @@
                                 <li class="nav-item">
                                     
 
-          <!--   <a class="nav-link" href="{{ route('register') }}">{{ __('') }}</a> -->
+                         <a class="nav-link" href="{{ route('register') }}">{{ __('Inscription') }}</a> 
                                 </li>
                             @endif
                         @else

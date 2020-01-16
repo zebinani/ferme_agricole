@@ -44,7 +44,7 @@ class usersController extends Controller
 
     {
         //
-       // $user_id = Auth::id();
+        $this->authorize('Admin');
 
         $Users = new User();
 

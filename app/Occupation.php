@@ -8,4 +8,11 @@ class Occupation extends Model
 {
     //
     protected $guarded =[];
+
+    public function Employ(){
+
+        return $this->hasmany('App\Employ');
+
+}
+
 }

@@ -1,4 +1,4 @@
-@extends("layouts.layout_login")
+@extends("layouts.layout")
 
 @section("Admin_create")
 <br> <br> <br>

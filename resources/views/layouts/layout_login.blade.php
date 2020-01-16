@@ -51,7 +51,7 @@
                                 <li class="nav-item">
                                     
 
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Inscription') }}</a>
                                 </li>
                             @endif
                         @else
@@ -90,6 +90,7 @@
   <div id="container">  @yield("confirmer")</div>
   <div id="container">  @yield("verify")</div>
   <div id="container">  @yield("email")</div>
+  <div id="container">  @yield("register")</div>
 
 
   

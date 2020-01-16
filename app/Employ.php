@@ -14,4 +14,10 @@ class Employ extends Model
 
         return $this->belongsTo('App\Department');
     }
+
+    public function Occupation(){
+
+      return $this->belongsTo('App\Occupation'); 
+    }
+
 }

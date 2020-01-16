@@ -1,4 +1,4 @@
-@extends('layouts.loyout_login')
+@extends('layouts.layout_login')
 
 @section('register')
 

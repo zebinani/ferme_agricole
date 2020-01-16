@@ -25,6 +25,7 @@ Route::resource('/Contact',"ContactlistController");
 
 
 Auth::routes(); //la route pour authentification
+ // Auth::routes(['login' => false]);
 
 Route::get('/User',"UsersController@Afficher");
 
@@ -76,17 +77,19 @@ Route::patch("/User/edit/{id}","usersController@update")->name('User.update');
 
 Route::resource ('/Client','ClientsController');
 Route::get("/Client/edit/{id}","ClientsController@edit")->name('Client.edit');
-Route::get("/Client/edit/{id}","ClientsController@edit")->name('Client.edit');
-});
-Route::resource ('/Client','ClientsController');
-
-
 Route::patch("/Client/edit/{id}","ClientsController@update")->name('Client.update');
-
 
 Route::resource('/Command','CommandesController');
 Route::get("/Command/edit/{id}","CommandesController@edit")->name('command.edit');
 Route::patch("/Command/edit/{id}","CommandesController@update")->name('Command_update');
+
+
+
+});
+
+
+
+
 
 
 

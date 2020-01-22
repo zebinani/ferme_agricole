@@ -1,6 +1,6 @@
 @extends("layouts.layout")
-
 @section("Admin_create")
+
 <br> <br> <br>
 <div class="container t-5 pl-5">
     <div class="row justify-content-center">

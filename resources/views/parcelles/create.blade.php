@@ -8,7 +8,7 @@
                             <input type="text" name="rentabilite" class="form-control"required placeholder="RENTABILITE">
                         </div>
                         <div>
-                       <input type="text" name="categorie" class="form-control"required placeholder="CATEGORIE">
+                       <input type="text" name="Nbr_hectar" class="form-control"required placeholder="Nbr_hectar">
                         </div>
                         <div>
                             <input type="text" name="type_de_sol" class="form-control"required placeholder="TYPE DE SOL">

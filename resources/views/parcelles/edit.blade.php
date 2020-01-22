@@ -5,7 +5,7 @@
    @method('patch')
    <div><input type="text" name="rentabilte" class="form-control" placeholder="RENTABILITE" value="{{$parcels->rentabilite}}"></div>
 
-   <div><input type="text" name="categorie" class="form-control" placeholder="categorie" value="{{$parcels->categorie}}"> </div>
+   <div><input type="text" name="Nbr_hectar" class="form-control" placeholder="categorie" value="{{$parcels->Nbr_hectar}}"> </div>
 
    <div><input type="text" name="type_de_sol" class="form-control" placeholder="tepe de sol" value="{{$parcels->type_de_sol}}"> </div>
 

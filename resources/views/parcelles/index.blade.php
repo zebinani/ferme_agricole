@@ -1,9 +1,11 @@
 @extends("layouts.layout")
 @section('parcel_index')
+<br>
+<div><h1>{{__('Liste Des Parcel')}}</h1></div>
 
-<table class="table table-bordered">
+<table class="table table-striped">
        <tr>
-        <th>#</th> <th>id</th>    <th>RENTABILITE</th> <th>CATEGORIE</th><th>TYPE DE SOL</th>  <th>Test</th>
+        <th>#</th> <th>id</th>    <th>RENTABILITE</th> <th>Nbr_hectar</th><th>TYPE DE SOL</th>  <th>Test</th>
        </tr>
   @foreach($parcels as $parcel)
         <tr>
@@ -11,7 +13,7 @@
                
                <td>{{$parcel->id ?? ''}}</td>
                <td>{{$parcel->rentabilite ?? ''}}</td>
-               <td>{{$parcel->categorie ?? ''}}</td>
+               <td>{{$parcel->Nbr_hectar ?? ''}}</td>
                <td>{{$parcel->type_de_sol ?? ''}}</td>
               
                <td> <a href="Parcel/create">

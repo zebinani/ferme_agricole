@@ -16,7 +16,7 @@ class CreateParcelsTable extends Migration
         Schema::create('parcels', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('rentabilite');
-            $table->string('categorie');
+            $table->string('Nbr_hectar');
             $table->string('type_de_sol');
             $table->timestamps();
         });

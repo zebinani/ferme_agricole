@@ -68,12 +68,12 @@ Route::resource('/Materiel','MaterielsController');
 Route::get("/Materiel/edit/{id}","MaterielsController@edit")->name('Materiel.edit');
 Route::patch("/Materiel/edit/{id}","MaterielsController@update")->name('Materiel.update');
 
-
-
-
 Route::resource('/User','usersController');
-Route::get("/User/edit/{id}","usersController@edit")->name('Admin.edit');
+Route::get("/User/edit/{id}","usersController@edit")->name('User.edit');
 Route::patch("/User/edit/{id}","usersController@update")->name('User.update');
+
+
+
 
 Route::resource ('/Client','ClientsController');
 Route::get("/Client/edit/{id}","ClientsController@edit")->name('Client.edit');

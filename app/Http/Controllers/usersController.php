@@ -22,6 +22,7 @@ class usersController extends Controller
        return view('Admin.index',compact('users'));
        
     }
+    
 
     /**
      * Show the form for creating a new resource.
@@ -44,7 +45,7 @@ class usersController extends Controller
 
     {
         //
-        $this->authorize('Admin');
+      //  $this->authorize('Admin');
 
         $Users = new User();
 
@@ -109,7 +110,7 @@ class usersController extends Controller
        ]);
       
     }
-    return redirect('/');
+    return redirect()->route('User.index');
    
     }
 
@@ -129,6 +130,7 @@ class usersController extends Controller
         if($Users)
 
         $Users->delete();
+
         return redirect()->route('User.index');
     }
 }

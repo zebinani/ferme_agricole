@@ -9,7 +9,7 @@
     <table class="table table-sm">
     <thead>
         <tr class=" bg-success">
-            <th>#</th> <th>ID</th>    <th>NOM</th> <th>EMAIL</th>  <th>ROLE</th> <th>Ajouter</th> <th>modification</th> 
+            <th>#</th> <th>ID</th>    <th>NOM</th> <th>EMAIL</th>  <th>ROLE</th> <th><a href="User/create">Ajouter</a></th>
             
         </tr>
         </thead>
@@ -23,18 +23,18 @@
 
                 <th>{{$user->role ?? ''}}</th>
 
-                
-                <th>  <a href="User/create">Ajouter</a></th>
+              <!--  <th>  <a href="User/create">Ajouter</a></th> -->
 
                 <td><a href="{{route('User.update',['id'=>$user->id])}}">
                 
-                <button class="btn btn-warning">Modifier</button> </a> </th>
-
+                <button class="btn btn-warning">Modifier</button> </a> 
+                 <br>  
                 <form action="User/{{$user->id}}" method="post">
                @csrf
                @method('delete')
-             <td>  <input type="submit" class="btn btn-danger" name="delete" value="Supprimer">
+             <input type="submit" class="btn btn-danger" name="delete" value="Supprimer">
              </td>
+             </form>
             </tr>
            
             </tbody>

@@ -85,6 +85,7 @@
   <div id="container">  @yield("login")</div>
   
   <div id="container">  @yield("Admin_create")</div>
+  <div id="container">  @yield("Admin_edit")</div>
 
   <div id="container">  @yield("reset")</div>
   <div id="container">  @yield("confirmer")</div>

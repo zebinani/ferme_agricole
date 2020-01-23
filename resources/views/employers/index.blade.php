@@ -12,7 +12,9 @@
     <table class="table table-bodered">
     <thead>
     <tr class=" bg-success">
-            <th>#</th> <th>ID</th>    <th>MATRICULE</th> <th>NOM</th><th>PRENOM</th> <th>ADRESSE</th>    <th>TELEPHONE</th>  <th>Departement</th> <th>Ajouter</th> <th>Modifier</th> <th>Supprimer</th>
+            <th>#</th> <th>ID</th>    <th>MATRICULE</th> <th>NOM</th><th>PRENOM</th> <th>ADRESSE</th>    <th>TELEPHONE</th>  <th>Departement</th> <th> <a href="Employ/create">
+                <button type="button" class="btn btn-success">
+                Ajouter </button></a></th> <th>Modifier</th> <th>Supprimer</th>
             
         </tr>
         </thead>

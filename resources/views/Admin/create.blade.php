@@ -1,6 +1,7 @@
-@extends("layouts.layout")
+@extends("layouts.layout_login")
 @section("Admin_create")
 <br> <br> <br>
+
 <div class="container t-5 pl-5">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -70,9 +71,8 @@
                         <option value="user">utilisateur</option>
                         
                         </select>
-                                
                    
-                    </div>
+                    
 
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">

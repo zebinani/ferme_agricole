@@ -10,7 +10,7 @@
        <tr>
            <th>#</th>          <th>Nom materiel</th>  <th>description</th>    
            
-           <th>AMORTISSEMENT</th>        <th>Ajouter</th> <th>Modifier</th>
+           <th>AMORTISSEMENT</th>        <th><a href="Materiel/create">Ajouter</a></th> <th>Modifier</th>
        </tr>
        
        @foreach($Materiels as $materiel)

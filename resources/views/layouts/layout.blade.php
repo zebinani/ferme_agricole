@@ -44,15 +44,16 @@
     <div class="container">
       <a class="navbar-brand" href="/accueil">Accueil</a>
       <a class="navbar-brand" href="/Contact/create">Contact</a>
-      <a class="navbar-brand" href="/accueil">blog</a>
-      
+      <a class="navbar-brand" href="/Command/create">Commande</a>
+      <a class="navbar-brand" href="/accueil">Blog</a>
+
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
        
-        <a class="navbar-brand" href="/Client/create"><button type="button" class="btn btn-outline-success">Client</button> </a>
+        <a class="navbar-brand" href="/Command/create"><button type="button" class="btn btn-outline-success"></button> </a>
        
         
        
@@ -122,7 +123,7 @@
                             @if (Route::has('register'))
                                 <li class="nav-item">
                                     
-
+                               
                          <a class="nav-link" href="{{ route('register') }}">{{ __('Inscription') }}</a> 
                                 </li>
                             @endif
@@ -139,8 +140,6 @@
                                         {{ __('Deconnexion') }}
                                     </a>
                                     
-                                   
-                                   
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>

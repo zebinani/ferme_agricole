@@ -94,8 +94,9 @@
     <a href="#"><img class="card-img-top" src="{{asset('images/fruit1.jpeg')}}" alt=""></a>
       <div class="card-body">
       <h3 class="card-title ">
-       <button type="button" class="btn btn-outline-success">   <a href="Command/create ">COMMANDER</a>
-       </button> 
+     <!--  <button type="button" class="btn btn-outline-success">   <a href="Command/create ">COMMANDER</a> 
+       </button>
+       --> 
         </h3>
         <p class="card-text">la fraicheur le gout et la qualite d'une agriculture raisonnee </p>
       </div>
@@ -106,9 +107,11 @@
       <a href="#"><img class="card-img-top" src="{{asset('images/champs.jpg')}}" alt=""></a>
       <div class="card-body">
       <h3 class="card-title ">
-        <button type="button" class="btn btn-outline-success">
-          <a href="Command/create ">COMMANDER</a>
+     <!--    <button type="button" class="btn btn-outline-success">
+         <a href="Command/create ">COMMANDER</a> 
+         
           </button>
+          -->
         </h3>
         <p class="card-text">Nos legumes sont de tres bonne qualite avec une culture naturel.Nous utilisons moyen d'engrais dans nos  productions </div>
     </div>
@@ -118,9 +121,10 @@
       <a href="#"><img class="card-img-top" src="{{asset('images/tomate.jpg')}}" alt=""></a>
       <div class="card-body">
         <h3 class="card-title ">
-        <button type="button" class="btn btn-outline-success">
-          <a href="Command/create ">COMMANDER</a>
+       <!--  <button type="button" class="btn btn-outline-success">
+         <a href="Command/create ">COMMANDER</a> 
           </button>
+          -->
         </h3>
         <p class="card-text"> nous disposons de tomate frais de tres bonne qualite.le 1kilogramme a 200 Franc fc
         </p>

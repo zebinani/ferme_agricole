@@ -17,9 +17,6 @@
 
                 <form action="{{route('Command.store')}}" method="post" autocomplete="on">
                     @csrf
-
-                   
-                    
                     
                     <div class="row-4">
                         <div><label for="Clients">Num_Client</label>

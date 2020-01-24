@@ -45,7 +45,7 @@ class usersController extends Controller
 
     {
         //
-      //  $this->authorize('Admin');
+       $this->authorize('Admin');
 
         $Users = new User();
 
@@ -72,6 +72,7 @@ class usersController extends Controller
      */
     public function show($id)
     {
+        $this->authorize('Admin');
         //
     }
 
@@ -84,6 +85,7 @@ class usersController extends Controller
     public function edit($id)
     {
         //
+        $this->authorize('Admin');
         $Users = \App\User::find($id);//on recupere le produit
     
         return view('Admin.edit', compact('Users'));
@@ -99,6 +101,7 @@ class usersController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $this->authorize('Admin');
         $Users = \App\User::find($id);
           if($Users){
            $Users->update([

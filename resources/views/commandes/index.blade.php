@@ -7,7 +7,8 @@
 <div><h1>{{__('Liste Des Commandes')}}</h1></div>
 <br>
         <tr>
-            <th>#</th>  <th>id</th>   <th>Num_client</th>  <th>ARTICLE</th>  <th>REFERENCE</th> <th>QUANTITE</th>    <th>DATE</th>  <th>Ajouter</th> <th>Modifier</th> <th>Supprimer</th>
+            <th>#</th>  <th>id</th>   <th>Num_client</th>  <th>ARTICLE</th>  <th>REFERENCE</th> <th>QUANTITE</th>    <th>DATE</th>  <th>  <a href="Command/create "><button type="button" class="btn btn-success">Ajouter</button>
+</a></th> <th>Modifier</th> <th>Supprimer</th>
         </tr>
 
         @foreach($Commandes as $commande)

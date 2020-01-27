@@ -17,6 +17,7 @@ class usersController extends Controller
     public function index()
     {
         //
+        $this->authorize('Admin');
        $users=\App\User::all();
        
        return view('Admin.index',compact('users'));
@@ -32,6 +33,7 @@ class usersController extends Controller
     public function create()
     {
         //
+        $this->authorize('Admin');
        return view ('Admin.create');
     }
 
@@ -45,7 +47,7 @@ class usersController extends Controller
 
     {
         //
-      //  $this->authorize('Admin');
+       $this->authorize('Admin');
 
         $Users = new User();
 

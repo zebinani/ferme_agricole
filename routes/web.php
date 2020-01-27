@@ -15,7 +15,7 @@ Route::get('/', function () {
    
      return view('accueil');
      
-});
+})->middleware('auth');
 
 Route::get('/accueil',"AccueilController@index");
 

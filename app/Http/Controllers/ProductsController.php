@@ -14,6 +14,7 @@ class ProductsController extends Controller
      */
     public function index()
     {
+        $this->authorize('Admin');
         //
     $products = \App\Product::orderBy('created_at', 'DESC')->get();
      
@@ -27,6 +28,7 @@ class ProductsController extends Controller
      */
     public function create()
     {
+        $this->authorize('Admin');
         return view('products.create');
    
     }
@@ -39,6 +41,7 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     { 
+        $this->authorize('Admin');
         $product = new Product();
         $product->name = $request->input('name');
         $product->price = $request->input('price');

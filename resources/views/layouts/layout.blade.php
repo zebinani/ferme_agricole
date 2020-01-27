@@ -43,8 +43,8 @@
  
     <div class="container">
       <a class="navbar-brand" href="/accueil">Accueil</a>
+      <a class="navbar-brand" href="/Command/create">Commander</a>
       <a class="navbar-brand" href="/Contact/create">Contact</a>
-      <a class="navbar-brand" href="/Command/create">Commande</a>
       <a class="navbar-brand" href="/accueil">Blog</a>
 
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,12 +53,12 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
        
-        <a class="navbar-brand" href="/Command/create"><button type="button" class="btn btn-outline-success"></button> </a>
+     <!--   <a class="navbar-brand" href="/Command/create"><button type="button" class="btn btn-outline-success"></button> </a> -->
        
         
        
   @can('Admin')
-  <!--
+       <!--
         <a class="navbar-brand" href="/User"><button type="button" class="btn btn-outline-success">Utilisateurs</button> </a>
         <a class="navbar-brand" href="/Product"> <button type="button" class="btn btn-outline-success">Produits</button> </a>
         <a class="navbar-brand" href="/Employ"><button type="button" class="btn btn-outline-success">Employers</button> </a>

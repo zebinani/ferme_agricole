@@ -12,9 +12,12 @@
                     <div>
                         <input type="text" name="name" class="form-control"  required placeholder="nom">
                     </div>
+                    <br>
                     <div>
-                        <input type="text" name="description" class="form-control"required placeholder="description">
+                       <textarea class="description" name="description"  placeholder="description"></textarea>
+                        
                     </div>
+                    <br>
                     <div>
                         <input type="text" name="amortissement" class="form-control"required placeholder="amortissement">
                     </div>
@@ -27,5 +30,11 @@
     </div>
         </div>
 
-
+        <script src="{{ asset('node_modules/tinymce/tinymce.js') }}"></script>
+<script>
+   tinymce.init({
+       selector:'textarea.description',
+       width: 900,
+       height: 300,
+   });
 @endsection

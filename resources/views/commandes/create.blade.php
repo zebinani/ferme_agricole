@@ -18,22 +18,31 @@
                 <form action="{{route('Command.store')}}" method="post" autocomplete="on">
                     @csrf
                     
-                    <div class="row-4">
-                        <div><label for="Clients">Num_Client</label>
-                        <div>
-                        
-                        <select name="client_id" id="Clients" class="form-control " required autocomplete="Cient_id" >
-                        <option value=""></option>
-                        @foreach($Clients as $key => $value)
-                            <option value="{{$key}}">{{$value}}</option>
-                        @endforeach
-                    </select>
                     
-                    </div>
                     
                     <div class="row-4">
                     <div><label for="text">ARTICLE</label><div>
-                        <input type="text" name="article" class="form-control" required >
+                    <input list="product" name="article" class="form-control" required>
+                        <datalist id="product">
+                            <option value="orange">
+                            <option value="Banane">
+                            <option value="mangue">
+                            <option value="legume">
+                            <option value="carotte"> 
+                        </datalist>
+
+                    </div>
+                    <div class="row-4">
+                    <div><label for="text">REFERENCE</label><div>
+                    <input list="reference" name="" class="form-control" required>
+                        <datalist id="reference">
+                            <option value="FRUIT">
+                            <option value="LEGUME">
+                            <option value="CEREALE">
+                            <option value="legume">
+                            
+                        </datalist>
+                        
                     </div>
                     <div class="row-4">
                     <div><label for="reference">REFERENCE</label><div>
@@ -44,17 +53,21 @@
                         <input type="number" name="quantite" class="form-control" required>
                     </div>
                     <div class="row-4">
-                    <div><label for="date">DATE</label>
-                    <div>
-                    <div>
-                        <input type="date" name="date" class="form-control" required>
+                    <div><label for="text">ADRESSE</label><div>
+                        <input type="text" name="adresse" class="form-control" required >
                     </div>
+                    <div class="row-4">
+                    <div><label for="phone">TELEPHONE</label><div>
+                        <input type="tel" name="phone" class="form-control" required >
+                    </div>
+                   
                     <br>
                     <div>
                     
                     <input type="reset" value="Effacer">
                         <button class="btn btn-primary">Enregistrer</button>
                     </div>
+                    <br>
                     <br>
                     
                 </form>

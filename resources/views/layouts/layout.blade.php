@@ -123,7 +123,7 @@
                                 <li class="nav-item">
                                     
                                
-                         <a class="nav-link" href="{{ route('register') }}">{{ __('Inscription') }}</a> 
+                         <a class="nav-link" href="{{ route('register') }}">{{ __("S'inscrire") }}</a> 
                                 </li>
                             @endif
                         @else
@@ -271,6 +271,14 @@
 
   <!-- Bootstrap core JavaScript -->
   <script src="{{asset('js/app.js')}}"></script>
+  <script src="{{ asset('node_modules/tinymce/tinymce.js') }}"></script>
+<script>
+   tinymce.init({
+       selector:'textarea.description',
+       width: 900,
+       height: 300,
+   });
+</script>
 
 </body>
 

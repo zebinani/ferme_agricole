@@ -66,7 +66,7 @@
                             <div class="form-group row-12 mb-0">
                             <div class="col-md-8 offset-md-4">
                                 
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Inscription') }}</a>
+                                <a class="nav-link" href="{{ route('register') }}">{{ __("S'inscrire") }}</a>
                                 
                             <div class="form-group row-12 mb-0"> 
                             

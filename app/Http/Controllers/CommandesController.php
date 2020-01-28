@@ -48,17 +48,19 @@ class CommandesController extends Controller
      */
     public function store(Request $request)
     {
+       
         //
         $Commande= new Command();
+
         $Commande->article =$request->input('article');
         $Commande->reference=$request->input('reference');
         $Commande->quantite=$request->input('quantite');
         $Commande->adresse=$request->input('adresse');
         $Commande->phone=$request->input('phone');
+       // dd("$Commande");
+       $Commande->save();
 
-        $Commande->save();
-
-         return redirect()->route('Command.index')->with(['success' => "Employe enregistré"]);
+       return redirect()->route('Command.index')->with(['success' => "Employe enregistré"]);
     }
     
     /**
@@ -82,9 +84,8 @@ class CommandesController extends Controller
     {
         //
        $Commandes = \App\Command::find($id);
-       
-       
-       return view('commandes.edit',compact('Commandes'));
+      //dd("$Commandes");
+      return view('commandes.edit',compact('Commandes'));
     }
     
 
@@ -100,8 +101,9 @@ class CommandesController extends Controller
         //
            //  $this->authorize('Admin');
 
-            $Commandes =\App\Command::find($id);
-            if($Commandes) $Commandes->update([
+         $Commandes =\App\Command::find($id);
+
+          if($Commandes) $Commandes->update([
             
             'article'=>$request->input('article'),
             'reference'=>$request->input('reference'),
@@ -110,7 +112,7 @@ class CommandesController extends Controller
             'phone'=>$request->input('phone')
     
     ]);
-         
+        // dd('$Commandes');
          return redirect('/Command');
     }
 

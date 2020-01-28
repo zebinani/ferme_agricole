@@ -11,30 +11,27 @@
          @method('patch')
          <Fieldset>
          <div>
-         <div><label for="client">CLIENT</label></div>
-         <select name="client_id" id="Clients" class="form-control" required autocomplete="Cient_id" >
-                        <option value=""></option>
-                        @foreach($Clients as $key => $value)
-                            <option value="{{$key}}">{{$value}}</option>
-                        @endforeach
-                    </select>
-                    
-        
-          </div> 
-          <div><label for="client">ARTICLE</label></div>
-         <div><input type="text" name="article" class="form-control" value="{{$Commandes->article}}"> </div>
-         <div><label for="client">REFERENCE</label></div>
-         <div><input type="text" name="reference" class="form-control"  value="{{$Commandes->reference}}"> </div>
-         <div><label for="client">QUANTITE</label></div>
-         <div><input type="text" name="quantite" class="form-control"  value="{{$Commandes->quantite}}"> </div>
-         <div><label for="client">DATE</label></div>
-         <div><input type="date" name="date" class="form-control"  value="{{$Commandes->date}}"> </div>
          
+          <div><label for="Command">ARTICLE</label></div>
+         <div><input type="text" name="article" class="form-control" value="{{$Commandes->article}}"> </div>
+
+         <div><label for="Command">REFERENCE</label></div>
+         <div><input type="text" name="reference" class="form-control"  value="{{$Commandes->reference}}"> </div>
+
+         <div><label for="Command">QUANTITE</label></div>
+         <div><input type="number"name="quantite"class="form-control"value="{{$Commandes->quantite}}"> </div>
+
+         <div><label for="Command">ADRESSE</label></div>
+         <div><input type="text" name="adresse" class="form-control"  value="{{$Commandes->adresse}}"> </div>
+
+         <div><label for="Command">telephone</label></div>
+         <div><input type="tel" name="phone" class="form-control"  value="{{$Commandes->phone}}"> </div>
+         <br>
          <div> <button class="btn btn-primary">Enregistrer</button> </div>
          </Fieldset>
          <br>
       </form>
-
+   
    </div>
 
  @endsection  

@@ -17,8 +17,8 @@ class usersController extends Controller
     public function index()
     {
         //
-       // $this->authorize('Admin');
-     //  $users=\App\User::all();
+        $this->authorize('Admin');
+      $users=\App\User::all();
        
        return view('Admin.index',compact('users'));
        
@@ -33,7 +33,7 @@ class usersController extends Controller
     public function create()
     {
         //
-       // $this->authorize('Admin');
+        $this->authorize('Admin');
        return view ('Admin.create');
     }
 
@@ -47,7 +47,7 @@ class usersController extends Controller
 
     {
         //
-     //  $this->authorize('Admin');
+      $this->authorize('Admin');
 
         $Users = new User();
 
@@ -87,7 +87,7 @@ class usersController extends Controller
     public function edit($id)
     {
         //
-       // $this->authorize('Admin');
+       $this->authorize('Admin');
         $Users = \App\User::find($id);//on recupere le produit
     
         return view('Admin.edit', compact('Users'));
@@ -103,7 +103,7 @@ class usersController extends Controller
     public function update(Request $request, $id)
     {
         //
-       // $this->authorize('Admin');
+        $this->authorize('Admin');
         $Users = \App\User::find($id);
           if($Users){
            $Users->update([
@@ -128,7 +128,7 @@ class usersController extends Controller
     public function destroy($id)
     {
         //
-       // $this->authorize('Admin');
+        $this->authorize('Admin');
 
         $Users= \App\User::find($id);
         //dd($Employs);

@@ -18,7 +18,7 @@ class usersController extends Controller
     {
         //
        // $this->authorize('Admin');
-       $users=\App\User::all();
+     //  $users=\App\User::all();
        
        return view('Admin.index',compact('users'));
        

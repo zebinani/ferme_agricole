@@ -125,7 +125,7 @@ class EmploysController extends Controller
            'Department_id'=> $request->input('Department_id')
            
        ]);
-       return redirect()->back();
+       return redirect()->route('Employ.index')->with(['success' => "Employe modifier"]);
     }
     
   
@@ -144,7 +144,7 @@ class EmploysController extends Controller
         //dd($Employs);
         if($Employs)
         $Employs->delete();
-        return redirect()->route('Employ.index');
+        return redirect()->route('Employ.index')->with(['success' => "Employe supprimer avec success"]);
      
 
     }

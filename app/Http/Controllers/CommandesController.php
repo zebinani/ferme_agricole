@@ -31,11 +31,11 @@ class CommandesController extends Controller
     public function create()
     {
         //
-        $Clients = \App\Client::pluck( 'num_client','id');
+       // $Clients = \App\Client::pluck( 'num_client','id');
 
  
         
-        return view("commandes.create" ,compact('Clients'));
+        return view("commandes.create");
         
       
     }
@@ -50,15 +50,15 @@ class CommandesController extends Controller
     {
         //
         $Commande= new Command();
-
-        $Commande->client_id = $request->input('client_id');
         $Commande->article =$request->input('article');
         $Commande->reference=$request->input('reference');
         $Commande->quantite=$request->input('quantite');
-        $Commande->date=$request->input('date');
+        $Commande->adresse=$request->input('adresse');
+        $Commande->phone=$request->input('phone');
 
         $Commande->save();
-         return redirect('/Command');
+
+         return redirect()->route('Command.index')->with(['success' => "Employe enregistré"]);
     }
     
     /**
@@ -82,9 +82,9 @@ class CommandesController extends Controller
     {
         //
        $Commandes = \App\Command::find($id);
-       $Clients=\App\Client::pluck('num_client','id');
        
-       return view('commandes.edit',compact('Commandes','Clients'));
+       
+       return view('commandes.edit',compact('Commandes'));
     }
     
 
@@ -102,11 +102,12 @@ class CommandesController extends Controller
 
             $Commandes =\App\Command::find($id);
             if($Commandes) $Commandes->update([
-            'client_id'=>$request->input('client_id'),
+            
             'article'=>$request->input('article'),
             'reference'=>$request->input('reference'),
             'quantite'=>$request->input('quantite'),
-            'date'=>$request->input('date')
+            'adresse'=>$request->input('adresse'),
+            'phone'=>$request->input('phone')
     
     ]);
          

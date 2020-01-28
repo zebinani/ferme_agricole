@@ -51,7 +51,8 @@ class MaterielsController extends Controller
             
             $materiel->save();
 
-            return redirect('/Materiel');
+            return redirect()->route('Materiel.index')->with(['success'=>"Materiels enrigistre avec success"]);
+
             
     }
 

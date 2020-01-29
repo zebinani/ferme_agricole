@@ -15,6 +15,8 @@ class CommandesController extends Controller
      */
     public function index()
     {
+
+        $this->authorize('Admin');
         //
         $Commandes= \App\Command::orderBy('created_at','DESC')->get();
        
@@ -32,12 +34,8 @@ class CommandesController extends Controller
     {
         //
        // $Clients = \App\Client::pluck( 'num_client','id');
-
- 
-        
         return view("commandes.create");
-        
-      
+         
     }
 
     /**
@@ -48,7 +46,7 @@ class CommandesController extends Controller
      */
     public function store(Request $request)
     {
-       
+       //$this->authorize('Admin');
         //
         $Commande= new Command();
 
@@ -58,9 +56,9 @@ class CommandesController extends Controller
         $Commande->adresse=$request->input('adresse');
         $Commande->phone=$request->input('phone');
        // dd("$Commande");
-       $Commande->save();
+        $Commande->save();
 
-       return redirect()->route('Command.index')->with(['success' => "Employe enregistré"]);
+       return redirect('/accueil');
     }
     
     /**
@@ -69,7 +67,7 @@ class CommandesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($num_client)
+    public function show($id)
     {
         //
     }
@@ -82,6 +80,7 @@ class CommandesController extends Controller
      */
     public function edit($id)
     {
+        $this->authorize('Admin');
         //
        $Commandes = \App\Command::find($id);
       //dd("$Commandes");
@@ -99,7 +98,7 @@ class CommandesController extends Controller
     public function update(Request $request, $id)
     {
         //
-           //  $this->authorize('Admin');
+             $this->authorize('Admin');
 
          $Commandes =\App\Command::find($id);
 
@@ -113,7 +112,7 @@ class CommandesController extends Controller
     
     ]);
         // dd('$Commandes');
-         return redirect('/Command');
+         return redirect('command.index');
     }
 
     /**

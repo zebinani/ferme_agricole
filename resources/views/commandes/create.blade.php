@@ -44,10 +44,7 @@
                         </datalist>
                         
                     </div>
-                    <div class="row-4">
-                    <div><label for="reference">REFERENCE</label><div>
-                        <input type="text" name="reference" class="form-control" required>
-                    </div>
+                    
                     <div class="row-4">
                     <div><label for="quantite">QUANTITE</label><div>
                         <input type="number" name="quantite" class="form-control" required>

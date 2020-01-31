@@ -50,13 +50,13 @@ class EmploysController extends Controller
     public function store(Request $request)
     {
        $data= $request->validate([
-            'matricule' => 'required | max:6 ' ,
+            'matricule' => 'required | max:6 |unique' ,
             'nom' => ' max:50|required ' ,
             'prenom' => 'required | max:50' ,
             'adresse' => 'required | max:50' ,
             'telephone' => 'required|numeric' ,
             ]);
-        //
+        
    $employs = new Employ();
    
    $employs->matricule = $request->input('matricule');
@@ -66,12 +66,12 @@ class EmploysController extends Controller
    $employs->telephone = $request->input('telephone');
 
    $employs->department_id = $request->input('Department_id');
-   
-   $employs->save();
+   dd("$employs");
+   // $employs->save();
 
   // return redirect('/');
 
-   return redirect()->route('Employ.index')->with(['success' => "Employe enregistré"]);
+ // return redirect()->route('Employ.index')->with(['success' => "Employe enregistré"]);
 
 
    }

@@ -33,20 +33,21 @@
 
                     </div>
                     <div class="row-4">
-                    <div><label for="text">REFERENCEs</label><div>
+                    <div><label for="text">REFERENCE</label><div>
                     <input list="reference" name="" class="form-control" required>
                         <datalist id="reference">
                             <option value="FRUIT">
                             <option value="LEGUME">
                             <option value="CEREALE">
                             <option value="legume">
-                            <option value="legumessssss">
-                            <option value="legumessssss">
                             
                         </datalist>
                         
                     </div>
-                    
+                    <div class="row-4">
+                    <div><label for="reference">REFERENCE</label><div>
+                        <input type="text" name="reference" class="form-control" required>
+                    </div>
                     <div class="row-4">
                     <div><label for="quantite">QUANTITE</label><div>
                         <input type="number" name="quantite" class="form-control" required>

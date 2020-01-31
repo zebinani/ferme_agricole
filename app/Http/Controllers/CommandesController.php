@@ -47,7 +47,7 @@ class CommandesController extends Controller
     public function store(Request $request)
     {
        //$this->authorize('Admin');
-        //
+        
         $Commande= new Command();
 
         $Commande->article =$request->input('article');
@@ -112,7 +112,7 @@ class CommandesController extends Controller
     
     ]);
         // dd('$Commandes');
-         return redirect('command.index');
+         return redirect('Command');
     }
 
     /**

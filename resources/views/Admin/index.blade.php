@@ -16,25 +16,28 @@
         @foreach($users as $user)
         <tbody>
             <tr>
-                <th>#</th>
-                <th>{{$user->id ?? ''}}</th>
-                <th>{{$user->name ?? ''}}</th>
-                <th>{{$user->email ?? ''}}</th>
+                <td>#</th>
+                <td>{{$user->id ?? ''}}</td>
+                <td>{{$user->name ?? ''}}</td>
+                <td>{{$user->email ?? ''}}</td>
 
-                <th>{{$user->role ?? ''}}</th>
+                <td>{{$user->role ?? ''}}</td>
 
               <!--  <th>  <a href="User/create">Ajouter</a></th> -->
 
-                <td><a href="{{route('User.update',['id'=>$user->id])}}">
+                <td>
+                <p>
+                <a href="{{route('User.update',['id'=>$user->id])}}">
                 
                 <button class="btn btn-warning">Modifier</button> </a> 
-                 <br>  
+                </p> 
                 <form action="User/{{$user->id}}" method="post">
                @csrf
                @method('delete')
              <input type="submit" class="btn btn-danger" name="delete" value="Supprimer">
-             </td>
+             
              </form>
+             </td>
             </tr>
            
             </tbody>

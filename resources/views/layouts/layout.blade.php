@@ -80,8 +80,10 @@
               <a class="dropdown-item" href="/Ventes">Ventes</a>
               <a class="dropdown-item" href="/Parcel">Parcelles</a>
               <a class="dropdown-item" href="/Client">Clients</a>
+              <a class="dropdown-item" href="/Department">Departments</a>
               <a class="dropdown-item" href="/User">Utilisateur</a>
               <a class="dropdown-item" href="/Contact">contacts</a>
+              
              
             </div>
       

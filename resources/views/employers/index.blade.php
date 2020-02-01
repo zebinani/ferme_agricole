@@ -19,7 +19,7 @@
         </tr>
         </thead>
         @foreach($employs as $employ)
-        <tbody>
+        
             <tr>
                 <td>#</td>
                 <td>{{$employ->id ?? ''}}</td>
@@ -53,7 +53,7 @@
            </form>                
 
             </tr>
-            </tbody>
+            
         @endforeach
 
     </table>

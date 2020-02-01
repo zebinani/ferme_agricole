@@ -56,9 +56,11 @@ class CommandesController extends Controller
         $Commande->adresse=$request->input('adresse');
         $Commande->phone=$request->input('phone');
        // dd("$Commande");
-        $Commande->save();
+       $Commande->save();
 
-       return redirect('/accueil');
+       return redirect('/')->with(['danger' => "Employe enregistré"]);
+
+       //return redirect()->route('/accueil')->with(['success' => "Employe enregistré"]);
     }
     
     /**
@@ -112,7 +114,7 @@ class CommandesController extends Controller
     
     ]);
         // dd('$Commandes');
-         return redirect('Command');
+         return redirect()->route('Command.index')->with(['success' => "Employe enregistré"]);;
     }
 
     /**

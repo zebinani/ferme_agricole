@@ -12,9 +12,9 @@
     <table class="table table-bodered">
     <thead>
     <tr class=" bg-success">
-            <th>#</th> <th>ID</th>    <th>MATRICULE</th> <th>NOM</th><th>PRENOM</th> <th>ADRESSE</th>    <th>TELEPHONE</th>  <th>Departement</th> <th> <a href="Employ/create">
-                <button type="button" class="btn btn-success">
-                Ajouter </button></a></th> <th>Modifier</th> <th>Supprimer</th>
+            <th>#</th> <th>ID</th>    <th>MATRICULE</th> <th>NOM</th><th>PRENOM</th> <th>ADRESSE</th>    <th>TELEPHONE</th>  <th>Departement</th> 
+          <th></th>  <th>ACTION</th>  
+          <th><a href="Employ/create"> Ajouter </th> 
             
         </tr>
         </thead>
@@ -32,22 +32,18 @@
        
 
             <td>
-             <a href="Employ/create">
-                <button type="button" class="btn btn-success">
-                Ajouter </button></a>
-                
-
+           
                 </td>
                 
                 <td> 
-                
+                <p>
                  <a href="{{route('update.Employs',['id'=>$employ->id])}}"> <button type="button" class="btn btn-warning">Editer </button></a>
-                </td>
+                 </p>
                 
                 <form action="Employ/{{$employ->id}}" method="post">
                @csrf
                @method('delete')
-             <td>  <input type="submit" class="btn btn-danger" name="delete" value="Supprimer">
+               <input type="submit" class="btn btn-danger" name="delete" value="Supprimer">
              </td>
               
            </form>                

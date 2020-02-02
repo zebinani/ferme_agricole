@@ -58,7 +58,7 @@ class CommandesController extends Controller
        // dd("$Commande");
        $Commande->save();
 
-       return redirect('/')->with(['danger' => "Employe enregistré"]);
+       return redirect('/')->with(['success' => "Employe enregistré"]);
 
        //return redirect()->route('/accueil')->with(['success' => "Employe enregistré"]);
     }
@@ -114,7 +114,7 @@ class CommandesController extends Controller
     
     ]);
         // dd('$Commandes');
-         return redirect()->route('Command.index')->with(['success' => "Employe enregistré"]);;
+         return redirect()->route('Command.index')->with(['success' => "Employe enregistré"]);
     }
 
     /**

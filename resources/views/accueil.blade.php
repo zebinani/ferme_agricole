@@ -4,9 +4,6 @@
 <div class="row-10 ">
     <div class="col">
     <header>
-
-</ul>
-
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -49,93 +46,91 @@
   </div>
 </header>
 <!-- Marketing Icons Section -->
-<div class="row ">
-  <div class="col-lg-4 mb-4">
-    <div class="card h-100">
-      <h4 class="card-header">A PROPOS</h4>
-      <div class="card-body">
-        <p class="card-text">Notre groupement agricole a ete concu a l'origine pour permettre a l'excerce en commun de l'agriculture.</p>
-      </div>
-      <div class="card-footer">
-        <a href="/accueil" class="btn btn-primary">suite</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-4 mb-4">
-    <div class="card h-100">
-      <h4 class="card-header">A LA UNE</h4>
-      <div class="card-body">
-        <p class="card-text">Nous recrutons 150  saisonniers pour la recolte du mois de janviers .</p>
-      </div>
-      <div class="card-footer">
-        <a href="#" class="btn btn-primary">suite</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-4 mb-4">
-    <div class="card h-100">
-      <h4 class="card-header">COMMUNIQUE</h4>
-      <div class="card-body">
-        <p class="card-text">Nous informons a nos partenaire que nous disposons des produits agricole de tres bonne qualite  avec des prix tres abordables .</p>
-      </div>
-      <div class="card-footer">
-        <a href="#" class="btn btn-primary">suite</a>
-      </div>
-    </div>
-  </div>
-</div><!-- Portfolio Section -->
-<h2>Nos Produits</h2>
+    <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="card h-100">
+            <h4 class="card-header">A PROPOS</h4>
+            <div class="card-body">
+              <p class="card-text">Notre groupement agricole a ete concu a l'origine pour permettre a l'excerce en commun de l'agriculture.</p>
+            </div>
+            <div class="card-footer">
+              <a href="/accueil" class="btn btn-primary">suite</a>
+            </div>
+          </div>
+        </div>
+          <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+              <h4 class="card-header">A LA UNE</h4>
+              <div class="card-body">
+                <p class="card-text">Nous recrutons 150  saisonniers pour la recolte du mois de janviers .</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">suite</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+              <h4 class="card-header">COMMUNIQUE</h4>
+              <div class="card-body">
+                <p class="card-text">Nous informons a nos partenaire que nous disposons des produits agricole de tres bonne qualite  avec des prix tres abordables .</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">suite</a>
+              </div>
+            </div>
+          </div>
+    </div><!-- Portfolio Section -->
+  <h2>Nos Produits</h2>
 
      <!-- /.row  <div class="test1">-->                 
-
-<div class="row">
-  <div class="col-lg-4 col-sm-6 portfolio-item">
-    <div class="card h-100">
-    <a href="#"><img class="card-img-top" src="{{asset('images/fruit1.jpeg')}}" alt=""></a>
-      <div class="card-body">
-      <h3 class="card-title ">
-     <!--  <button type="button" class="btn btn-outline-success">   <a href="Command/create ">COMMANDER</a> 
-       </button>
-       --> 
-        </h3>
-        <p class="card-text">la fraicheur le gout et la qualite d'une agriculture raisonnee </p>
-      </div>
+    <div class="row">
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="{{asset('images/fruit1.jpeg')}}" alt=""></a>
+            <div class="card-body">
+            <h3 class="card-title ">
+          <!--  <button type="button" class="btn btn-outline-success">   <a href="Command/create ">COMMANDER</a> 
+            </button>
+            --> 
+              </h3>
+              <p class="card-text">la fraicheur le gout et la qualite d'une agriculture raisonnee </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="{{asset('images/champs.jpg')}}" alt=""></a>
+            <div class="card-body">
+            <h3 class="card-title ">
+          <!--    <button type="button" class="btn btn-outline-success">
+              <a href="Command/create ">COMMANDER</a> 
+              
+                </button>
+                -->
+              </h3>
+              <p class="card-text">Nos legumes sont de tres bonne qualite avec une culture naturel.Nous utilisons moyen d'engrais dans nos  productions </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="{{asset('images/tomate.jpg')}}" alt=""></a>
+            <div class="card-body">
+              <h3 class="card-title ">
+            <!--  <button type="button" class="btn btn-outline-success">
+              <a href="Command/create ">COMMANDER</a> 
+                </button>
+                -->
+              </h3>
+              <p class="card-text"> nous disposons de tomate frais de tres bonne qualite.le 1kilogramme a 200 Franc fc
+              </p>
+            </div>
+          </div>
+        </div>
     </div>
-  </div>
-  <div class="col-lg-4 col-sm-6 portfolio-item">
-    <div class="card h-100">
-      <a href="#"><img class="card-img-top" src="{{asset('images/champs.jpg')}}" alt=""></a>
-      <div class="card-body">
-      <h3 class="card-title ">
-     <!--    <button type="button" class="btn btn-outline-success">
-         <a href="Command/create ">COMMANDER</a> 
-         
-          </button>
-          -->
-        </h3>
-        <p class="card-text">Nos legumes sont de tres bonne qualite avec une culture naturel.Nous utilisons moyen d'engrais dans nos  productions </div>
-    </div>
-  </div>
-  <div class="col-lg-4 col-sm-6 portfolio-item">
-    <div class="card h-100">
-      <a href="#"><img class="card-img-top" src="{{asset('images/tomate.jpg')}}" alt=""></a>
-      <div class="card-body">
-        <h3 class="card-title ">
-       <!--  <button type="button" class="btn btn-outline-success">
-         <a href="Command/create ">COMMANDER</a> 
-          </button>
-          -->
-        </h3>
-        <p class="card-text"> nous disposons de tomate frais de tres bonne qualite.le 1kilogramme a 200 Franc fc
-        </p>
-      </div>
-    </div>
-  </div>
-  
   <h2>Nos champs</h2> 
-<div class="row">
-
-<div class="col-lg-4 col-sm-6 portfolio-item">
+  <div class="row">
+  <div class="col-lg-4 col-sm-6 portfolio-item">
     <div class="card h-100">
       <a href="#"><img class="card-img-top" src="{{asset('images/10.jpg')}}" alt=""></a>
       <div class="card-body">
@@ -169,37 +164,32 @@
     </div>
   </div>
 </div>
-
-</div>
-
 <!-- /.row -->
 
 <!-- Features Section -->
 <!--
 <div class="row">
-  <div class="col-lg-6">
-    <h2>Modern Business Features</h2>
-    <p>The Modern Business template by Start Bootstrap includes:</p>
-    <ul>
-      <li>
-        <strong>Bootstrap v4</strong>
-      </li>
-      <li>jQuery</li>
-      <li>Font Awesome</li>
-      <li>Working contact form with validation</li>
-      <li>Unstyled page elements for easy customization</li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
-  </div>
-  <div class="col-lg-6">
-    <img class="img-fluid rounded" src="{{asset('images/champs.jpg')}}" alt="sellou">
-  </div>
+
+        <div class="col-lg-6">
+            <h2>Modern Business Features</h2>
+            <p>The Modern Business template by Start Bootstrap includes:</p>
+            <ul>
+            <li><strong>Bootstrap v4</strong> </li>
+            <li>jQuery</li>
+            <li>Font Awesome</li>
+            <li>Working contact form with validation</li>
+            <li>Unstyled page elements for easy customization</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+        </div>
+    <div class="col-lg-6">
+        <img class="img-fluid rounded" src="{{asset('images/champs.jpg')}}" alt="sellou">
+    </div>
 </div>
 
 <!-- /.row
 
 <hr>
-
 <!-- Call to Action Section 
 <div class="row mb-4">
   <div class="col-md-8">
@@ -209,10 +199,6 @@
     <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
   </div>
    -->
-</div>
-    
-    </div>
-    
-  </div>
+   </div>
 
 @endsection

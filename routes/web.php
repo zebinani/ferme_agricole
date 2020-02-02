@@ -21,8 +21,8 @@ Route::get('/accueil',"AccueilController@index");
 Route::resource('/Contact',"ContactlistController");
 Route::get('/contacts', "ProductsController@index" );
 
-Auth::routes(); //la route pour authentification
-
+// Auth::routes(); //la route pour authentification
+Auth::routes(['verify'=>true]);
 // Auth::routes(['login' => false]); ca permet  de retire l'affiche du button login
 
 // Route::get('/User',"UsersController@Afficher");
@@ -79,12 +79,12 @@ Route::patch("/Command/edit/{id}","CommandesController@update")->name('Command_u
 });
 
 
+Route::get('/abonnement/expired', "AbonnementController@expired");
 
 
+Route::get('/welcome', 'HomeController@index')->name('welcome');
 
-
-
-//Route::get('/accueil', 'HomeController@index');
+// Route::get('/accueil', 'HomeController@index');
 
 // Auth::routes();
 

@@ -1,16 +1,16 @@
 <?php
 
 namespace App\Http\Controllers;
-
+ use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
-
+use App\Mail\AbonnementMail;
 class AbonnementController extends Controller
 {
     //
     public function expired(){
-        $name = "Amadou";
+        $name = "Sellou";
         $date = "31 - 12 -2019";
-        Illuminate\Support\Facades\Mail::to('masellouddiallo@gmail.com')->send(new AbonnementMail($name, $date));
+        Mail::to('masellouddiallo@gmail.com')->send(new AbonnementMail($name, $date));
         return "Message envoyé";
      }
      

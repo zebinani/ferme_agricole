@@ -36,6 +36,8 @@
                     <div><label for="text">REFERENCE</label><div>
                     <input list="reference" name="reference" class="form-control" required>
                         <datalist id="reference">
+
+                            
                             <option value="FRUIT">
                             <option value="LEGUME">
                             <option value="CEREALE">

@@ -31,7 +31,8 @@
               <br><br>
                     <div>
                     <select name="Department_id" id="Department" class="form-control" required  placeholder="Departement">
-                        <option value=""></option>
+                        <option value="" > </option>
+
                         @foreach($Departments as $key => $value)
                             <option value="{{$key}}">{{$value}}</option>
                         @endforeach

@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-  <link href="{{asset('css/app.css')}}" rel="stylesheet" />
-  <link href="{{asset('css/all.css')}}" rel="stylesheet" />
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+      <head>
+        <link href="{{asset('css/app.css')}}" rel="stylesheet" />
+        <link href="{{asset('css/all.css')}}" rel="stylesheet" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-  <title>FERME AGRICOLE</title>
+        <title>FERME AGRICOLE</title>
 
-  <!-- Bootstrap core CSS -->
-</head>
+        <!-- Bootstrap core CSS -->
+      </head>
 
-<body>
+  <body>
    
- <header>
- <!--
-  <div class="container justify-content-center">
-      <div class="row-12  fixed-top  heigth-45vw justify-content-center"> 
-          <div class="col-12 "> PLATE-FORME DE GESTION AGRICOLE </div>
-      </div>
-  </div>
--->
-<div class="container">
-  <div class="row  fixed-top text-align-center">
-    <div class="col-sm-12 bg-success">
-      <div class="entete"><strong>  PLATE-FORME DE GESTION DE FERME AGRICOLE </strong>  </div>
- 
-    </div>
-  </div>
-</div>
-</header>
+    <header>
+        <!--
+          <div class="container justify-content-center">
+              <div class="row-12  fixed-top  heigth-45vw justify-content-center"> 
+                  <div class="col-12 "> PLATE-FORME DE GESTION AGRICOLE </div>
+              </div>
+          </div>
+        -->
+          <div class="container">
+              <div class="row  fixed-top text-align-center">
+                <div class="col-sm-12 bg-success">
+                  <div class="entete"><strong>  PLATE-FORME DE GESTION DE FERME AGRICOLE </strong>  </div>
+            
+                </div>
+              </div>
+          </div>
+    </header>
  
   <main>
- 
-
   <!-- Navigation -->
   <!-- <div id='titre'><h1>PLATE-FORME DE GESTION DE FERME</h1></div>-->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
- 
+  
     <div class="container">
-      <a class="navbar-brand" href="/accueil">Accueil</a>
-      <a class="navbar-brand" href="/Command/create">Commander</a>
-      <a class="navbar-brand" href="/Contact/create">Contact</a>
-      <a class="navbar-brand" href="/accueil">Blog</a>
+    <a class="navbar-brand" href="/accueil">Accueil</a></button>
+    <a class="navbar-brand" href="/Command/create">Commander</a></button>
+    <a class="navbar-brand" href="/Contact/create">Contact</a></button>
+    <button type="button" class="btn btn-outline"><a class="navbar-brand" href="/accueil">Blog</a></button>
+      
+      
+      
+      
 
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -57,14 +59,14 @@
        
         
        
-  @can('Admin')
-       <!--
-        <a class="navbar-brand" href="/User"><button type="button" class="btn btn-outline-success">Utilisateurs</button> </a>
-        <a class="navbar-brand" href="/Product"> <button type="button" class="btn btn-outline-success">Produits</button> </a>
-        <a class="navbar-brand" href="/Employ"><button type="button" class="btn btn-outline-success">Employers</button> </a>
-        <a class="navbar-brand" href="/Client"><button type="button" class="btn btn-outline-success">Clients</button> </a>
-        <a class="navbar-brand" href="/Command"><button type="button" class="btn btn-outline-success">Commandes</button> </a>
-        -->
+        @can('Admin')
+              <!--
+                <a class="navbar-brand" href="/User"><button type="button" class="btn btn-outline-success">Utilisateurs</button> </a>
+                <a class="navbar-brand" href="/Product"> <button type="button" class="btn btn-outline-success">Produits</button> </a>
+                <a class="navbar-brand" href="/Employ"><button type="button" class="btn btn-outline-success">Employers</button> </a>
+                <a class="navbar-brand" href="/Client"><button type="button" class="btn btn-outline-success">Clients</button> </a>
+                <a class="navbar-brand" href="/Command"><button type="button" class="btn btn-outline-success">Commandes</button> </a>
+                -->
        
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -89,9 +91,9 @@
       
           </li>
 
-                   @endcan
+        @endcan
         
- <!-- </li>
+       <!-- </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Blog
@@ -116,7 +118,7 @@
           </li>
           <li class="nav-item">
           -->
-          @guest
+               @guest
                             
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Connexion') }}</a>
@@ -157,9 +159,9 @@
   </nav>
 
 
-  <main>
-  <!-- la page de connexion-->
-  <div id="container">
+    <main>
+         <!-- la page de connexion-->
+      <div id="container">
   
         <div id="container"> @yield("create_product ") </div> 
         
@@ -218,22 +220,22 @@
               
              
               <div id="container"> @yield("sect_create_mat")</div>
-             
-             
-             <div id="container">@yield("create_materiel")</div>
+              <div id="container">@yield("create_materiel")</div>
+
+              <div id="container">@yield("Com_index")</div>
+              <div id="container">@yield("Com_create")</div>
+              <div id="container">@yield("Com_edit")</div>
               
-             
-                <div id="container">@yield("Com_index")</div>
-                <div id="container">@yield("Com_create")</div>
-                <div id="container">@yield("Com_edit")</div>
+              <div id="container">@yield("parcel_index")</div>
+              <div id="container">@yield("parcel_create")</div>
+              <div id="container">@yield("parcel_edit")</div>
 
-                <div id="container">@yield("parcel_index")</div>
-                <div id="container">@yield("parcel_create")</div>
-                <div id="container">@yield("parcel_edit")</div>
-
+               
                <div id="container">@yield("validation")</div> 
                <div id="container">@yield("login")</div> 
                <div id="container">@yield("verication")</div> 
+             
+               
                
 
                <div id="container">@yield("client_index")</div> 
@@ -254,34 +256,29 @@
 
                <div id="container">  @yield("Prod_creation")</div>
                <div id="container">  @yield("Prod_index")</div>
-             
+          </div> 
 
-               
+       </main>
 
-              
-</div> 
+        <footer class="py-2 bg-dark ">
+            <div class="container ">
+            <div class="row-12 ">
+              <p class="m-0 text-center   text-white">Copyright 2020 &copy; TOUS LES DROITS SONT RESERVES BINANITECH</p>
+            </div>
+            <!-- /.container -->
+        </footer>
 
-</main>
+              <!-- Bootstrap core JavaScript -->
+              <script src="{{asset('js/app.js')}}"></script>
+              <script src="{{ asset('node_modules/tinymce/tinymce.js') }}"></script>
+              <script>
+                tinymce.init({
+                    selector:'textarea.description',
+                    width: 900,
+                    height: 300,
+                });
+              </script>
 
- <footer class="py-2 bg-dark ">
-    <div class="container ">
-    <div class="row-12 ">
-      <p class="m-0 text-center   text-white">Copyright 2020 &copy; TOUS LES DROITS SONT RESERVES BINANITECH</p>
-    </div>
-    <!-- /.container -->
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="{{asset('js/app.js')}}"></script>
-  <script src="{{ asset('node_modules/tinymce/tinymce.js') }}"></script>
-<script>
-   tinymce.init({
-       selector:'textarea.description',
-       width: 900,
-       height: 300,
-   });
-</script>
-
-</body>
+  </body>
 
 </html>

@@ -21,16 +21,15 @@
          <div><input type="text" name="telephone" class="form-control" placeholder="Telephone" value="{{$Employs->telephone}}"> </div>
         
       <div> 
-                    <select name="Department_id" id="Department" class="form-control">
-                        <option value=""></option>
+                    <select name="Department_id" id="Department_id" class="form-control">
+                        <option value="$Employs->Department_id"></option>
                         @foreach($Departments as $key => $value)
-                            <option value="{{$key}}">{{$value }}</option>
+                            <option value="{{$key}}"{{ $key == $Employs->Department_id ? 'selected="selected"':''}}>{{$value }}</option>
                         @endforeach
                     </select>
                     
                     </div>
-         
-         
+    
          <div> <button class="btn btn-primary">Enregistrer</button> </div>
       </form>
 

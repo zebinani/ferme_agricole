@@ -100,11 +100,11 @@ class EmploysController extends Controller
         //
         $Employs = \App\Employ::find($id);//on recupere le produit
         $Departments = \App\Department::pluck( 'name','id');
-        $departEmpl= \App\Department::find($Employs->department_id);
+       // $departEmpl= \App\Department::find($Employs->department_id);
 
         $valdep = $departEmpl->name;
         dd($valdep);
-        return view('employers.edit', compact('Employs','Departments','valdep'));
+        return view('employers.edit', compact('Employs','Departments'));
        
     }
 

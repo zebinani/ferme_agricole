@@ -1,9 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
-
 use App\Command ;
 
 class CommandesController extends Controller

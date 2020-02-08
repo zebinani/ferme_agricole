@@ -33,12 +33,7 @@ class EmploysController extends Controller
          $Departments = \App\Department::pluck( 'name','id');
 
          return view('employers.create', compact('Departments'));
-       
 
-   
-
-
-      
     }
 
     /**
@@ -100,11 +95,8 @@ class EmploysController extends Controller
         //
         $Employs = \App\Employ::find($id);//on recupere le produit
         $Departments = \App\Department::pluck( 'name','id');
-       // $departEmpl= \App\Department::find($Employs->department_id);
-
-        $valdep = $departEmpl->name;
-        dd($valdep);
-        return view('employers.edit', compact('Employs','Departments'));
+        $nomDep = \App\Department::find($Employs->department_id)->name;
+        return view('employers.edit', compact('Employs','Departments','nomDep'));
        
     }
 
@@ -119,7 +111,7 @@ class EmploysController extends Controller
     {
         //
         $employs = \App\Employ::find($id);
-        if($employs )  $employs->update([
+         if($employs )  $employs->update([
            'matricule' => $request->input('matricule'),
            'nom' => $request->input('nom'),
            'prenom'=> $request->input('prenom'),

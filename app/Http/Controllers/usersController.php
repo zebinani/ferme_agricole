@@ -88,8 +88,7 @@ class usersController extends Controller
         //
        $this->authorize('Admin');
         $Users = \App\User::find($id);//on recupere le produit
-    
-        return view('Admin.edit', compact('Users'));
+       return view('Admin.edit', compact('Users'));
     }
 
     /**

@@ -96,13 +96,15 @@
                @guest
                             
                             <li class="nav-item">
+                            
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Connexion') }}</a>
+                                
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
                                     
-                               
-                         <a class="nav-link" href="{{ route('register') }}">{{ __("S'inscrire") }}</a> 
+                                <button type="button" class="btn btn-outline-success btn-sm"> <a class="nav-link" href="{{ route('register') }}">{{ __("S'inscrire") }}</a>  </button>     
+                         
                                 </li>
                             @endif
                         @else

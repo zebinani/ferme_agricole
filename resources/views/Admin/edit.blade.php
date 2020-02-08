@@ -17,12 +17,17 @@
 
          <div><input type="password" name="password" class="form-control" placeholder="EMAIL" value="{{$Users->password}}"> </div>
 
-         <div><select name="role">
-                        <option value="Admin"></option>
-                        <option value="Admin">Admin</option>
-                        <option value="user">utilisateur</option>
+         <div>
+                     <select  type="text" name="role" class="form-control" value="{{$Users->role}}">
+
+                        <option value="Admin" {{$Users->role==='Admin'? 'selected="selected" ':''}}>Admin</option>
+
+                        <option value="User" {{$Users->role==='User'? 'selected="selected" ':''}}>User</option>
                         
-                        </select></div>
+                        
+                        
+                     </select>
+         </div>
 
          <div> <button class="btn btn-primary">Enregistrer</button> </div>
       </form>

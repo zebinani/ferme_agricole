@@ -10,23 +10,9 @@
     <br>
         <form action="{{route('Command.store')}}" method="post" autocomplete="on">
                     @csrf
-                    <div class="row-4">
-                    <div><label for="text">ARTICLE</label><div>
                     
-                        <select id="product"name="article" class="form-control" required >
-                        
-                            
-                            <option value="Banane">BANANE</option>
-                            <option value="mangue">MANGUE</option>
-                            <option value="legume">LEGUME</option>
-                            <option value="carotte">CAROTTE</option> 
-                            <option  value="orange" selected>select</option>
-                        </select>
-
-                    </div>
-                    <br>
-                    <div class="row-4">
-                    <div><label for="text">REFERENCE</label><div>
+                 <div class="row-4">
+                    <div><label for="text">CATEGORIERS</label><div>
                         <select id="reference" name="reference" class="form-control" required>
                             <option value="FRUIT">FRUIT</option>
                             <option value="CEREALE">CEREALE</option>
@@ -36,16 +22,30 @@
                         
                     </div>
                     <br>
+                <div class="row-4">
+                    <div><label for="text">ARTICLE</label><div>
+                    <select id="product"name="article" class="form-control" required >
+                    
+                        <option value="Banane">BANANE</option>
+                        <option value="mangue">MANGUE</option>
+                        <option value="legume">LEGUME</option>
+                        <option value="carotte">CAROTTE</option> 
+                        <option  value="orange" selected>select</option>
+                    </select>
+
+                </div>
+                    <br>
                     <div class="row-4">
                     <div><label for="quantite">QUANTITE</label><div>
                         <input type="number" name="quantite" class="form-control" required>
                     </div>
                     
-                    <div class="row-4">
+                <div class="row-4">
                     <div><label for="text">ADRESSE</label><div>
                         <input type="text" name="adresse" class="form-control" required >
                     </div>
-                    <div class="row-4">
+                    <br>
+                 <div class="row-4">
                     <div><label for="phone">TELEPHONE</label><div>
                         <input type="tel" name="phone" class="form-control" required >
                     </div>

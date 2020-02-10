@@ -53,8 +53,8 @@ class CommandesController extends Controller
         
         $Commande= new Command();
 
-        $Commande->article =$request->input('article');
         $Commande->reference=$request->input('reference');
+        $Commande->article =$request->input('article');
         $Commande->quantite=$request->input('quantite');
         $Commande->user_id=Auth::id();
         $Commande->adresse=$request->input('adresse');
@@ -109,9 +109,9 @@ class CommandesController extends Controller
          $Commandes =\App\Command::find($id);
 
           if($Commandes) $Commandes->update([
-            
-            'article'=>$request->input('article'),
+              
             'reference'=>$request->input('reference'),
+            'article'=>$request->input('article'),
             'quantite'=>$request->input('quantite'),
             'adresse'=>$request->input('adresse'),
             'phone'=>$request->input('phone')

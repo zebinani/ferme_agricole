@@ -20,13 +20,11 @@
                             <option value="mangue">MANGUE</option>
                             <option value="legume">LEGUME</option>
                             <option value="carotte">CAROTTE</option> 
-                            <option  value="orange" selected>ORANGE</option>
+                            <option  value="orange" selected>select</option>
                         </select>
 
-     
- 
-                        
                     </div>
+                    <br>
                     <div class="row-4">
                     <div><label for="text">REFERENCE</label><div>
                         <select id="reference" name="reference" class="form-control" required>
@@ -42,6 +40,7 @@
                     <div><label for="quantite">QUANTITE</label><div>
                         <input type="number" name="quantite" class="form-control" required>
                     </div>
+                    
                     <div class="row-4">
                     <div><label for="text">ADRESSE</label><div>
                         <input type="text" name="adresse" class="form-control" required >

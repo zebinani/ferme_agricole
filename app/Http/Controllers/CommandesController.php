@@ -19,6 +19,7 @@ class CommandesController extends Controller
         //
         $Commandes= \App\Command::orderBy('created_at','DESC')->get();
        
+    
         return view('commandes.index',compact('Commandes'));
 
         
@@ -31,10 +32,13 @@ class CommandesController extends Controller
      */
     public function create()
     {
-        //
+        $user_id = Auth::id();
+         // dump($user_id);
+      //  return view('employers.create', compact('Departments'));
+        
        // $Clients = \App\Client::pluck( 'num_client','id');
-        return view("commandes.create");
-         
+        return view("commandes.create",compact('user'));
+       
     }
 
     /**
@@ -52,10 +56,11 @@ class CommandesController extends Controller
         $Commande->article =$request->input('article');
         $Commande->reference=$request->input('reference');
         $Commande->quantite=$request->input('quantite');
+        $Commande->user_id=Auth::id();
         $Commande->adresse=$request->input('adresse');
         $Commande->phone=$request->input('phone');
        // dd("$Commande");
-       $Commande->save();
+        $Commande->save();
 
        return redirect('/')->with(['success' => "Employe enregistré"]);
 

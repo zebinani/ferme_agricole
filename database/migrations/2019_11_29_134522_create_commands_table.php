@@ -18,8 +18,10 @@ class CreateCommandsTable extends Migration
             $table->string('article');
             $table->string('reference');
             $table->integer('quantite');
+            $table->unsignedInteger('user_id');
             $table->string('adresse');
             $table->integer('phone');
+
             $table->timestamps();
         });
     }

@@ -43,5 +43,11 @@ class User extends Authenticatable
 
         public function isUTILISATEUR(){
             return strtolower(@$this->role) === 'UTILISATEUR'? true : false;}
+
+
+            public function commands(){
+
+                return $this->hasmany("App\Command");
+            }
 };
 

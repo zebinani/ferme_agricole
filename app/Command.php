@@ -14,8 +14,8 @@ class Command extends Model
         return $this->hasOne("App\Production");
     }
 
-    public function Client(){
+    public function user(){
 
-        return $this->belongsTo("App\Client");
+        return $this->belongsTo("App\User");
     }
 }

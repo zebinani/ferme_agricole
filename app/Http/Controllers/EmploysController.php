@@ -31,7 +31,7 @@ class EmploysController extends Controller
     {
         $this->authorize('Admin');
          $Departments = \App\Department::pluck( 'name','id');
-
+          dump($departments);
          return view('employers.create', compact('Departments'));
 
     }

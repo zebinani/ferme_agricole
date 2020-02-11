@@ -33,11 +33,8 @@ class CommandesController extends Controller
     public function create()
     {
         $user_id = Auth::id();
-         // dump($user_id);
       //  return view('employers.create', compact('Departments'));
-        
-       // $Clients = \App\Client::pluck( 'num_client','id');
-        return view("commandes.create",compact('user'));
+        return view("commandes.create",compact('user_id'));
        
     }
 

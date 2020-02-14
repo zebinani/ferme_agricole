@@ -6,23 +6,27 @@
  <div class="col-8">
  <div><h1>{{__('Enregistrement d\'un Produit')}}</h1></div>
  <br>
+
+ <form action="{{route('Product.store')}}" method="post" enctype="multipart/form-data">
  
- <form action="{{route('Product.store')}}" method="post">
                @csrf
                <div>
                    <input type="text" name="name" class="form-control"required placeholder="le nom du produit">
                </div>
                <br>
                <div>
-                   <input type="text" name="price" class="form-control"required placeholder="Le prix du produit">
+                   <input type="number" min="0" name="price" class="form-control"required placeholder="Le prix du produit">
                </div>
                <br>
                <div>
-                   <input type="text" name="quantity" class="form-control"required placeholder="Le quantite du produit">
+                   <input type="number" min="0" name="quantity" class="form-control"required placeholder="Le quantite du produit">
                </div>
-  <br>
+                <br>            
+                <div><input type="file" name="product_image" class="form-control"></div>
+                <br>
+  
                <div>
-                   <button class="btn btn-primary">Enregistrer</button>
+                   <button type="submit" class="btn btn-primary">Enregistrer</button>
                </div>
                <br><br>
     </form>

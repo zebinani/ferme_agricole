@@ -18,8 +18,7 @@
                             <option value="CEREALE">CEREALE</option>
                             <option value="LEGUME">LEGUME</option>
                             <option  value="#" selected>SELECTIONNER </option>
-                        </select>
-                        
+                        </select>                       
                     </div>
                     <br>
                 <div class="row-4">

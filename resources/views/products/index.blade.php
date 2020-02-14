@@ -9,18 +9,18 @@
 <div><h1>{{__('Liste des produits')}}</h1></div>
 <br>
 <tr class=" bg-success">
-           <th>id</th>          <th>Nom Produit</th>  <th>Prix Produit</th>    <th>Quantite</th>  <th><a href="Product/create "> <button class="btn btn-success">Ajouter</button></a></th>      <th>Action</th>
+           <th>id</th>          <th>Nom Produit</th>  <th>Prix Produit</th>    <th>Quantite</th> <th>Images</th> <th><a href="Product/create "> <button class="btn btn-success">Ajouter</button></a></th>      <th>Action</th>
        </tr>
        
-       @foreach($products as $product)
-       
-       
-   <tr>
+       @foreach($products as $product)  
+<tr>
        
             <td>{{$product->id ?? ''}}</td>
             <td>{{$product->name ?? ''}}</td>
             <td>{{$product->price ?? ''}} </td>
             <td>{{$product->quantity ?? ''}} </td>
+            
+            <td><img src="{{$product->product_image ? asset($product->images) : asset('uploads/images/default.png')}}" alt="{{$product->name}}" width="50"></td>
 
             <td>
             <a href="Product/create "> <button class="btn btn-success">  Ajouter </button></a>
@@ -35,7 +35,7 @@
              </td>
               
            </form>
-   </tr>
+</tr>
 
 @endforeach
 

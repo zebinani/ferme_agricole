@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Product;
 
@@ -14,12 +15,13 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        $this->authorize('Admin');
+       // $this->authorize('Admin');
         //
     $products = \App\Product::orderBy('created_at', 'DESC')->get();
-     
+        
         return view('products.index', compact('products'));
     }
+    
 
     /**
      * Show the form for creating a new resource.
@@ -40,18 +42,41 @@ class ProductsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    { 
-        $this->authorize('Admin');
-        $product = new Product();
-        $product->name = $request->input('name');
-        $product->price = $request->input('price');
-        $product->quantity = $request->input('quantity');
-        
-        $product->save();
+    {
+       
+        $data =$request->validate([
+            "name"=>"required|max:300|min:5",
+            "price"=>"required|numeric",
+            "product_image" => 'nullable | image | mimes:jpeg,png,jpg,gif | max: 2048'
+        ]);
 
+        $produit = new Product();
+        //On verfie si une image est envoyée
+        if($request->has('product_image')){
+            //On enregistre l'image dans un dossier
+            $image = $request->file('product_image');
+            //Nous allons definir le nom de notre image en combinant le nom du produit et un timestamp
+            $image_name = Str::slug($request->input('name')).'_'.time();
+            //Nous enregistrerons nos fichiers dans /uploads/images dans public
+            $folder = '/uploads/images/';
+            //Nous allons enregistrer le chemin complet de l'image dans la BD
+            $produit->product_image= $folder.$image_name.'.'.$image->getClientOriginalExtension();
+            //Maintenant nous pouvons enregistrer l'image dans le dossier en utilisant la methode uploadImage();
+            $this->uploadImage($image, $folder, 'public', $image_name);
+        }
+       $produit->name = $request->input('name');
+       $produit->price = $request->input('price');
+       $produit->quantity = $request->input('quantity');
+       $produit->save();
+ 
         return redirect('/');
     }
-
+    public function uploadImage(UploadedFile $uploadedFile, $folder = null, $disk = 'public', $filename = null){
+        $name = !is_null($filename) ? $filename : str_random('25');
+        $file = $uploadedFile->storeAs($folder, $name.'.'.$uploadedFile->getClientOriginalExtension(), $disk);
+     
+        return $file;
+     }
     /**
      * Display the specified resource.
      *
@@ -116,5 +141,8 @@ class ProductsController extends Controller
         if($Products)
         $Products->delete();
     return redirect()->route('Product.index');
-    }
 }
+
+ 
+}
+

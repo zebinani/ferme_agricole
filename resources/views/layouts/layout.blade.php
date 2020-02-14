@@ -34,8 +34,9 @@
           <div class="container">
           <a class="navbar-brand" href="/accueil">Accueil</a></button>
           <a class="navbar-brand" href="/Command/create">Commander</a></button>
+          <a class="navbar-brand" href="/show">Boutique</a>
           <a class="navbar-brand" href="/Contact/create">Contact</a></button>
-          <a class="navbar-brand" href="/accueil">Blog</a>
+          
       
       
       
@@ -48,6 +49,8 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         
         <ul class="navbar-nav ml-auto">
+        
+        
             @can('Admin')
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio"   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -56,13 +59,14 @@
               
               <div class="dropdown-menu dropdown-menu-right"     aria-labelledby="navbarDropdownPortfolio">
                   <a class="dropdown-item" href="/Employ">Personnels</a>
-                  <a class="dropdown-item" href="/Product">Produits</a>
+                  
                   <a class="dropdown-item" href="/Production">Production</a>
                   <a class="dropdown-item" href="/Materiel">Materiels</a>
                   <a class="dropdown-item" href="/Command">Commandes</a>
                   <a class="dropdown-item" href="/Ventes">Ventes</a>
                   <a class="dropdown-item" href="/Parcel">Parcelles</a>
                   <a class="dropdown-item" href="/Client">Clients</a>
+                  <a class="dropdown-item" href="/Product">Produits</a>
                   <a class="dropdown-item" href="/Department">Departments</a>
                   <a class="dropdown-item" href="/User">Utilisateur</a>
                   <a class="dropdown-item" href="/Contact">contacts</a>
@@ -161,6 +165,11 @@
               @yield("sect_accueil")
 
               </div> 
+              <div id="container">
+                
+                @yield("page_show")
+  
+                </div> 
               <div id="container">
                 
               @yield("sect_contact")

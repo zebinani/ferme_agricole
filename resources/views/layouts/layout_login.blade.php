@@ -34,7 +34,7 @@
       <a class="navbar-brand" href="/accueil">Accueil</a>
       <a class="navbar-brand" href="/Command/create">Commander</a>
       <a class="navbar-brand" href="/Contact/create">Contact</a>
-      <a class="navbar-brand" href="/accueil">Blog</a>
+    <!--   <a class="navbar-brand" href="/accueil">Blog</a>-->
       
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

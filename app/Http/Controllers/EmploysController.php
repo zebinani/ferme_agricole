@@ -61,10 +61,10 @@ class EmploysController extends Controller
    $employs->telephone = $request->input('telephone');
 
    $employs->department_id = $request->input('Department_id');
-   // dd("$employs");
+    //dd("$employs");
    $employs->save();
 
-  // return redirect('/');
+   return redirect('/');
 
    return redirect()->route('Employ.index')->with(['success' => "Employe enregistré"]);
 

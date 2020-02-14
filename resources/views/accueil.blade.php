@@ -62,7 +62,7 @@
             <div class="card h-100">
               <h4 class="card-header">A LA UNE</h4>
               <div class="card-body">
-                <p class="card-text">Nous recrutons 150  saisonniers pour la recolte du mois de janviers .</p>
+                <p class="card-text"> <span>Nous recrutons 150  saisonniers pour la recolte du mois de janviers . </span></p>
               </div>
               <div class="card-footer">
                 <a href="#" class="btn btn-primary">suite</a>
@@ -83,10 +83,12 @@
   </div>
           <!-- Portfolio Section -->
   
-    <h2>Nos Produits</h2>
+    <h2><a class="navbar-brand" href="/show">Boutique</a></h2>
+
+    
       <!-- /.row  <div class="test1">--> 
  
-  <div class="row">
+    <div class="row">
       <div class="col-lg-4 col-sm-4 portfolio-item">
         <div class="card h-100">
           <a href="#"><img class="card-img-top" src="{{asset('images/fruit1.jpeg')}}" alt=""></a>
@@ -94,7 +96,7 @@
             <h3 class="card-title ">
            <!--  <button type="button" class="btn btn-outline-success">   <a href="Command/create ">COMMANDER</a> 
             </button>
-            --> 
+            -->
               </h3>
               <p class="card-text">la fraicheur le gout et la qualite d'une agriculture raisonnee </p>
             </div>
@@ -130,6 +132,7 @@
           </div>
         </div>
        </div>
+       
      
         <h2>Nos champs</h2> 
   <div class="row">

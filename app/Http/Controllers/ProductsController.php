@@ -99,8 +99,8 @@ class ProductsController extends Controller
     { 
         //
         $product = \App\Product::find($id);//on recupere le produit
-        dd("$product");
-       // return view('products.edit', compact('product'));
+        
+        return view('products.edit', compact('product'));
     }
 
 

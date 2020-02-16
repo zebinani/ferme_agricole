@@ -67,6 +67,7 @@ class ProductsController extends Controller
        $produit->name = $request->input('name');
        $produit->price = $request->input('price');
        $produit->quantity = $request->input('quantity');
+       $produit->description = $request->input('description');
        $produit->save();
  
         return redirect('/');
@@ -98,8 +99,8 @@ class ProductsController extends Controller
     { 
         //
         $product = \App\Product::find($id);//on recupere le produit
-        
-        return view('products.edit', compact('product'));
+        dd("$product");
+       // return view('products.edit', compact('product'));
     }
 
 
@@ -120,7 +121,8 @@ class ProductsController extends Controller
          $product->update([
            'name' => $request->input('name'),
            'price' => $request->input('price'),
-           'quantity'=> $request->input('quantity')
+           'quantity'=> $request->input('quantity'),
+           'description'=> $request->input('description')
            
        ]);
    }

@@ -24,7 +24,9 @@
                 <br>            
                 <div><input type="file" name="product_image" class="form-control"></div>
                 <br>
-  
+                           
+                <div>  <textarea  name="description" class="form-control"></textarea></div>
+                <br>
                <div>
                    <button type="submit" class="btn btn-primary">Enregistrer</button>
                </div>

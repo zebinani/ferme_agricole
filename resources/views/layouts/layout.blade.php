@@ -36,6 +36,8 @@
           <a class="navbar-brand" href="/Command/create">Commander</a></button>
           <a class="navbar-brand" href="/show">Boutique</a>
           <a class="navbar-brand" href="/Contact/create">Contact</a></button>
+
+          <a class="navbar-brand" href="#">Panier <span classe="badge badge-pill badge-dark"> {{Cart::count()}}</span> </a>
           
       
       
@@ -49,7 +51,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         
         <ul class="navbar-nav ml-auto">
-        
+        <li class="nav-item dropdown">
+                
+                
+                </a>
         
             @can('Admin')
               <li class="nav-item dropdown">
@@ -95,7 +100,7 @@
               </li>  
             @endcan
 
-
+            
           <!-- pour faire du backend -->
                @guest
                             
@@ -134,6 +139,7 @@
               </li>
               </li>
               </li>
+              <li><a  href="#">Panier <span classe="badge badge-pill badge-black"> {{Cart::count()}}</span> </li>
           </ul>
       </div>
      </div>

@@ -78,7 +78,7 @@ Route::patch("/Command/edit/{id}","CommandesController@update")->name('Command_u
 
 
 });
-
+Route::post('/panier/Ajouter',"cartController@store")->name('cart.store');
 
 Route::get('/abonnement/expired', "AbonnementController@expired");
 

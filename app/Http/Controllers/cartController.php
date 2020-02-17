@@ -3,11 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-<<<<<<< HEAD
 use Gloudemans\Shoppingcart\Facades\Cart;
-=======
-
->>>>>>> 5497d738057804fdb72dd68d88bae72a47670479
 class cartController extends Controller
 {
     /**
@@ -39,12 +35,9 @@ class cartController extends Controller
     public function store(Request $request)
     {
         //
-<<<<<<< HEAD
         cart::add($request->id,$request->name,1,$request->price) 
         ->associate(' App\Product');
         return redirect('/show')->with(['success'=>'le produit est bien ajouter au panier']);
-=======
->>>>>>> 5497d738057804fdb72dd68d88bae72a47670479
     }
 
     /**

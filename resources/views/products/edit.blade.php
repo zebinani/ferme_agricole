@@ -26,6 +26,16 @@
         value="{{$product->quantity ?? ''}}">
             </div>
         <br>
+        <br>
+        <div>
+        <input type="file" name="product_image" class="form-control"required 
+        value="{{$product->product_image ?? ''}}">
+            </div>
+        <br>
+        <div>
+        <textarea  name="description" class="form-control" placeholder="description du produit" value="{{$product->description ?? ''}}"></textarea>
+         </div>
+         <br>
             <div> <button class="btn btn-primary">Enregistrer</button> </div>
 
 </form>

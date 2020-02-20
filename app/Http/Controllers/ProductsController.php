@@ -99,12 +99,9 @@ class ProductsController extends Controller
     { 
         //
         $product = \App\Product::find($id);//on recupere le produit
-        
+       // dd($product);
         return view('products.edit', compact('product'));
     }
-
-
-
 
     /**
      * Update the specified resource in storage.

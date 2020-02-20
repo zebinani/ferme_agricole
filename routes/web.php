@@ -19,7 +19,9 @@ Route::get('/', function () {
 Route::get('/accueil',"AccueilController@index");
 Route::resource('/Contact',"ContactlistController");
 Route::get('/contacts', "ProductsController@index" );
-Route::get('/show', "showController@show" );
+Route::get('/shop', "showController@shop" );
+
+Route::get("/show/{id}", "showController@show" )->name('show_detail');
 
 // Auth::routes(); //la route pour authentification
 Auth::routes(['verify'=>true,]);
@@ -78,7 +80,13 @@ Route::patch("/Command/edit/{id}","CommandesController@update")->name('Command_u
 
 
 });
+
+   Route::get('/videpanier',function(){
+      Cart::destroy();
+});
 Route::post('/panier/Ajouter',"cartController@store")->name('cart.store');
+Route::get('/panier',"cartController@index")->name('cart.index');
+Route::delete('/panier/{rowId}',"cartController@destroy")->name('cart.destroy');
 
 Route::get('/abonnement/expired', "AbonnementController@expired");
 

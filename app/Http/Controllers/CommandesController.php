@@ -50,7 +50,7 @@ class CommandesController extends Controller
         
         $Commande= new Command();
 
-        $Commande->reference=$request->input('reference');
+        
         $Commande->article =$request->input('article');
         $Commande->quantite=$request->input('quantite');
         $Commande->user_id=Auth::id();
@@ -107,7 +107,7 @@ class CommandesController extends Controller
 
           if($Commandes) $Commandes->update([
               
-            'reference'=>$request->input('reference'),
+            
             'article'=>$request->input('article'),
             'quantite'=>$request->input('quantite'),
             'adresse'=>$request->input('adresse'),

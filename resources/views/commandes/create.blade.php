@@ -11,16 +11,7 @@
         <form action="{{route('Command.store')}}" method="post" autocomplete="on">
                     @csrf
                     
-                 <div class="row-4">
-                    <div><label for="text">CATEGORIERS</label><div>
-                        <select id="reference" name="reference" class="form-control" required>
-                            <option value="FRUIT">FRUIT</option>
-                            <option value="CEREALE">CEREALE</option>
-                            <option value="LEGUME">LEGUME</option>
-                            <option  value="#" selected>SELECTIONNER </option>
-                        </select>                       
-                    </div>
-                    <br>
+                
                 <div class="row-4">
                     <div><label for="text">ARTICLE</label><div>
                     <select id="product"name="article" class="form-control" required >

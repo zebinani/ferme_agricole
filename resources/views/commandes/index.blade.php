@@ -26,7 +26,7 @@
                 
                  
                 <td>
-                 <p><a href="{{route('Command_update',['id'=>$commande->id])}}"><button type="button" class="btn btn-info btn-sm">Modifier</button></a> </p>
+                 <p><a href="{{route('Command_update',['id'=>$commande->id])}}"><button type="submit" class="btn btn-info btn-sm">Modifier</button></a> </p>
                   
                 <form action="Command/{{$commande->id}}" method="post">
                @csrf

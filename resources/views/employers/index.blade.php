@@ -37,7 +37,7 @@
                 
                 <td> 
                 <p>
-                 <a href="{{route('update.Employs',['id'=>$employ->id])}}"> <button type="button" class="btn btn-warning">Editer </button></a>
+                 <a href="{{route('update.Employs',['id'=>$employ->id])}}"> <button type="button" class="btn btn-warning"><i class="fas fa-trash-alt"></i></button></a>
                  </p>
                 
                 <form action="Employ/{{$employ->id}}" method="post">

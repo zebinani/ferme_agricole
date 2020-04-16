@@ -44,10 +44,10 @@ class MaterielsController extends Controller
             $materiel = new Materiel();
 
             $materiel->name = $request->input('name');
+            
+            $materiel->amortissement = $request->input('amortissement');
 
             $materiel->description = $request->input('description');
-
-            $materiel->amortissement = $request->input('amortissement');
             
             $materiel->save();
 
@@ -98,8 +98,8 @@ class MaterielsController extends Controller
         $materiels = \App\Materiel::find($id);
         if($materiels )  $materiels->update([
            'name' => $request->input('name'),
-           'description' => $request->input('description'),
-           'amortissement'=> $request->input('amortissement')
+           'amortissement'=> $request->input('amortissement'),
+           'description' => $request->input('description')
            
            
        ]);

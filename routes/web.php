@@ -84,9 +84,12 @@ Route::patch("/Command/edit/{id}","CommandesController@update")->name('Command_u
    Route::get('/videpanier',function(){
       Cart::destroy();
 });
+Route::resource('/panier','cartController');
 Route::post('/panier/Ajouter',"cartController@store")->name('cart.store');
 Route::get('/panier',"cartController@index")->name('cart.index');
+Route::patch('/panier/{rowId}',"cartController@update")->name('cart.update');
 Route::delete('/panier/{rowId}',"cartController@destroy")->name('cart.destroy');
+
 
 Route::get('/abonnement/expired', "AbonnementController@expired");
 

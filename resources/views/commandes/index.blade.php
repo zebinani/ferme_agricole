@@ -5,10 +5,11 @@
 <table class="table table-striped">
 <br>
 <div><h1>{{__('Liste Des Commandes')}}</h1></div>
+<th>  <a href="Command/create "><button type="button" class="btn btn-success">Ajouter</button>
+</a></th>
 <br>
         <tr>
-            <th>id</th>   <th>ARTICLE</th>   <th>REFERENCE</th> <th>QUANTITE</th>  <th>nom</th> <th>EMAIL</th> <th>ADRESSE</th> <th>telephone</th> <th>ACTIONS</th> <th>  <a href="Command/create "><button type="button" class="btn btn-success">Ajouter</button>
-</a></th> 
+            <th>id</th>   <th>ARTICLE</th>   <th>REFERENCE</th> <th>QUANTITE</th>  <th>nom</th> <th>EMAIL</th> <th>ADRESSE</th> <th>telephone</th> <th>ACTIONS</th>  
         </tr>
 
         @foreach($Commandes as $commande)

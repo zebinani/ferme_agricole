@@ -423,12 +423,13 @@ h2,
 h3,
 .h3 {
   font-size: 1.575rem;
+  color: #eb0808;
 }
 
 h4,
 .h4 {
   font-size: 1.35rem;
-  color: #0d11eb;
+  color: #0a0a0a;
 }
 
 h5,

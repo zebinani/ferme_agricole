@@ -6,12 +6,10 @@
 " method="post">
    @csrf
    @method('patch')
-   <div><input type="text" name="name" class="form-control" placeholder="NOM" value="{{$materiels->name}}"></div>
-
-   <div><input type="text" name="description" class="form-control" placeholder="description" value="{{$materiels->description}}"> </div>
+   <div><input type="text" name="name" class="form-control" placeholder="NOM" value="{{$materiels->name}}"></div>   
 
    <div><input type="text" name="amortissement" class="form-control" placeholder="Amortissement" value="{{$materiels->amortissement}}"> </div>
-
+   <div><input type="text" name="description" class="form-control" placeholder="description" value="{{$materiels->description}}"> </div>
    <div> <button class="btn btn-primary">Enregistrer</button> </div>
 </form>
 @endsection
@@ -33,8 +31,8 @@
    <tr>
        <th>#</th>
        <th>{{$materiel->name ?? ''}}</th>
-       <th>{{$materiel->description ??''}} </th>
        <th>{{$materiel->amortissement ?? ''}} </th>
+       <th>{{$materiel->description ??''}} </th>
        <th>
        <a href="Materiel/create">Ajouter</a>
         </th>

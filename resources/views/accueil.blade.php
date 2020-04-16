@@ -91,7 +91,7 @@
     <div class="row">
       <div class="col-lg-4 col-sm-4 portfolio-item">
         <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="{{asset('images/fruit1.jpeg')}}" alt=""></a>
+          <a href="#"><img class="card-img-top" src="{{asset('images/fruit1.jpeg')}}" alt="image" height="250px"></a>
             <div class="card-body">
             <h3 class="card-title ">
            <!--  <button type="button" class="btn btn-outline-success">   <a href="Command/create ">COMMANDER</a> 
@@ -104,7 +104,7 @@
       </div>
       <div class="col-lg-4 col-sm-4 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="{{asset('images/champs.jpg')}}" alt=""></a>
+            <a href="#"><img class="card-img-top" src="{{asset('images/champs.jpg')}}" alt="image" height="250px"></a>
             <div class="card-body">
             <h3 class="card-title ">
            <!--    <button type="button" class="btn btn-outline-success">
@@ -118,7 +118,7 @@
         </div>
       <div class="col-lg-4 col-sm-4 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="{{asset('images/tomate.jpg')}}" alt=""></a>
+            <a href="#"><img class="card-img-top" src="{{asset('images/tomate.jpg')}}" alt="image"height="250px"></a>
             <div class="card-body">
               <h3 class="card-title ">
              <!--  <button type="button" class="btn btn-outline-success">
@@ -138,7 +138,7 @@
   <div class="row">
       <div class="col-lg-4 col-sm-4 portfolio-item">
         <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="{{asset('images/10.jpg')}}" alt=""></a>
+          <a href="#"><img class="card-img-top" src="{{asset('images/10.jpg')}}" alt="image"height="300px"></a>
           <div class="card-body">
             <h4 class="card-title">
               <a href="#">Champs de fruit</a>
@@ -149,7 +149,7 @@
       </div>
       <div class="col-lg-4 col-sm-4 portfolio-item">
         <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="{{asset('images/2.jpg')}}" alt=""></a>
+          <a href="#"><img class="card-img-top" src="{{asset('images/2.jpg')}}" alt="image"height="300px"></a>
           <div class="card-body">
             <h4 class="card-title">
               <a href="#">Nos Pepinieres</a>
@@ -160,7 +160,7 @@
       </div>
       <div class="col-lg-4 col-sm-4 portfolio-item">
         <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="{{asset('images/champs6.jpeg')}}" alt=""></a>
+          <a href="#"><img class="card-img-top" src="{{asset('images/champs6.jpeg')}}" alt="image" height="300px"></a>
           <div class="card-body">
             <h4 class="card-title">
               <a href="#">Cueillette</a>

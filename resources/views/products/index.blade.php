@@ -8,11 +8,9 @@
 <br>
 <div><h1>{{__('Liste des produits')}}</h1></div>
 <br>
-<tr> 
-<a href="Product/create "> <button class="btn btn-info">Ajouter</button></a>
-</tr>
+
 <tr class=" bg-success">
-           <th>id</th>          <th>Nom Produit</th>  <th>Prix Produit</th>    <th>Quantite</th> <th>Images</th><th>description</th>       <th>Action</th>
+           <th>id</th>  <th>Nom Produit</th>  <th>Prix Produit</th>    <th>Quantite</th> <th>Images</th><th>description</th>       <th>Action</th>
        </tr>
        
        @foreach($products as $product)  
@@ -27,7 +25,7 @@
             <td>{{$product->description ?? ''}}</td>
             
        <td>
-        <a href="{{route('update_produit',['id'=>$product->id])}}"><button class="btn btn-warning"> <i class="fa fa-eyedropper" aria-hidden="true"></i> </button></a>
+        <a href="{{route('update_produit',['id'=>$product->id])}}"target="_blank" ><button class="btn btn-warning"> <i class="fa fa-eyedropper" aria-hidden="true"></i> </button></a>
        <br>
            <form action="Product/{{$product->id}}" method="post">
                @csrf
@@ -38,11 +36,15 @@
            </form>
 </tr>
 
-       @endforeach
 
+       @endforeach
+       <br>
+<tr> 
+<a href="Product/create "> <button class="btn btn-info">Ajouter</button></a> </tr>
 </table>
         </div>
         </div>
+        
 
  @endsection  
 

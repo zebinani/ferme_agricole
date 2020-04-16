@@ -44,7 +44,7 @@ class ParcelController extends Controller
         $parcels = new Parcel();
 
    $parcels->rentabilite = $request->input('rentabilite');
-   $parcels->categorie= $request->input('categorie');
+   $parcels->Nbr_hectar = $request->input('Nbr_hectar');
    $parcels->type_de_sol = $request->input('type_de_sol');
   
    $parcels->save();
@@ -92,7 +92,7 @@ class ParcelController extends Controller
     
           if($parcels )  $parcels->update([
            'rentabilite' => $request->input('rentabilte'),
-           'categorie' => $request->input('categorie'),
+           'Nbr_hectar' => $request->input('Nbr_hectar'),
            'type_de_sol'=> $request->input('type_de_sol')
            
            

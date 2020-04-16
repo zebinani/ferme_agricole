@@ -8,7 +8,9 @@
  <br>
 
  <form action="{{route('Product.store')}}" method="post" enctype="multipart/form-data">
+ <fieldset>
  
+
                @csrf
                <div>
                    <input type="text" name="name" class="form-control"required placeholder="le nom du produit">
@@ -31,6 +33,7 @@
                    <button type="submit" class="btn btn-primary">Enregistrer</button>
                </div>
                <br><br>
+</fieldset>               
     </form>
     </div>
     </div>

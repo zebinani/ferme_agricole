@@ -14,5 +14,9 @@ class product extends Model
         return $this->belongsTo("App\Production");
     }
 
-     
+     public function getPrice(){
+        $price=$this->price;
+       
+        return number_format($price, 2,',', '').'fcfa'; 
+     }
 }

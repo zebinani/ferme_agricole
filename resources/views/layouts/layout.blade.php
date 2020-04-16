@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+  <head>   
+          <link href="{{asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')}}" rel="stylesheet">
           <link href="{{asset('css/app.css')}}" rel="stylesheet" />
           <link href="{{asset('css/all.css')}}" rel="stylesheet" />
-          <link href="{{asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')}}" rel="stylesheet">
           
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,7 +11,8 @@
           <meta name="author" content="">
 
                      <title>FERME AGRICOLE</title>
-  </head>     
+  </head> 
+
   <body> 
     <header>
         
@@ -101,16 +102,12 @@
           </div>
          </div>
         </nav>
-
-
-            <!-- la page de connexion-->
+            
       <div id="container">
         
         <div id="container"> @yield("create_product ") </div> 
 
-        <div id="container"> @yield("create_parcel ") </div> 
-        <div id="container"> @yield("edit_parcel ") </div> 
-        <div id="container"> @yield("index_parcel ") </div>
+        
 
         <div id="container"> @yield("listecontact") </div>
         <div id="container"> @yield("cart_index") </div>
@@ -165,11 +162,6 @@
 
         <div id="container">  @yield("role_page")</div>
 
-        <div id="container">  @yield("parcel_index")</div>
-        <div id="container">  @yield("parcel_create")</div>
-        <div id="container">  @yield("parcel_edit")</div>
-
-
         <div id="container">  @yield("Admin.edit")</div>
 
         <div id="container">  @yield("Prod_creation")</div>
@@ -178,13 +170,16 @@
 
     </main>
 
-    <footer class="py-2 bg-dark ">
+    <footer class="py-2 bg-dark fixed-bottom">
       <div class="container ">
       <div class="row-12 ">
       <p class="m-0 text-center   text-white">Copyright 2020 &copy; TOUS LES DROITS SONT RESERVES BINANITECH</p>
       </div>
       <!-- /.container -->
     </footer>
+    
+    @yield('extra-js')
+
 
       <!-- Bootstrap core JavaScript -->
       <script src="{{asset('js/app.js')}}"></script>

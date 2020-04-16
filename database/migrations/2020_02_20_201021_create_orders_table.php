@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMaterielsTable extends Migration
+class CreateOrdersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,13 @@ class CreateMaterielsTable extends Migration
      */
     public function up()
     {
-        Schema::create('materiels', function (Blueprint $table) {
+        Schema::create('orders', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->string('amortissement');
-            $table->string('description');
+            $table->string('payment_intent_id')->unique();
+            $table->integer('amount');
+            $table->datetime('payment_create_at');
+            $table->text('products');
+            $table->unsignedBigInteger('user_id');
             $table->timestamps();
         });
     }
@@ -29,6 +31,6 @@ class CreateMaterielsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('materiels');
+        Schema::dropIfExists('orders');
     }
 }

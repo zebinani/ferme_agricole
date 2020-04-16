@@ -25,8 +25,9 @@ class showController extends Controller
        
     //  $product= \App\Product::find($id);
       $product= \App\Product::where('id',$id)->firstOrFail();
+      
       $stock= $product->stock === 0 ? 'indisponible':'disponible';
-
+           
       return view('products.produit',[
         'product'=>$product,
         'stock'=>$stock]);
